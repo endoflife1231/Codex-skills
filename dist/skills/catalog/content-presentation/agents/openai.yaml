@@ -1,0 +1,8 @@
+interface:
+  display_name: Content Presentation
+  short_description: Generate full HTML presentations using Slidev, Reveal.js, Spectacle, or raw HTML with brand
+    integration. Use when user wants to create a…
+  default_prompt: Use $content-presentation for this task. Follow the skill workflow, inspect relevant files and
+    prerequisites, and verify the result.
+policy:
+  allow_implicit_invocation: true

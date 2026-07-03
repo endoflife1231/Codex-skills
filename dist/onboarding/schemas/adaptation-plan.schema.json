@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-powerpack.local/schemas/adaptation-plan.schema.json",
+  "type": "object",
+  "required": ["schema_version", "plan_id", "created_at", "project_root", "project_fingerprint", "mode", "profile", "confidence", "analysis_method", "always_on", "skills", "agents", "integrations", "operations", "verification", "risks", "questions", "approved"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "plan_id": {"type": "string"}, "created_at": {"type": "string"},
+    "project_root": {"type": "string"}, "project_fingerprint": {"type": "string"},
+    "mode": {"enum": ["guided", "auto", "manual", "analyze-only"]},
+    "profile": {"enum": ["auto", "minimal", "standard", "full"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "analysis_method": {"type": "string"},
+    "always_on": {"type": "object", "required": ["caveman", "live_language"]},
+    "skills": {"type": "object", "required": ["always_on", "selected", "optional", "rejected", "conflicted", "manual_review"]},
+    "agents": {"type": "object", "required": ["selected", "optional", "rejected"]},
+    "integrations": {"type": "object", "required": ["codebase-memory", "graphify", "at_least_one_required"]},
+    "operations": {"type": "array", "items": {"type": "object", "required": ["action", "target"]}},
+    "verification": {"type": "array", "items": {"type": "string"}},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "questions": {"type": "array", "items": {"type": "string"}},
+    "approved": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

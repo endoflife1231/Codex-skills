@@ -1,0 +1,6 @@
+interface:
+  display_name: Source Driven Development
+  short_description: Ground implementation decisions in current official documentation and primary sources. Use
+    when framework, library, API, or standard details may be…
+  default_prompt: Use $source-driven-development for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

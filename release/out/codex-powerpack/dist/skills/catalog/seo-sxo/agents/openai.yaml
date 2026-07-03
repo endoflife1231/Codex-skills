@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Sxo
+  short_description: 'Search Experience Optimization: reads Google SERPs backwards to detect page-type mismatches,
+    derives user stories from search intent signals, and…'
+  default_prompt: Use $seo-sxo for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

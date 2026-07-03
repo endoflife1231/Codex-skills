@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Google
+  short_description: 'Google SEO APIs: Search Console (Search Analytics, URL Inspection, Sitemaps), PageSpeed Insights
+    v5, CrUX field data with 25-week history, Indexing…'
+  default_prompt: Use $seo-google for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

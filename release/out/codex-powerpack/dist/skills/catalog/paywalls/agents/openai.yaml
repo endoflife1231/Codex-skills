@@ -1,0 +1,8 @@
+interface:
+  display_name: Paywalls
+  short_description: When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals,
+    or feature gates. Also use when the user mentions…
+  default_prompt: Use $paywalls for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

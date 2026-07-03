@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Firecrawl
+  short_description: Full-site crawling, scraping, and site mapping via Firecrawl MCP. Use when user says "crawl
+    site", "map site", "full crawl", "find all pages",…
+  default_prompt: Use $seo-firecrawl for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

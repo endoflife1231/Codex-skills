@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "version": "0.8.1",
+  "release_tag": "v0.8.1",
+  "release_base_url": "https://github.com/DeusData/codebase-memory-mcp/releases/download/v0.8.1",
+  "checksum_file": "checksums.txt",
+  "policy": "Download the archive and checksums.txt separately; require an exact SHA-256 match before extraction.",
+  "artifacts": {
+    "linux-amd64": {"name": "codebase-memory-mcp-linux-amd64-portable.tar.gz", "sha256": "6ab87a6c05d049dde57700803ca0ab4199fcf25973a0606618af0fcee73f5abd"},
+    "linux-arm64": {"name": "codebase-memory-mcp-linux-arm64-portable.tar.gz", "sha256": "13526acc2a6a0697dff3c763fb443a416589bc10ad8b12015b63d87e515dd72b"},
+    "darwin-amd64": {"name": "codebase-memory-mcp-darwin-amd64.tar.gz", "sha256": "fb62da3016ea12b948351208759b5c083fb1446cf6e78d6db8b7cd28fe86fd54"},
+    "darwin-arm64": {"name": "codebase-memory-mcp-darwin-arm64.tar.gz", "sha256": "fbd047509852021b5446a11141bcb0a3d1dcaebf6e5112460960f29f052c1c58"}
+  },
+  "ui_artifacts": {
+    "linux-amd64": {"name": "codebase-memory-mcp-ui-linux-amd64-portable.tar.gz", "sha256": "74ed63e3af2d85bfd98cbcce7191295536d0a54b084cbc0b868d69f2272172da"},
+    "linux-arm64": {"name": "codebase-memory-mcp-ui-linux-arm64-portable.tar.gz", "sha256": "80a3c0cac329cc9eda8bcde80f691674f09abb62205c087e69c085e803efeae5"},
+    "darwin-amd64": {"name": "codebase-memory-mcp-ui-darwin-amd64.tar.gz", "sha256": "3377e494540956bb6f9f8474efe7c7d675f7bc64ab838c96e0a63ffd74338794"},
+    "darwin-arm64": {"name": "codebase-memory-mcp-ui-darwin-arm64.tar.gz", "sha256": "131f7de0a9691974a656502443f86c7c29cb89e62ddc43c9553134a5075b52fb"}
+  }
+}

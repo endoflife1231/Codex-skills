@@ -1,0 +1,8 @@
+interface:
+  display_name: Ascii Art Beautifier
+  short_description: Beautifies and generates ASCII art diagrams in markdown files. Use when user says "beautify
+    ascii", "fix ascii art", "align ascii", "выровняй…
+  default_prompt: Use $ascii-art-beautifier for this task. Follow the skill workflow, inspect relevant files and
+    prerequisites, and verify the result.
+policy:
+  allow_implicit_invocation: true

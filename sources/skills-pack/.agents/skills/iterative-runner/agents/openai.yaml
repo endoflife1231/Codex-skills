@@ -1,0 +1,6 @@
+interface:
+  display_name: Iterative Runner
+  short_description: Run a bounded implement-test-debug loop in the current Codex session until explicit completion
+    criteria pass or a documented stop condition is…
+  default_prompt: Use $iterative-runner to run a finite evidence-driven repair loop in this Codex session. Define
+    verification and stop conditions, make one testable change per iteration, and report the final evidence.

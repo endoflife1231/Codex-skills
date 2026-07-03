@@ -1,0 +1,27 @@
+version: 1
+ignored_directories:
+  - .git
+  - node_modules
+  - vendor
+  - .venv
+  - venv
+  - dist
+  - build
+  - coverage
+  - .next
+  - target
+  - __pycache__
+  - .cache
+  - .codex-powerpack
+  - .agents
+  - .codex
+secret_names:
+  - .env
+  - .env.*
+  - '*.pem'
+  - '*.key'
+  - credentials*
+  - secrets*
+  - id_rsa*
+max_manifest_bytes: 1048576
+max_tree_entries: 1000

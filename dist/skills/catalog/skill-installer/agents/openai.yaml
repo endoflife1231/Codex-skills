@@ -1,0 +1,8 @@
+interface:
+  display_name: Skill Installer
+  short_description: Install Codex skills into $HOME/.agents/skills from a curated list or a GitHub repository path.
+    Use when listing or installing local skills,…
+  icon_small: ./assets/skill-installer-small.svg
+  icon_large: ./assets/skill-installer.png
+  default_prompt: Use $skill-installer to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

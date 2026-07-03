@@ -1,0 +1,8 @@
+interface:
+  display_name: Image
+  short_description: When the user wants to create, generate, edit, or optimize images for marketing — blog heroes,
+    social graphics, product mockups, profile banners,…
+  default_prompt: Use $image for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,8 @@
+interface:
+  display_name: Bilingual Transcreator
+  short_description: Transcreate, localize, rewrite, and polish marketing or editorial text between Russian and
+    English so it reads as original, natural,…
+  default_prompt: Use $bilingual-transcreator for this task. Follow the skill workflow, inspect relevant files and
+    prerequisites, and verify the result.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Image Gen
+  short_description: Generate and edit SEO image assets such as OG/social previews, blog heroes, schema images,
+    product visuals, infographics, banners, thumbnails, and…
+  default_prompt: Use $seo-image-gen for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

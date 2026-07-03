@@ -1,0 +1,8 @@
+interface:
+  display_name: Emails
+  short_description: When the user wants to create or optimize an email sequence, drip campaign, automated email
+    flow, or lifecycle email program. Also use when the user…
+  default_prompt: Use $emails for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

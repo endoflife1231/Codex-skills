@@ -1,0 +1,4 @@
+source_term,source_language,approved_target_term,target_language,status,context_or_definition,forbidden_variants,case_sensitive,notes
+пример,ru,example,en,approved,Demonstration item,sample,false,
+AI assistant,en,ИИ-ассистент,ru,approved,Customer-facing product category,AI помощник|эй-ай ассистент,false,Use hyphen
+BrandName,any,BrandName,any,locked,Official brand spelling,,true,Never transliterate

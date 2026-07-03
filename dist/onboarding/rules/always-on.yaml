@@ -1,0 +1,53 @@
+version: 1
+always_on:
+  caveman:
+    required: true
+    skills:
+      required:
+        - caveman
+      preferred:
+        - caveman-compress
+        - caveman-review
+        - caveman-stats
+        - caveman-commit
+        - caveman-help
+        - caveman-setup
+        - cavecrew
+    profiles:
+      - minimal
+      - standard
+      - full
+      - auto
+      - guided
+  live_language_core:
+    required: true
+    languages:
+      - ru
+      - en
+    preferred_skills:
+      - bilingual-transcreator
+      - humanizer
+      - humanizer-ru
+      - ru-editor
+      - ru-text
+      - ru-textovod
+      - en-ru-translator-adv
+      - copy-editing
+      - writing-guidelines
+      - brand
+      - copywriting
+      - impeccable
+    category_fallbacks:
+      - Writing, localization & editorial
+      - Communication & productivity
+    profiles:
+      - minimal
+      - standard
+      - full
+      - auto
+      - guided
+  project_intelligence:
+    required: true
+    at_least_one_of:
+      - codebase-memory
+      - graphify

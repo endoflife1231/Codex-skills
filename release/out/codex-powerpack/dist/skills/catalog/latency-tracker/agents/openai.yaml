@@ -1,0 +1,6 @@
+interface:
+  display_name: Latency Tracker
+  short_description: Per-call and aggregated latency tracking for MEV infrastructure. Use when implementing performance
+    monitoring or debugging slow operations. Triggers…
+  default_prompt: Use $latency-tracker to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

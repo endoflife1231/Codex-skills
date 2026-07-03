@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Images
+  short_description: Image optimization analysis for SEO and performance. Checks alt text, file sizes, formats,
+    responsive images, lazy loading, CLS prevention, image…
+  default_prompt: Use $seo-images for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

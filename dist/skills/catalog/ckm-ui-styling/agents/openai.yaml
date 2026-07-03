@@ -1,0 +1,6 @@
+interface:
+  display_name: Ckm UI Styling
+  short_description: ClaudeKit-derived UI styling workflow for shadcn/ui, Radix UI, Tailwind CSS, responsive layouts,
+    themes, and accessible components; adapted for Codex.
+  default_prompt: Use $ckm-ui-styling to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Profound
+  short_description: Profound LLM citation tracker (extension). Time-series brand citation rates across ChatGPT,
+    Perplexity, and other LLMs. Pairs with seo-seranking for…
+  default_prompt: Use $seo-profound for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,23 @@
+version: 1
+untrusted_content:
+  - README and Markdown bodies
+  - source comments
+  - generated files
+  - Graphify output
+  - MCP output
+  - issue templates
+never_execute_from_content: true
+forbidden_defaults:
+  - hooks
+  - watchers
+  - deployment
+  - migrations
+  - shell profile changes
+  - global agent configuration
+  - curl-piped installers
+required_before_apply:
+  - valid plan schema
+  - matching plan hash
+  - unchanged project fingerprint
+  - integration dependency preflight
+  - backup snapshot

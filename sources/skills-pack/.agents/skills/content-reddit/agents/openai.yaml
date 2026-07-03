@@ -1,0 +1,8 @@
+interface:
+  display_name: Content Reddit
+  short_description: Subreddit-aware post generation that matches community norms. Use when user wants to create
+    a Reddit post or comment for any subreddit.
+  default_prompt: Use $content-reddit for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

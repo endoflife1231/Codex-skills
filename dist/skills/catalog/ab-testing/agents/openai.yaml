@@ -1,0 +1,8 @@
+interface:
+  display_name: Ab Testing
+  short_description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth
+    experimentation program. Also use when the user…
+  default_prompt: Use $ab-testing for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

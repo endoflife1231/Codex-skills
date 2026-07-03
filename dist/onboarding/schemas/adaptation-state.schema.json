@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-powerpack.local/schemas/adaptation-state.schema.json",
+  "type": "object",
+  "required": ["schema_version", "project_root", "plan_path", "plan_sha256", "applied_at", "status", "managed_files", "backup_root", "backup_manifest", "selected_skills", "selected_agents", "integrations", "verification"],
+  "properties": {
+    "schema_version": {"const": 1}, "project_root": {"type": "string"},
+    "plan_path": {"type": "string"}, "plan_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "applied_at": {"type": "string"}, "status": {"enum": ["applied", "verified", "rolled-back", "failed"]},
+    "managed_files": {"type": "array", "items": {"type": "string"}},
+    "backup_root": {"type": "string"}, "backup_manifest": {"type": "string"},
+    "selected_skills": {"type": "array", "items": {"type": "string"}},
+    "selected_agents": {"type": "array", "items": {"type": "string"}},
+    "integrations": {"type": "object"}, "verification": {"type": "object"}
+  },
+  "additionalProperties": true
+}

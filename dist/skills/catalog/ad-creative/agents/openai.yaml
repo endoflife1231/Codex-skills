@@ -1,0 +1,8 @@
+interface:
+  display_name: Ad Creative
+  short_description: When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary
+    text, or full ad variations — for any paid…
+  default_prompt: Use $ad-creative for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

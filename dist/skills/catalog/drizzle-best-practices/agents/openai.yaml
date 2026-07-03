@@ -1,0 +1,6 @@
+interface:
+  display_name: Drizzle Best Practices
+  short_description: Use this skill whenever the user is working with Drizzle ORM on PostgreSQL. This covers any
+    mention of Drizzle, drizzle-orm, drizzle-kit,…
+  default_prompt: Use $drizzle-best-practices to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

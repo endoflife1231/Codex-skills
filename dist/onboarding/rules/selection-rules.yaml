@@ -1,0 +1,19 @@
+version: 1
+project_intelligence:
+  codebase_memory:
+    source_files_minimum: 30
+    enable_for_monorepo: true
+    enable_for_multiple_services: true
+  graphify:
+    documentation_files_minimum: 20
+    enable_for_media: true
+  both:
+    source_files_minimum: 30
+    documentation_files_minimum: 20
+profiles:
+  minimal_source_files_maximum: 29
+  standard_source_files_maximum: 4999
+confidence:
+  deterministic_high: 0.9
+  deterministic_medium: 0.75
+  manual_review_below: 0.65

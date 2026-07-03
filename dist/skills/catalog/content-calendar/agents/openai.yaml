@@ -1,0 +1,8 @@
+interface:
+  display_name: Content Calendar
+  short_description: Editorial calendar planning and content scheduling. Use when user wants to plan a content calendar,
+    create a publishing schedule, organize content…
+  default_prompt: Use $content-calendar for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

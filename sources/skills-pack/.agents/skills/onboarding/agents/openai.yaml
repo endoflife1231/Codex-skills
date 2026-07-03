@@ -1,0 +1,8 @@
+interface:
+  display_name: Onboarding
+  short_description: When the user wants to optimize post-signup onboarding, user activation, first-run experience,
+    or time-to-value. Also use when the user mentions…
+  default_prompt: Use $onboarding for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

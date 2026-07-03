@@ -1,0 +1,5 @@
+interface:
+  display_name: Security Threat Model
+  short_description: Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities,
+    abuse paths, and mitigations, and writes a…
+  default_prompt: Create a repository-grounded threat model for this codebase with prioritized abuse paths and mitigations.

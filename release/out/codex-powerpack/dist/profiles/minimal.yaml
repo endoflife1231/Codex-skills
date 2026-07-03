@@ -1,0 +1,50 @@
+name: minimal
+version: 1
+core:
+  - dist/core/AGENTS.base.md
+agents:
+  - explorer
+  - planner
+  - reviewer
+skills:
+  - api-and-interface-design
+  - frontend-ui-engineering
+  - context-engineering
+  - doubt-driven-development
+  - idea-refine
+  - interview-me
+  - source-driven-development
+  - ci-cd-and-automation
+  - deprecation-and-migration
+  - documentation-and-adrs
+  - engineering-delivery-lifecycle
+  - git-workflow-and-versioning
+  - incremental-implementation
+  - observability-and-instrumentation
+  - planning-and-task-breakdown
+  - shipping-and-launch
+  - spec-driven-development
+  - code-review-and-quality
+  - debugging-and-error-recovery
+  - performance-optimization
+  - security-and-hardening
+  - test-driven-development
+  - caveman
+  - caveman-compress
+  - caveman-review
+  - caveman-stats
+  - bilingual-transcreator
+  - humanizer
+  - humanizer-ru
+  - ru-editor
+  - ru-text
+  - ru-textovod
+  - en-ru-translator-adv
+  - copy-editing
+  - writing-guidelines
+integrations:
+  codebase-memory: optional
+  graphify: optional
+always_on:
+  caveman: true
+  live-language: true

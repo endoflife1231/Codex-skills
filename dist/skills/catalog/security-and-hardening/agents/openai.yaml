@@ -1,0 +1,6 @@
+interface:
+  display_name: Security And Hardening
+  short_description: Harden code that handles untrusted input, authentication, authorization, secrets, storage,
+    third-party services, or LLM tools. Use for…
+  default_prompt: Use $security-and-hardening for this task. Follow its workflow, inspect the relevant project files,
+    and verify the result.

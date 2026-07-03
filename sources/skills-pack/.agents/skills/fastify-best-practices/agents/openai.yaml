@@ -1,0 +1,6 @@
+interface:
+  display_name: Fastify Best Practices
+  short_description: Guides production Fastify v5 backend and REST API development with TypeScript or JavaScript.
+    Use for Fastify plugins, routes, JSON Schema…
+  default_prompt: Use $fastify-best-practices to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

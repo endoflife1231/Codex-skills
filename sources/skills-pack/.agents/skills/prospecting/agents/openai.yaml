@@ -1,0 +1,8 @@
+interface:
+  display_name: Prospecting
+  short_description: When the user wants to find, qualify, and build a list of prospects to reach out to — across
+    B2B SaaS, general B2B, or local small businesses. Also…
+  default_prompt: Use $prospecting for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

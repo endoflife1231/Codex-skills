@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-07-03",
+  "schema_version": 1,
+  "modes": [
+    "guided",
+    "auto",
+    "manual",
+    "analyze-only"
+  ],
+  "default_mode": "guided",
+  "always_on": {
+    "caveman_required": true,
+    "live_language_required": true,
+    "project_intelligence_required": true
+  },
+  "analysis": {
+    "deterministic_scanner": true,
+    "codex_schema_analysis": "when codex exec is available",
+    "fallback": "deterministic-fallback"
+  },
+  "project_intelligence": [
+    "codebase-memory",
+    "graphify"
+  ],
+  "safety": [
+    "untrusted project prose is never executed",
+    "apply requires a matching plan SHA-256",
+    "project fingerprint is rechecked",
+    "external integrations are preflighted",
+    "affected project paths are snapshotted",
+    "rollback restores the pre-apply snapshot"
+  ],
+  "fixtures": 18,
+  "acceptance_status": "passed",
+  "skills_registry_count": 254,
+  "agents_registry_count": 8,
+  "graphify_default_hooks": false,
+  "auto_mode_implicit_network": false
+}

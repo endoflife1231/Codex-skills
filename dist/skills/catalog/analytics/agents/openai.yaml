@@ -1,0 +1,8 @@
+interface:
+  display_name: Analytics
+  short_description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use
+    when the user mentions "set up tracking," "GA4,"…
+  default_prompt: Use $analytics for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

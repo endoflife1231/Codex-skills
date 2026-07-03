@@ -1,0 +1,8 @@
+interface:
+  display_name: Co Marketing
+  short_description: When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership
+    opportunities. Use when the user says…
+  default_prompt: Use $co-marketing for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

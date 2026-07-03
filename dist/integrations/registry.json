@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "integrations": [
+    {
+      "id": "graphify",
+      "adapter": "dist/integrations/graphify/adapter.json",
+      "type": "optional-tool",
+      "optional": true
+    },
+    {
+      "id": "codebase-memory",
+      "adapter": "dist/integrations/codebase-memory/adapter.json",
+      "type": "mcp",
+      "optional": true
+    }
+  ]
+}

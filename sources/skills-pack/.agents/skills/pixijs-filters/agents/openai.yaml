@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Filters
+  short_description: Use this skill when applying visual effects to PixiJS v8 containers via the filter pipeline.
+    Covers built-in filters (AlphaFilter, BlurFilter,…
+  default_prompt: Use $pixijs-filters to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

@@ -1,0 +1,8 @@
+interface:
+  display_name: Content Editorial Strategy
+  short_description: 'Build a brand-led editorial strategy for the content-studio workflow: audience beliefs, content
+    pillars, channel mix, idea backlog, and briefs. Use…'
+  default_prompt: Use $content-editorial-strategy for this task. Follow the skill workflow, inspect relevant files
+    and prerequisites, and verify the result.
+policy:
+  allow_implicit_invocation: true

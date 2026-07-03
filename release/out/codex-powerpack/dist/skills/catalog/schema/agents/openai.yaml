@@ -1,0 +1,8 @@
+interface:
+  display_name: Schema
+  short_description: When the user wants to add, fix, or optimize schema markup and structured data on their site.
+    Also use when the user mentions "schema markup,"…
+  default_prompt: Use $schema for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: Code Review And Quality
+  short_description: Review a diff, branch, or pull request across correctness, readability, architecture, security,
+    performance, and tests. Use for structured pre-merge…
+  default_prompt: Use $code-review-and-quality for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

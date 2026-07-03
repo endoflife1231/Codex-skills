@@ -1,0 +1,5 @@
+# Managed values are rendered by configure.sh.
+[mcp_servers.codebase-memory]
+command = "{{BINARY_PATH}}"
+args = []
+env = { CBM_CACHE_DIR = "{{CACHE_PATH}}" }

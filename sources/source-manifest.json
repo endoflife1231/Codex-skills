@@ -1,0 +1,8 @@
+{
+  "name": "graphify",
+  "local_path": "sources/graphify",
+  "source_url": "https://github.com/safishamsi/graphify",
+  "commit_or_tag": "0c628fa38f2027f1e204935bceae1b9859474ef1",
+  "license": "MIT",
+  "redistribution_allowed": true
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: Caveman Stats
+  short_description: Compare an original text file with a Caveman-compressed version and report deterministic byte,
+    character, and word savings plus a clearly labeled…
+  default_prompt: Use $caveman-stats for this task. Follow the skill workflow and preserve technical accuracy.

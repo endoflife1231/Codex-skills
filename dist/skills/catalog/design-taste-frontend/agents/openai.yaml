@@ -1,0 +1,5 @@
+interface:
+  display_name: Design Taste Frontend
+  short_description: Design or redesign distinctive production landing pages, portfolios, campaigns, editorial sites,
+    and brand-led frontend experiences without generic…
+  default_prompt: Use $design-taste-frontend to design and implement this distinctive frontend experience.
