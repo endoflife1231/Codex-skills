@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Ticker
-  short_description: Use this skill when running per-frame logic or controlling the PixiJS v8 render loop. Covers
-    Ticker.add/addOnce/remove, deltaTime vs deltaMS vs…
-  default_prompt: Use $pixijs-ticker to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.

@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Unlighthouse
-  short_description: Multi-page Lighthouse audit via the MIT-licensed Unlighthouse CLI. Free-tier alternative to
-    running PageSpeed against every URL on a site — no API…
-  default_prompt: Use $seo-unlighthouse for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: false

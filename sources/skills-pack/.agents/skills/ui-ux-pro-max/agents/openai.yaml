@@ -1,6 +1,0 @@
-interface:
-  display_name: UI UX Pro Max
-  short_description: UI/UX design intelligence for web and mobile. Use to plan, build, review, or improve interfaces,
-    design systems, accessibility, typography, layout,…
-  default_prompt: Use $ui-ux-pro-max to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.

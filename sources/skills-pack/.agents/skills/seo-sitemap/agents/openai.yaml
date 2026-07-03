@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Sitemap
-  short_description: Analyze existing XML sitemaps or generate new ones with industry templates. Validates format,
-    URLs, and structure. Use when user says "sitemap",…
-  default_prompt: Use $seo-sitemap for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

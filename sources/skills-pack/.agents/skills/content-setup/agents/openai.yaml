@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Setup
-  short_description: Interactive brand onboarding that creates `.agents/brand/` with BRAND.md, VOICE.md, and VISUAL.md.
-    Use for `$content-setup`, brand review/update,…
-  default_prompt: Use $content-setup for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

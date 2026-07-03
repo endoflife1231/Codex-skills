@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Audit
-  short_description: Full website SEO audit with parallel subagent delegation. Crawls up to 500 pages, detects business
-    type, delegates to up to 15 specialists (8 always…
-  default_prompt: Use $seo-audit for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

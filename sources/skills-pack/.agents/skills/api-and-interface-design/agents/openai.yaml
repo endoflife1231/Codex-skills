@@ -1,6 +1,0 @@
-interface:
-  display_name: API and Interface Design
-  short_description: Design stable REST, GraphQL, module, and service interfaces with explicit contracts, errors,
-    versioning, and compatibility. Use for new or changing…
-  default_prompt: Use $api-and-interface-design for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.

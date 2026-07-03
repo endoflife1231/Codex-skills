@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Video
-  short_description: Video script generation and Remotion composition scaffolding. Use when user wants to create
-    video content, storyboards, Remotion scripts, social…
-  default_prompt: Use $content-video for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

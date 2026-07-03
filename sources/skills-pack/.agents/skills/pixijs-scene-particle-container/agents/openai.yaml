@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Scene Particle Container
-  short_description: Use this skill when rendering thousands of lightweight sprites in PixiJS v8. Covers ParticleContainer
-    with Particle instances,…
-  default_prompt: Use $pixijs-scene-particle-container to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

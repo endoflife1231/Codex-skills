@@ -1,6 +1,0 @@
-interface:
-  display_name: Ckm Banner Design
-  short_description: Design banners for social media, ads, website heroes, campaigns, and print in multiple art
-    directions; adapted from ClaudeKit for Codex.
-  default_prompt: Use $ckm-banner-design to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

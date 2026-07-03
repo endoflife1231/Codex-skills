@@ -1,6 +1,0 @@
-interface:
-  display_name: HFT Quant Expert
-  short_description: Quantitative trading expertise for DeFi and crypto derivatives. Use when building trading strategies,
-    signals, risk management. Triggers on signal,…
-  default_prompt: Use $hft-quant-expert to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

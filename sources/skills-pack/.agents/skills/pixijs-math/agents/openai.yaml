@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Math
-  short_description: Use this skill when working with coordinates, vectors, matrices, shapes, hit testing, or layout
-    rectangles in PixiJS v8. Covers…
-  default_prompt: Use $pixijs-math to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.

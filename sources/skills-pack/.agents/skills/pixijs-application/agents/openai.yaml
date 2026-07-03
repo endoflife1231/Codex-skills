@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Application
-  short_description: Use this skill when creating and configuring a PixiJS v8 Application. Covers new Application()
-    + async app.init() options (width, height,…
-  default_prompt: Use $pixijs-application to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

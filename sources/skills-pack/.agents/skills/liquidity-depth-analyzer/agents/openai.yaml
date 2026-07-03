@@ -1,6 +1,0 @@
-interface:
-  display_name: Liquidity Depth Analyzer
-  short_description: DEX liquidity analysis and slippage estimation for MEV trading. Use when implementing swaps,
-    route selection, or position sizing. Triggers on:…
-  default_prompt: Use $liquidity-depth-analyzer to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

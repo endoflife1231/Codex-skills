@@ -1,6 +1,0 @@
-interface:
-  display_name: Error Logger
-  short_description: Structured JSON logging with correlation IDs for multi-service systems. Use when implementing
-    logging, debugging failures, or tracing errors across…
-  default_prompt: Use $error-logger to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.

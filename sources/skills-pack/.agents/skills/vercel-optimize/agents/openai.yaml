@@ -1,6 +1,0 @@
-interface:
-  display_name: Vercel Optimize
-  short_description: Use for Vercel cost and performance optimization on deployed projects, especially Next.js,
-    SvelteKit, Nuxt, and limited Astro apps.
-  default_prompt: Use $vercel-optimize to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

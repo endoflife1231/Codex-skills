@@ -1,6 +1,0 @@
-interface:
-  display_name: Test-Driven Development
-  short_description: Develop or fix behavior with a failing test first, minimal implementation, refactoring, and
-    regression verification. Use when tests can define the…
-  default_prompt: Use $test-driven-development for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.

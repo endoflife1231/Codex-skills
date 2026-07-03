@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Blend Modes
-  short_description: Use this skill when compositing display objects with blend modes in PixiJS v8. Covers standard
-    modes (normal, add, multiply, screen, erase, min,…
-  default_prompt: Use $pixijs-blend-modes to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

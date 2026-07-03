@@ -1,6 +1,0 @@
-interface:
-  display_name: Idea Refine
-  short_description: Turn a vague product or technical idea into sharper alternatives, assumptions, trade-offs,
-    and a chosen direction. Use for ideation and concept…
-  default_prompt: Use $idea-refine for this task. Follow its workflow, inspect the relevant project files, and verify
-    the result.

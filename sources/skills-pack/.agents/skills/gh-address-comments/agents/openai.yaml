@@ -1,7 +1,0 @@
-interface:
-  display_name: GitHub Address Comments
-  short_description: Help address review/issue comments on the open GitHub PR for the current branch using gh CLI;
-    verify gh auth first and prompt the user to…
-  icon_small: ./assets/github-small.svg
-  icon_large: ./assets/github.png
-  default_prompt: Address all actionable GitHub PR review comments in this branch and summarize the updates.

@@ -1,8 +1,0 @@
-interface:
-  display_name: Popups
-  short_description: When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for
-    conversion purposes. Also use when the user mentions…
-  default_prompt: Use $popups for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

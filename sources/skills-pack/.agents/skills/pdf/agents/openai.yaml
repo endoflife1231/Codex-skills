@@ -1,6 +1,0 @@
-interface:
-  display_name: PDF
-  short_description: Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout
-    matter; prefer visual checks by rendering pages…
-  icon_large: ./assets/pdf.png
-  default_prompt: Create, edit, or review this PDF and summarize the key output or changes.

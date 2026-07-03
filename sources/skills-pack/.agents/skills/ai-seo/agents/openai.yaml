@@ -1,8 +1,0 @@
-interface:
-  display_name: AI SEO
-  short_description: When the user wants to optimize content for AI search engines, get cited by LLMs, or appear
-    in AI-generated answers. Also use when the user mentions…
-  default_prompt: Use $ai-seo for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

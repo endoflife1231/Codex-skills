@@ -1,6 +1,0 @@
-interface:
-  display_name: Vercel CLI With Tokens
-  short_description: Deploy and manage projects on Vercel using token-based authentication. Use when working with
-    Vercel CLI using access tokens rather than interactive…
-  default_prompt: Use $vercel-cli-with-tokens to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

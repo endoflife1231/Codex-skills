@@ -1,6 +1,0 @@
-interface:
-  display_name: Writing Guidelines
-  short_description: Review docs/prose for Writing Guidelines compliance. Use when asked to "review my docs", "check
-    writing style", "audit prose", "review docs voice…
-  default_prompt: Use $writing-guidelines to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

@@ -1,5 +1,0 @@
-interface:
-  display_name: Huashu Design
-  short_description: Create high-fidelity HTML prototypes, interactive demos, slide decks, motion pieces, narrated
-    explainers, and visual design explorations. Use for…
-  default_prompt: Use $huashu-design to create and verify this HTML-based visual artifact.

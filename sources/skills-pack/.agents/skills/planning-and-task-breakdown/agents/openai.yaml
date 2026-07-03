@@ -1,6 +1,0 @@
-interface:
-  display_name: Planning And Task Breakdown
-  short_description: Convert a specification or clear requirements into ordered, dependency-aware, independently
-    verifiable implementation tasks.
-  default_prompt: Use $planning-and-task-breakdown for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.

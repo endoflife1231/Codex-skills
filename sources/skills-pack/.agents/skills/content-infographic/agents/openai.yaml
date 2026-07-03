@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Infographic
-  short_description: Generate SVG and HTML infographics with brand-aware design. Use when user wants to create an
-    infographic, data visualization, process flow,…
-  default_prompt: Use $content-infographic for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

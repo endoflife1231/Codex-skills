@@ -1,6 +1,0 @@
-interface:
-  display_name: Brand
-  short_description: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate
-    for branded content, tone of voice, marketing…
-  default_prompt: Use $brand to handle this task. Follow the skill workflow, inspect relevant project files, and
-    verify the result.

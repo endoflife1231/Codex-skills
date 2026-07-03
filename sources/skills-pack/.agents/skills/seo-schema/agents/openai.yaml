@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Schema
-  short_description: Detect, validate, and generate Schema.org structured data. JSON-LD format preferred. Use when
-    user says "schema", "structured data", "rich results",…
-  default_prompt: Use $seo-schema for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

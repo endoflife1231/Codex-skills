@@ -1,5 +1,0 @@
-interface:
-  display_name: Impeccable
-  short_description: Audit, shape, polish, harden, clarify, optimize, or iteratively improve production product
-    interfaces. Use for dashboards, app shells, tools,…
-  default_prompt: Use $impeccable to audit, improve, and verify this production product interface.

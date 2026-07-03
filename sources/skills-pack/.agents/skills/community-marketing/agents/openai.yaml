@@ -1,8 +1,0 @@
-interface:
-  display_name: Community Marketing
-  short_description: Build and leverage online communities to drive product growth and brand loyalty. Use when the
-    user wants to create a community strategy, grow a…
-  default_prompt: Use $community-marketing for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

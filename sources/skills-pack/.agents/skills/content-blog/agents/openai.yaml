@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Blog
-  short_description: Long-form blog post generation with brand voice integration and anti-slop enforcement. Use
-    when user wants to write a blog post, article, tutorial,…
-  default_prompt: Use $content-blog for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

@@ -1,7 +1,0 @@
-interface:
-  display_name: Speech
-  short_description: Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio
-    prompts, or batch speech generation via the OpenAI…
-  icon_small: ./assets/speech-small.svg
-  icon_large: ./assets/speech.png
-  default_prompt: Generate spoken audio for this text with the right voice style, pacing, and output format.

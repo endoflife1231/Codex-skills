@@ -1,8 +1,0 @@
-interface:
-  display_name: Sentry
-  short_description: Use when the user asks to inspect Sentry issues or events, summarize recent production errors,
-    or pull basic Sentry health data via the Sentry CLI;…
-  icon_small: ./assets/sentry-small.svg
-  icon_large: ./assets/sentry.png
-  default_prompt: Investigate this issue in read-only Sentry data and report likely root cause, impact, and next
-    steps.

@@ -1,6 +1,0 @@
-interface:
-  display_name: Plugin Creator
-  short_description: Create and scaffold plugin directories for Codex with a required `.codex-plugin/plugin.json`,
-    optional plugin folders/files, and baseline…
-  default_prompt: Use $plugin-creator to scaffold a plugin with placeholder plugin.json, optional structure, and
-    a marketplace.json entry.

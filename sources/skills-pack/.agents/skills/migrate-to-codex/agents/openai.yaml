@@ -1,6 +1,0 @@
-interface:
-  display_name: Migrate To Codex
-  short_description: Migrate supported instruction files, skills, agents, and MCP config into Codex project and
-    global files.
-  default_prompt: Use $migrate-to-codex to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

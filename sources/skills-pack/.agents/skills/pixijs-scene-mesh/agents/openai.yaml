@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Scene Mesh
-  short_description: Use this skill when rendering custom geometry in PixiJS v8. Covers Mesh with MeshGeometry (positions,
-    uvs, indices, topology), MeshSimple for…
-  default_prompt: Use $pixijs-scene-mesh to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

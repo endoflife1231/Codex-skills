@@ -1,5 +1,0 @@
-interface:
-  display_name: Caveman Help
-  short_description: Explain the installed Caveman suite, activation levels, related skills, optional hooks, and
-    safe usage. Trigger on $caveman-help or questions about…
-  default_prompt: Use $caveman-help for this task. Follow the skill workflow and preserve technical accuracy.

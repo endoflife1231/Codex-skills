@@ -1,8 +1,0 @@
-interface:
-  display_name: Copywriting
-  short_description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage,
-    landing pages, pricing pages, feature pages,…
-  default_prompt: Use $copywriting for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

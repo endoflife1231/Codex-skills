@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Geo
-  short_description: Optimize content for AI Overviews (formerly SGE), ChatGPT web search, Perplexity, and other
-    AI-powered search experiences. Generative Engine…
-  default_prompt: Use $seo-geo for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Scene Gif
-  short_description: Use this skill when displaying animated GIFs in PixiJS v8. Covers the pixi.js/gif side-effect
-    import, Assets.load returning a GifSource, GifSprite…
-  default_prompt: Use $pixijs-scene-gif to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Backlinks
-  short_description: 'Backlink profile analysis: referring domains, anchor text distribution, toxic link detection,
-    competitor gap analysis. Works with free APIs (Moz,…'
-  default_prompt: Use $seo-backlinks for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

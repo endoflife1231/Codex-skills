@@ -1,6 +1,0 @@
-interface:
-  display_name: Vercel Composition Patterns
-  short_description: React composition patterns for scalable component APIs. Use when refactoring prop-heavy components,
-    compound components, providers, or reusable…
-  default_prompt: Use $vercel-composition-patterns to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

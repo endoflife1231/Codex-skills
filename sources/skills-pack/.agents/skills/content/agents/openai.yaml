@@ -1,8 +1,0 @@
-interface:
-  display_name: Content
-  short_description: Content studio with brand consistency. Use this skill whenever the user wants to create content
-    — blog posts, social media (X/Twitter, LinkedIn,…
-  default_prompt: Use $content for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: false

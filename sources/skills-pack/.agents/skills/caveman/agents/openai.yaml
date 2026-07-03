@@ -1,8 +1,0 @@
-interface:
-  display_name: Caveman
-  short_description: Use an explicitly requested ultra-concise communication mode while preserving technical accuracy,
-    exact code, warnings, and the user language.…
-  default_prompt: Use $caveman in full mode for this conversation. Keep the user language, remove filler, and preserve
-    all technical detail.
-  icon_small: ./assets/caveman-small.svg
-  icon_large: ./assets/caveman.svg

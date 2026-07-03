@@ -1,6 +1,0 @@
-interface:
-  display_name: Winui App
-  short_description: Bootstrap, develop, and design modern WinUI 3 desktop applications with C# and the Windows
-    App SDK using official Microsoft guidance, WinUI Gallery…
-  icon_large: ./assets/winui.png
-  default_prompt: Create a new $winui-app desktop app for me.

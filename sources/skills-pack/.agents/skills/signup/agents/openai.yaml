@@ -1,8 +1,0 @@
-interface:
-  display_name: Signup
-  short_description: When the user wants to optimize signup, registration, account creation, or trial activation
-    flows. Also use when the user mentions "signup…
-  default_prompt: Use $signup for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

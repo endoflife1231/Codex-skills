@@ -1,6 +1,0 @@
-interface:
-  display_name: DeFi MEV Battletest
-  short_description: Stress-test DeFi systems against MEV, adversarial ordering, slippage, liquidation, and execution
-    risks. Use for protocol or trading-system…
-  default_prompt: Use $defi-mev-battletest to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

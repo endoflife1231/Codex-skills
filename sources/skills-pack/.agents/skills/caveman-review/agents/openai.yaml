@@ -1,5 +1,0 @@
-interface:
-  display_name: Caveman Review
-  short_description: Produce explicitly requested compressed code-review findings as one actionable line per issue.
-    Trigger on $caveman-review or a request for terse…
-  default_prompt: Use $caveman-review for this task. Follow the skill workflow and preserve technical accuracy.

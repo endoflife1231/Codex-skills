@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Custom Rendering
-  short_description: Use this skill when writing custom shaders, uniforms, filters, or batchers in PixiJS v8. Covers
-    Shader.from({gl, gpu, resources}),…
-  default_prompt: Use $pixijs-custom-rendering to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

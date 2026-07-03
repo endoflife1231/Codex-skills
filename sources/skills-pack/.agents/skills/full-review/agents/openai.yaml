@@ -1,6 +1,0 @@
-interface:
-  display_name: Full Review
-  short_description: Comprehensive code review using all available skills. Use before committing or when you want
-    a thorough analysis of changes. Triggers on review…
-  default_prompt: Use $full-review to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.
