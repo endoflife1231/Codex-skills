@@ -1,44 +1,116 @@
 # Codex Powerpack
 
-Этот репозиторий теперь представляет собой не просто набор исходных материалов, а уже собранный Codex-native дистрибутив.
+Это готовый Codex-native дистрибутив для установки в проекты через терминал.
+Его можно скачать как репозиторий, развернуть локально и применять к своему
+проекту без ручной сборки из исходников.
 
-Что здесь есть:
+Что в нём есть:
 
-- `dist/` — основной assembled product layer
-- `release/` — локальная release-сборка, manifest и checksums
-- `build/` — inventory, planning и build reports
-- `sources/` — исходные репозитории и first-party source inputs
-- `codex_powerpack_docs/` — исходный пакет документации и prompts, на которых строилась сборка
+- `dist/` — готовый слой дистрибутива, который устанавливается в проект
+- `release/` — локальная релизная сборка, zip и checksums
+- `build/` — отчёты инвентаризации и планирования
+- `sources/` — исходные репозитории и source inputs, использованные при сборке
+- `codex_powerpack_docs/` — основная документация и промпты, на которых строился дистрибутив
 
-Текущее состояние:
+Что умеет дистрибутив:
 
-- 8 canonical Codex agents
-- 254 installable skills в registry, включая Codebase Memory и Graphify wrappers
-- 3 profiles: `minimal`, `standard`, `full`
-- optional Graphify adapter и project-scoped Codebase Memory MCP
-- intelligent project adaptation with guided planning and rollback
-- working verify, doctor, install and local release flow
+- ставить в проект Codex-ядро, agents, skills и profiles
+- подстраиваться под конкретный проект через `guided` onboarding
+- выбирать нужный набор компонентов по структуре проекта
+- подключать optional project intelligence:
+  - Codebase Memory для кода, символов и связей
+  - Graphify для документации и визуальных связей
+- сохранять изменения безопасно и откатывать их через rollback
+- работать через понятные команды, а не через скрытую магию
 
-Быстрый старт:
+Кому это подходит:
+
+- тем, кто хочет быстро подключить Codex к своему проекту
+- тем, кому нужна аккуратная проектная адаптация, а не ручное копирование файлов
+- тем, кто хочет повторяемую установку с проверкой, планом и откатом
+
+## Как пользоваться
+
+Самый простой сценарий:
+
+1. Скачай этот репозиторий.
+2. Перейди в его корень.
+3. Выбери свой проект, куда нужно поставить дистрибутив.
+4. Запусти установку или адаптацию из терминала.
+
+Быстрая установка фиксированным профилем:
+
+```bash
+bash dist/install/install.sh --target /path/to/project --profile standard
+```
+
+Умная установка под конкретный проект:
+
+```bash
+bash dist/onboarding/adapt-project.sh --target /path/to/project --mode guided
+```
+
+Если план устроил, применяй его:
+
+```bash
+bash dist/onboarding/adapt-project.sh --target /path/to/project --mode guided --apply
+```
+
+Если нужно вернуться назад:
+
+```bash
+bash dist/onboarding/rollback.sh --target /path/to/project
+```
+
+## Что выбрать
+
+- `minimal` — если нужен самый лёгкий базовый слой
+- `standard` — если нужен хороший баланс из коробки
+- `full` — если нужен максимально богатый комплект
+
+Если не знаешь, с чего начать, бери `standard`.
+
+## Как это выглядит в жизни
+
+Обычный путь такой:
+
+1. Ты скачиваешь этот репозиторий как готовый дистрибутив.
+2. Открываешь терминал в его корне.
+3. Указываешь свой проект через `--target`.
+4. Дистрибутив анализирует проект, предлагает план и применяет нужные части.
+5. Если что-то не понравилось, используешь rollback.
+
+Иными словами: не нужно вручную разбирать сотни файлов. Ты просто даёшь путь к проекту, а дальше дистрибутив сам подбирает нужную конфигурацию.
+
+## Структура репозитория
+
+- `dist/` — то, что должно использоваться для установки и работы
+- `release/` — то, что можно собрать и распространять как релиз
+- `build/` — отчёты и история сборки
+- `sources/` — исходные материалы, оставшиеся для прозрачности и аудита
+- `codex_powerpack_docs/` — документация, спецификация и промпты сборки
+
+## Проверка
+
+Если хочешь убедиться, что дистрибутив собран корректно:
 
 ```bash
 python3 dist/verify/validate_dist.py
 bash dist/verify/doctor.sh
-bash release/build_release.sh
-bash dist/install/install.sh --target /path/to/project --profile standard
-bash dist/onboarding/adapt-project.sh --target /path/to/project --mode guided
 ```
 
-Ключевые точки входа:
+## Дополнительные материалы
 
-- [dist/docs/README.md](/workspaces/Codex-skills/dist/docs/README.md) — обзор assembled distribution
-- [dist/docs/ARCHITECTURE.md](/workspaces/Codex-skills/dist/docs/ARCHITECTURE.md) — архитектурный слой
-- [dist/docs/FINAL_STATUS.md](/workspaces/Codex-skills/dist/docs/FINAL_STATUS.md) — текущий product status
-- [release/README.md](/workspaces/Codex-skills/release/README.md) — release flow
-- [codex_powerpack_docs/prompts/MASTER_PROMPT_FOR_CODEX.md](/workspaces/Codex-skills/codex_powerpack_docs/prompts/MASTER_PROMPT_FOR_CODEX.md) — базовый orchestration prompt, использованный как исходная инструкция
+- [dist/docs/README.md](/workspaces/Codex-skills/dist/docs/README.md)
+- [dist/docs/PROJECT_ADAPTATION.md](/workspaces/Codex-skills/dist/docs/PROJECT_ADAPTATION.md)
+- [dist/onboarding/README.md](/workspaces/Codex-skills/dist/onboarding/README.md)
+- [dist/install/README.md](/workspaces/Codex-skills/dist/install/README.md)
+- [dist/docs/FINAL_STATUS.md](/workspaces/Codex-skills/dist/docs/FINAL_STATUS.md)
 
-Важно:
+## Важное
 
-- `sources/` не являются published product layer сами по себе
+- `sources/` и `codex_powerpack_docs/` — это часть рабочего репозитория и
+  прозрачной истории сборки
 - unsafe и host-specific поведение не включается в clean default core
-- `subagents` и `claude-overlay` адаптированы под Codex, а не перенесены как raw upstream publishing
+- сначала лучше использовать `guided`, а не сразу `auto`
+
