@@ -1,0 +1,12 @@
+version: 1
+skill_conflicts:
+  seo-audit:
+    - marketing-seo-audit
+  content-strategy:
+    - content-editorial-strategy
+integration_routing:
+  codebase-memory: code symbols, calls, imports, diffs, impact and code architecture
+  graphify: documentation, PDF, images, semantic links and visual maps
+agent_risks:
+  architect: write-capable in the current registry; use only when architecture work warrants it
+  tester: write-capable sandbox; verification commands must remain scoped

@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Assets
+  short_description: Use this skill when loading and managing resources in PixiJS v8. Covers Assets.init, Assets.load/add/unload,
+    bundles, manifests, background loading,…
+  default_prompt: Use $pixijs-assets to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

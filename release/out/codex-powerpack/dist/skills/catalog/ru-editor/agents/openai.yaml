@@ -1,0 +1,8 @@
+interface:
+  display_name: RU Editor
+  short_description: Edits AI-generated or poorly written Russian text into natural, idiomatic Russian following
+    informational style. Use when user says "отредактируй",…
+  default_prompt: Use $ru-editor for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

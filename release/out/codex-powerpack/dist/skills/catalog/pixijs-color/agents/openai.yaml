@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Color
+  short_description: Use this skill when creating, converting, or manipulating colors in PixiJS v8. Covers Color
+    class input formats (hex, CSS names, RGB/HSL objects,…
+  default_prompt: Use $pixijs-color to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

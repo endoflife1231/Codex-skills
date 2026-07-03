@@ -1,0 +1,6 @@
+interface:
+  display_name: System Integration Validator
+  short_description: Validates system integration before deployment. Use when checking ports, database connections,
+    frontend-backend APIs, or debugging blocked/stuck…
+  default_prompt: Use $system-integration-validator to handle this task. Follow the skill workflow, inspect relevant
+    project files, and verify the result.

@@ -1,0 +1,6 @@
+interface:
+  display_name: Web Design Guidelines
+  short_description: Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check
+    accessibility", "audit design", "review UX", or…
+  default_prompt: Use $web-design-guidelines to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-07-03",
+  "distribution": "codex-powerpack",
+  "policy": {
+    "adaptation_model": "selective codex-native adaptation",
+    "default_behavior": "clean and safe by default; optional integrations remain opt-in",
+    "redistribution_model": "not a single-license monolith; source-specific notices still apply"
+  },
+  "sources": [
+    {
+      "name": "skills-pack",
+      "role": "primary-base",
+      "license": "mixed-per-skill",
+      "upstream": "local imported source pack",
+      "verification": "local updated source tree present",
+      "published_form": "skill registry, profiles, and source pack updated to the 2026-07-03.1 expansion"
+    },
+    {
+      "name": "claude-overlay",
+      "role": "reference-only",
+      "license": "MIT",
+      "upstream": "Piebald-AI/claude-code-system-prompts",
+      "license_file": "sources/claude-overlay/LICENSE",
+      "verification": "license file present",
+      "published_form": "adapted core references only"
+    },
+    {
+      "name": "subagents",
+      "role": "migration-source",
+      "license": "MIT",
+      "upstream": "VoltAgent/awesome-claude-code-subagents",
+      "license_file": "sources/subagents/LICENSE",
+      "verification": "license file present",
+      "published_form": "canonical Codex-native agents plus references"
+    },
+    {
+      "name": "graphify",
+      "role": "optional-integration",
+      "license": "MIT",
+      "upstream": "safishamsi/graphify",
+      "license_file": "sources/graphify/LICENSE",
+      "verification": "license file present",
+      "published_form": "adapter scripts only; no bundled binaries"
+    },
+    {
+      "name": "project-rules",
+      "role": "first-party-rules",
+      "license": "first-party",
+      "upstream": "local first-party source",
+      "verification": "local source tree present",
+      "published_form": "Codex-native core policy and migration references"
+    },
+    {
+      "name": "codebase-memory-mcp",
+      "role": "optional-integration",
+      "license": "MIT",
+      "upstream": "DeusData/codebase-memory-mcp",
+      "version": "0.8.1",
+      "commit": "unverified-local-snapshot",
+      "license_file": "dist/licenses/source-licenses/codebase-memory-mcp-LICENSE",
+      "verification": "local source tree and declared server manifest present; commit unverified because .git is absent",
+      "published_form": "project-scoped adapter and Skill wrapper; binary downloaded separately with SHA-256 verification"
+    }
+  ]
+}

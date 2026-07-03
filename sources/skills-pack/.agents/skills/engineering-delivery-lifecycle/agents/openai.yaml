@@ -1,0 +1,8 @@
+interface:
+  display_name: Engineering Delivery Lifecycle
+  short_description: Orchestrate an end-to-end engineering change from intent and specification through planning,
+    incremental implementation, verification, review, and…
+  default_prompt: Use $engineering-delivery-lifecycle to handle this change end to end with proportionate planning,
+    verification, review, and launch safety.
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,52 @@
+{
+  "id": "codebase-memory",
+  "name": "Codebase Memory MCP",
+  "type": "mcp",
+  "optional": true,
+  "recommended": true,
+  "source": "sources/codebase-memory-mcp-main",
+  "upstream_url": "https://github.com/DeusData/codebase-memory-mcp",
+  "upstream_commit": "f0c9be1 (v0.8.1 release; local snapshot commit unverified)",
+  "upstream_version": "0.8.1",
+  "license": "MIT",
+  "mcp_server_name": "codebase-memory",
+  "transport": "stdio",
+  "default_scope": "project",
+  "default_enabled": true,
+  "default_auto_index": "auto",
+  "default_ui": false,
+  "managed_tool_dir": ".codex-powerpack/tools",
+  "managed_cache_dir": ".codex-powerpack/cache/codebase-memory",
+  "managed_state_dir": ".codex-powerpack/state",
+  "profiles": {
+    "minimal": "optional",
+    "standard": "enabled",
+    "full": "enabled"
+  },
+  "routing": {
+    "use_for": [
+      "code symbol search",
+      "call graph",
+      "imports",
+      "dependency tracing",
+      "impact analysis",
+      "git diff analysis",
+      "architecture of code"
+    ],
+    "do_not_use_for": [
+      "PDF analysis",
+      "image analysis",
+      "broad documentation knowledge graph",
+      "visual project maps"
+    ],
+    "source_of_truth": "Source files and tests override index results."
+  },
+  "conflicts": [],
+  "coexists_with": ["graphify", "caveman"],
+  "security": {
+    "upstream_installer_allowed": false,
+    "hooks_enabled_by_default": false,
+    "network_during_runtime": false,
+    "checksum_required_for_download": true
+  }
+}

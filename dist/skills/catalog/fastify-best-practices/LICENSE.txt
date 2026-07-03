@@ -1,0 +1,3 @@
+MIT License
+
+This Codex adaptation includes original project-specific wording and is informed by the publicly available mcollina/skills Fastify skill structure. See THIRD_PARTY_NOTICES.md.

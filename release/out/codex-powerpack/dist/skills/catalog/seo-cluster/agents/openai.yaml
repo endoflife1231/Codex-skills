@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Cluster
+  short_description: SERP-based semantic topic clustering for content architecture planning. Groups keywords by
+    actual Google SERP overlap (not text similarity), designs…
+  default_prompt: Use $seo-cluster for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

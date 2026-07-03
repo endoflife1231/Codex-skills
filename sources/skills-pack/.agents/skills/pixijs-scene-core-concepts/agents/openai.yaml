@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Scene Core Concepts
+  short_description: 'Use this skill when reasoning about the PixiJS v8 scene graph as a whole: how containers,
+    leaves, transforms, and render order fit together.'
+  default_prompt: Use $pixijs-scene-core-concepts to handle this task. Follow the skill workflow, inspect relevant
+    project files, and verify the result.

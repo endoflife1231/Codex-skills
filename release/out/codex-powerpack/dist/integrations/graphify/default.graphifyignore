@@ -1,0 +1,15 @@
+.git/
+.svn/
+.hg/
+node_modules/
+vendor/
+dist/
+build/
+coverage/
+.next/
+.turbo/
+.cache/
+graphify-out/
+*.min.js
+*.min.css
+*.map

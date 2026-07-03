@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Bing
+  short_description: Bing Webmaster Tools + IndexNow extension. Microsoft Copilot citations are fed by the Bing
+    index; this skill makes Bing visibility, link data, and…
+  default_prompt: Use $seo-bing for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

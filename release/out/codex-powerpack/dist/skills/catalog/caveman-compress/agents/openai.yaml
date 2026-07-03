@@ -1,0 +1,5 @@
+interface:
+  display_name: Caveman Compress
+  short_description: Safely compress a natural-language Markdown or text file into concise Caveman prose using the
+    current Codex session, with preflight checks, an…
+  default_prompt: Use $caveman-compress for this task. Follow the skill workflow and preserve technical accuracy.

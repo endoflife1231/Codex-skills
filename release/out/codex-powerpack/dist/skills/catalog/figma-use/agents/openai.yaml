@@ -1,0 +1,14 @@
+interface:
+  display_name: Figma Use
+  short_description: '**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call.
+    NEVER call `use_figma` directly without loading this…'
+  icon_small: ./assets/figma-small.svg
+  icon_large: ./assets/figma.png
+  default_prompt: Use $figma-use and follow its rules before making any use_figma call.
+dependencies:
+  tools:
+  - type: mcp
+    value: figma
+    description: Figma MCP server
+    transport: streamable_http
+    url: https://mcp.figma.com/mcp

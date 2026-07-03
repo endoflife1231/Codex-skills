@@ -1,0 +1,8 @@
+interface:
+  display_name: RU Textovod
+  short_description: Checks Russian text for spelling, punctuation, and grammar via Textovod.com API. Use for autocorrection,
+    spelling, or punctuation checks after…
+  default_prompt: Use $ru-textovod for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,8 @@
+interface:
+  display_name: RU Text
+  short_description: Use when writing, editing, or reviewing Russian-language text, or when user mentions ru-text.
+    Covers typography, info-style, editorial, UX writing,…
+  default_prompt: Use $ru-text for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

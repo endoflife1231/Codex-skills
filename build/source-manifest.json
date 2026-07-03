@@ -1,0 +1,342 @@
+{
+  "generated_at": "2026-06-28",
+  "generator": "Codex inventory pass",
+  "policy": {
+    "sources_directory_untouched": true,
+    "build_started": false,
+    "notes": [
+      "Inventory only. No integration, packaging, hook execution, or source mutation was performed.",
+      "Nested source directories do not contain local .git metadata, so commit/tag values are marked unverified unless a local manifest states them."
+    ]
+  },
+  "expected_sources": [
+    {
+      "name": "claude-overlay",
+      "path": "sources/claude-overlay",
+      "status": "present",
+      "purpose": "Claude-oriented overlay of system prompts, tool descriptions, and migration/reference materials.",
+      "source_url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "source_url_verification": "inferred from local CHANGELOG links; no local git remote",
+      "commit_or_tag": null,
+      "commit_or_tag_verification": "unverified",
+      "license": "MIT",
+      "license_file": "sources/claude-overlay/LICENSE",
+      "redistribution": "likely-allowed-with-attribution",
+      "formats": [
+        "md",
+        "js"
+      ],
+      "counts": {
+        "files": 530,
+        "skills": 0,
+        "custom_agents": 0
+      },
+      "executables": [],
+      "hooks": [],
+      "dependencies": [],
+      "risks": [
+        "Very large permanent prompt corpus; direct import would overload a Codex-first core if copied wholesale.",
+        "Content is Claude-specific and includes tool/model semantics that do not map 1:1 to Codex.",
+        "Contains examples of destructive commands in prompt text; safe as documentation, risky if transplanted without filtering."
+      ],
+      "possible_use": [
+        "Reference-only source for migration patterns, safety wording, and prompt decomposition.",
+        "Do not import raw always-on instructions into Codex without normalization."
+      ],
+      "redistribution_constraints": [
+        "MIT is permissive, but preserve notices.",
+        "Review third-party references before bundling excerpts."
+      ]
+    },
+    {
+      "name": "subagents",
+      "path": "sources/subagents",
+      "status": "present",
+      "purpose": "Large catalog of Claude-style subagent definitions grouped by category.",
+      "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "source_url_verification": "stated in local README; no local git remote",
+      "commit_or_tag": null,
+      "commit_or_tag_verification": "unverified",
+      "license": "MIT",
+      "license_file": "sources/subagents/LICENSE",
+      "redistribution": "likely-allowed-with-attribution",
+      "formats": [
+        "md",
+        "json",
+        "sh"
+      ],
+      "counts": {
+        "files": 189,
+        "skills": 0,
+        "custom_agents": 154
+      },
+      "executables": [],
+      "hooks": [],
+      "dependencies": [],
+      "risks": [
+        "Agent format is Claude frontmatter, not native Codex agent TOML.",
+        "Many agents grant broad tool sets in Claude terms; write scope must be re-derived for Codex.",
+        "Catalog is oversized for default inclusion and has semantic overlap with existing skills-pack agents."
+      ],
+      "possible_use": [
+        "Selective extraction of a small Codex-native agent set.",
+        "Reference pool for role wording and completion criteria."
+      ],
+      "redistribution_constraints": [
+        "MIT is permissive, but preserve notices.",
+        "Do not auto-install or auto-enable third-party installer flows."
+      ]
+    },
+    {
+      "name": "skills-pack",
+      "path": "sources/skills-pack",
+      "status": "present",
+      "purpose": "Current integrated Codex skills pack and agent bundle, now expanded with SEO, marketing, content-studio, and editorial workflows.",
+      "source_url": null,
+      "source_url_verification": "unverified; local README describes prior integrations but no repo remote metadata is present",
+      "commit_or_tag": "2026-07-03.1",
+      "commit_or_tag_verification": "from local README/PACK_VERSION, not git",
+      "license": "mixed-per-skill",
+      "license_file": null,
+      "redistribution": "mixed; per-skill review required",
+      "formats": [
+        "md",
+        "json",
+        "yaml",
+        "toml",
+        "py",
+        "js",
+        "cjs",
+        "mjs",
+        "svg",
+        "png"
+      ],
+      "counts": {
+        "files": 1947,
+        "skills": 252,
+        "custom_agents": 33
+      },
+      "executables": [
+        "sources/skills-pack/.agents/skills/huashu-design/scripts/fetch_images.py",
+        "sources/skills-pack/.agents/skills/huashu-design/scripts/verify.py"
+      ],
+      "hooks": [
+        "sources/skills-pack/.agents/skills/caveman-setup/scripts/caveman_hook.py"
+      ],
+      "dependencies": [
+        "sources/skills-pack/.agents/skills/ckm-ui-styling/scripts/requirements.txt",
+        "sources/skills-pack/.agents/skills/ckm-ui-styling/scripts/tests/requirements.txt",
+        "sources/skills-pack/.agents/skills/huashu-design/package.json",
+        "sources/skills-pack/.agents/skills/ui-styling/scripts/requirements.txt",
+        "sources/skills-pack/.agents/skills/ui-styling/scripts/tests/requirements.txt"
+      ],
+      "risks": [
+        "License model is heterogeneous; root-level license is absent and redistribution must follow per-skill notices.",
+        "Several skills reference platform-specific or potentially destructive shell examples; these need allowlisting and routing discipline.",
+        "Already contains design, review, browser, deployment, and Caveman workflows, so new additions can duplicate behavior if merged indiscriminately."
+      ],
+      "possible_use": [
+        "Primary base for the final Codex distribution.",
+        "Source of existing routing, validation, notices, and current Caveman integration."
+      ],
+      "redistribution_constraints": [
+        "Honor per-skill source licenses and notice files.",
+        "Do not assume the entire pack can be relicensed under one umbrella."
+      ]
+    },
+    {
+      "name": "caveman",
+      "path": "sources/caveman",
+      "status": "missing",
+      "purpose": "Expected by master prompt as a standalone source, but already represented inside skills-pack.",
+      "source_url": null,
+      "commit_or_tag": null,
+      "license": null,
+      "redistribution": "n/a",
+      "formats": [],
+      "counts": {
+        "files": 0,
+        "skills": 0,
+        "custom_agents": 0
+      },
+      "executables": [],
+      "hooks": [],
+      "dependencies": [],
+      "risks": [
+        "Standalone provenance cannot be re-verified from sources/caveman because the directory is absent."
+      ],
+      "possible_use": [
+        "Treat as covered by the already integrated Caveman skills inside skills-pack unless the user later adds a standalone source.",
+        "For planning, model this as an embedded capability rather than a blocking missing source."
+      ],
+      "redistribution_constraints": []
+    },
+    {
+      "name": "graphify",
+      "path": "sources/graphify",
+      "status": "present",
+      "purpose": "Knowledge-graph tooling plus host-specific skill generators and install/update flows.",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "source_url_verification": "verified from local source-manifest.json and pyproject",
+      "commit_or_tag": "0c628fa38f2027f1e204935bceae1b9859474ef1",
+      "commit_or_tag_verification": "from local source-manifest.json; repository .git metadata absent",
+      "license": "MIT",
+      "license_file": "sources/graphify/LICENSE",
+      "redistribution": "allowed",
+      "formats": [
+        "py",
+        "toml",
+        "yaml",
+        "md",
+        "svg",
+        "json",
+        "lock"
+      ],
+      "counts": {
+        "files": 644,
+        "skills": 0,
+        "custom_agents": 0
+      },
+      "executables": [],
+      "hooks": [
+        "sources/graphify/.pre-commit-config.yaml"
+      ],
+      "dependencies": [
+        "Python >=3.10",
+        "setuptools>=68",
+        "networkx>=3.4",
+        "numpy>=1.21",
+        "rapidfuzz>=3.0",
+        "many tree-sitter language packages",
+        "optional extras: mcp, starlette, neo4j, falkordb, pypdf, markdownify, watchdog, openpyxl, faster-whisper, yt-dlp, openai, tiktoken, anthropic, boto3, jieba, tree-sitter-sql, tree-sitter-dm, tree-sitter-hcl"
+      ],
+      "risks": [
+        "README promotes `curl | sh` for uv installation; this conflicts with the master prompt safety policy.",
+        "Graphify ships many platform-specific skills and hooks; direct import would duplicate functionality already present in skills-pack.",
+        "Codex integration depends on exact CLI behavior and optional features that must be verified before wiring into core."
+      ],
+      "possible_use": [
+        "Optional integration layer and dedicated Graphify wrapper skill.",
+        "Reference for install/update/doctor/uninstall flows after exact commands are verified."
+      ],
+      "redistribution_constraints": [
+        "MIT is permissive, but preserve notices.",
+        "Generated or packaged dependencies may carry separate licenses outside the repository."
+      ]
+    },
+    {
+      "name": "project-rules",
+      "path": "sources/project-rules",
+      "status": "present",
+      "purpose": "First-party Codex-native source of project rules and migration-safe support material.",
+      "source_url": null,
+      "commit_or_tag": null,
+      "license": "first-party",
+      "redistribution": "allowed",
+      "formats": [
+        "md"
+      ],
+      "counts": {
+        "files": 3,
+        "skills": 0,
+        "custom_agents": 0
+      },
+      "executables": [],
+      "hooks": [],
+      "dependencies": [],
+      "risks": [],
+      "possible_use": [
+        "Primary first-party home for Codex-native core policy and migration-safe support material.",
+        "Used to keep clean authored policy separate from imported upstream sources."
+      ],
+      "redistribution_constraints": []
+    },
+    {
+      "name": "codebase-memory-mcp",
+      "path": "sources/codebase-memory-mcp-main",
+      "status": "present",
+      "purpose": "Local code intelligence MCP source used through a project-scoped Powerpack adapter.",
+      "source_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "source_url_verification": "declared in local README and server.json",
+      "commit_or_tag": "0.8.1",
+      "commit_or_tag_verification": "version declared locally; commit unverified because .git is absent",
+      "license": "MIT",
+      "license_file": "sources/codebase-memory-mcp-main/LICENSE",
+      "redistribution": "allowed-with-attribution",
+      "formats": [
+        "c",
+        "h",
+        "sh",
+        "py",
+        "json",
+        "md",
+        "ts",
+        "tsx"
+      ],
+      "counts": {
+        "files": 1785,
+        "skills": 0,
+        "custom_agents": 0
+      },
+      "executables": [
+        "release binary is acquired separately; none bundled in dist"
+      ],
+      "hooks": [
+        "upstream supports client hooks; Powerpack does not install them"
+      ],
+      "dependencies": [
+        "source build requires C/C++ toolchain; release binary is static"
+      ],
+      "risks": [
+        "upstream install/update/uninstall mutate multiple user-level agent configurations",
+        "upstream default cache is user-global unless CBM_CACHE_DIR is set",
+        "UI and watcher require explicit policy"
+      ],
+      "possible_use": [
+        "project-scoped stdio MCP for code symbols, graphs, imports, diffs, architecture and impact analysis"
+      ],
+      "redistribution_constraints": [
+        "preserve MIT license and third-party notices",
+        "verify downloaded release binaries by SHA-256"
+      ]
+    }
+  ],
+  "conflicts": {
+    "duplicate_skills_by_exact_name": [],
+    "duplicate_agents_by_exact_name": [],
+    "normalized_agent_name_collisions": [
+      {
+        "normalized_name": "codereviewer",
+        "items": [
+          "sources/skills-pack/.codex/agents/code_reviewer.toml",
+          "sources/subagents/categories/04-quality-security/code-reviewer.md"
+        ]
+      },
+      {
+        "normalized_name": "securityauditor",
+        "items": [
+          "sources/skills-pack/.codex/agents/security_auditor.toml",
+          "sources/subagents/categories/04-quality-security/security-auditor.md"
+        ]
+      }
+    ],
+    "instruction_conflicts": [
+      {
+        "type": "platform-format",
+        "details": "subagents are authored for Claude frontmatter and tool names, while skills-pack custom agents already target Codex TOML."
+      },
+      {
+        "type": "slash-vs-skill-routing",
+        "details": "Graphify and Claude-derived materials use slash commands and Claude/Cursor style always-on instructions; the target pack must route through Codex-native skills and AGENTS fragments instead."
+      },
+      {
+        "type": "core-size-pressure",
+        "details": "claude-overlay contains many long system prompts that should stay as references, not always-on core policy."
+      }
+    ],
+    "missing_tool_references": [
+      "Graphify README references uv installation via shell bootstrap and multiple optional platform installers that are not verified in this workspace.",
+      "subagents README references Claude plugin marketplace and curl-based installers that are not suitable for direct Codex integration."
+    ]
+  }
+}

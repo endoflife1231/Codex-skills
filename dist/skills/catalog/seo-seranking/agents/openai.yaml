@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Seranking
+  short_description: SE Ranking AI visibility analyst (extension). Tracks AI Share-of-Voice across ChatGPT, Gemini,
+    Perplexity, AI Overviews, and AI Mode in a single…
+  default_prompt: Use $seo-seranking for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

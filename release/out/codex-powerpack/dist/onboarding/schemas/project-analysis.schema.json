@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-powerpack.local/schemas/project-analysis.schema.json",
+  "type": "object",
+  "required": ["schema_version", "analysis_method", "project_summary", "primary_purpose", "architecture", "confirmed_technologies", "development_workflow", "always_on", "recommended_skills", "recommended_agents", "recommended_integrations", "graph_strategy", "project_rules", "unknowns", "questions_requiring_user_decision", "confidence"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "analysis_method": {"enum": ["codex-schema", "deterministic-fallback", "manual"]},
+    "project_summary": {"type": "string"},
+    "primary_purpose": {"type": "string"},
+    "architecture": {"type": "object", "required": ["style", "layers", "modules", "services", "data_flow", "important_boundaries"], "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+    "confirmed_technologies": {"type": "array", "items": {"type": "string"}},
+    "probable_technologies": {"type": "array", "items": {"type": "string"}},
+    "development_workflow": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+    "always_on": {"type": "object", "required": ["caveman", "live_language", "project_intelligence"]},
+    "recommended_skills": {"type": "array", "items": {"$ref": "#/$defs/recommendation"}},
+    "recommended_agents": {"type": "array", "items": {"$ref": "#/$defs/recommendation"}},
+    "recommended_integrations": {"type": "array", "items": {"$ref": "#/$defs/recommendation"}},
+    "graph_strategy": {"type": "object", "required": ["codebase_memory", "graphify"]},
+    "caveman_policy": {"type": "object"},
+    "live_language_policy": {"type": "object"},
+    "project_rules": {"type": "array", "items": {"type": "string"}},
+    "nested_rule_scopes": {"type": "array", "items": {"type": "object"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "questions_requiring_user_decision": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "$defs": {
+    "recommendation": {
+      "type": "object",
+      "required": ["id", "confidence", "required", "always_on", "reasons", "matched_evidence"],
+      "properties": {
+        "id": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "required": {"type": "boolean"}, "always_on": {"type": "boolean"},
+        "reasons": {"type": "array", "items": {"type": "string"}},
+        "matched_evidence": {"type": "array", "items": {"type": "string"}},
+        "conflicts": {"type": "array", "items": {"type": "string"}},
+        "source_registry_entry": {"type": "string"}
+      }
+    }
+  },
+  "additionalProperties": true
+}

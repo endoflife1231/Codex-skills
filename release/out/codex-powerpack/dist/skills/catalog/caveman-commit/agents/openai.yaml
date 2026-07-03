@@ -1,0 +1,5 @@
+interface:
+  display_name: Caveman Commit
+  short_description: Generate an explicitly requested terse Conventional Commit message with a precise subject and
+    only necessary rationale. Trigger on $caveman-commit…
+  default_prompt: Use $caveman-commit for this task. Follow the skill workflow and preserve technical accuracy.

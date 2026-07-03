@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-28",
+  "agents": [
+    {
+      "name": "explorer",
+      "path": "dist/agents/codex/explorer.toml",
+      "role": "read-only discovery",
+      "writes": false,
+      "sources": [
+        "sources/project-rules",
+        "sources/subagents/categories/09-meta-orchestration/context-manager.md"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "read-only discovery"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": false,
+      "risk_level": "low",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "minimal",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "planner",
+      "path": "dist/agents/codex/planner.toml",
+      "role": "read-only planning",
+      "writes": false,
+      "sources": [
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "read-only planning"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": false,
+      "risk_level": "low",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "minimal",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "implementer",
+      "path": "dist/agents/codex/implementer.toml",
+      "role": "scoped implementation",
+      "writes": true,
+      "sources": [
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "scoped implementation"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": true,
+      "risk_level": "medium",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "debugger",
+      "path": "dist/agents/codex/debugger.toml",
+      "role": "root-cause analysis and fix support",
+      "writes": true,
+      "sources": [
+        "sources/subagents/categories/04-quality-security/debugger.md",
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "root-cause analysis and fix support"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": true,
+      "risk_level": "medium",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "reviewer",
+      "path": "dist/agents/codex/reviewer.toml",
+      "role": "code review",
+      "writes": false,
+      "sources": [
+        "sources/skills-pack/.codex/agents/code_reviewer.toml",
+        "sources/subagents/categories/04-quality-security/code-reviewer.md",
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "code review"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": false,
+      "risk_level": "low",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "minimal",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "tester",
+      "path": "dist/agents/codex/tester.toml",
+      "role": "test strategy and verification",
+      "writes": true,
+      "sources": [
+        "sources/skills-pack/.codex/agents/test_engineer.toml",
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "test strategy and verification"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": true,
+      "risk_level": "medium",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "minimal",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "security-reviewer",
+      "path": "dist/agents/codex/security-reviewer.toml",
+      "role": "security review",
+      "writes": false,
+      "sources": [
+        "sources/skills-pack/.codex/agents/security_auditor.toml",
+        "sources/subagents/categories/04-quality-security/security-auditor.md",
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "security review"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": false,
+      "risk_level": "low",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "standard"
+      ],
+      "verified": true
+    },
+    {
+      "name": "architect",
+      "path": "dist/agents/codex/architect.toml",
+      "role": "system and change design",
+      "writes": true,
+      "sources": [
+        "sources/subagents/categories/04-quality-security/architect-reviewer.md",
+        "sources/subagents/categories/09-meta-orchestration/workflow-orchestrator.md",
+        "sources/project-rules"
+      ],
+      "languages": [],
+      "frameworks": [],
+      "project_types": [
+        "code",
+        "documentation"
+      ],
+      "use_when": [
+        "system and change design"
+      ],
+      "avoid_when": [
+        "role does not materially improve the task"
+      ],
+      "requires": [],
+      "conflicts": [],
+      "write_access": true,
+      "risk_level": "medium",
+      "recommended_skills": [],
+      "graph_policy": "use selected project-intelligence tool for discovery, then verify real files",
+      "caveman_policy": "compress final summary only; preserve evidence and failures",
+      "profiles": [
+        "auto",
+        "full",
+        "guided",
+        "standard"
+      ],
+      "verified": true
+    }
+  ]
+}

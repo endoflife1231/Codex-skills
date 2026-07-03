@@ -1,0 +1,8 @@
+interface:
+  display_name: Content Twitter
+  short_description: X/Twitter thread and single tweet generation with brand voice and hook-first writing. Use when
+    user wants to create a tweet, thread, X post, or…
+  default_prompt: Use $content-twitter for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

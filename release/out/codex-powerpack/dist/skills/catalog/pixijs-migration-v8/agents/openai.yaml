@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Migration V8
+  short_description: Use this skill when upgrading to PixiJS v8 from v7 or diagnosing broken v7 code after an upgrade.
+    Covers async app.init, single pixi.js package…
+  default_prompt: Use $pixijs-migration-v8 to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

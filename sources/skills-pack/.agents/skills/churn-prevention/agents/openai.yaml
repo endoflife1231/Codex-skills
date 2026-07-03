@@ -1,0 +1,8 @@
+interface:
+  display_name: Churn Prevention
+  short_description: When the user wants to reduce churn, build cancellation flows, set up save offers, recover
+    failed payments, or implement retention strategies. Also…
+  default_prompt: Use $churn-prevention for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

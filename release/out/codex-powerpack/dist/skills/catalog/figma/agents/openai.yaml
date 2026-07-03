@@ -1,0 +1,14 @@
+interface:
+  display_name: Figma
+  short_description: Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma,
+    and to translate Figma nodes into production code.
+  icon_small: ./assets/figma-small.svg
+  icon_large: ./assets/figma.png
+  default_prompt: Use $figma to inspect the target design and translate it into implementable UI decisions.
+dependencies:
+  tools:
+  - type: mcp
+    value: figma
+    description: Figma MCP server
+    transport: streamable_http
+    url: https://mcp.figma.com/mcp

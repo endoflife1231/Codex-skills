@@ -1,0 +1,8 @@
+interface:
+  display_name: Ads
+  short_description: When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram),
+    LinkedIn, Twitter/X, or other ad platforms. Also…
+  default_prompt: Use $ads for this task. Follow the skill workflow, inspect relevant files and prerequisites, and
+    verify the result.
+policy:
+  allow_implicit_invocation: false

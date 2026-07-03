@@ -1,0 +1,6 @@
+interface:
+  display_name: Design
+  short_description: Route broad visual-design work across brand, design systems, UI styling, logos, presentations,
+    banners, icons, and social assets.
+  default_prompt: Use $design to handle this task. Follow the skill workflow, inspect relevant project files, and
+    verify the result.

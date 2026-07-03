@@ -1,0 +1,8 @@
+interface:
+  display_name: Humanizer RU
+  short_description: 'Редактирует русскоязычные LLM-тексты, возвращая конкретный авторский голос: убирает канцелярит,
+    кальки, шаблоны, монотонный ритм и документные…'
+  default_prompt: Use $humanizer-ru for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

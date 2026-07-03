@@ -1,0 +1,6 @@
+interface:
+  display_name: Frontend UI Engineering
+  short_description: Build production-quality user interfaces with clear component boundaries, responsive layout,
+    accessibility, state discipline, and visual verification.
+  default_prompt: Use $frontend-ui-engineering for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

@@ -1,0 +1,8 @@
+interface:
+  display_name: Referrals
+  short_description: When the user wants to create, optimize, or analyze a referral program, affiliate program,
+    or word-of-mouth strategy. Also use when the user…
+  default_prompt: Use $referrals for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: false

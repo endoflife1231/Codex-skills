@@ -1,0 +1,6 @@
+interface:
+  display_name: Shipping And Launch
+  short_description: Prepare a production release with launch checks, staged rollout, monitoring, feature flags,
+    migration handling, and an executable rollback plan.
+  default_prompt: Use $shipping-and-launch for this task. Follow its workflow, inspect the relevant project files,
+    and verify the result.

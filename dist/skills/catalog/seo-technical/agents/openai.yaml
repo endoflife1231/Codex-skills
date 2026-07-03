@@ -1,0 +1,8 @@
+interface:
+  display_name: SEO Technical
+  short_description: 'Technical SEO audit across 9 categories: crawlability, indexability, security, URL structure,
+    mobile, Core Web Vitals, structured data, JavaScript…'
+  default_prompt: Use $seo-technical for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: Debugging And Error Recovery
+  short_description: Debug failures systematically by reproducing, localizing, reducing, fixing, and adding a regression
+    guard. Use for broken builds, failing tests,…
+  default_prompt: Use $debugging-and-error-recovery for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

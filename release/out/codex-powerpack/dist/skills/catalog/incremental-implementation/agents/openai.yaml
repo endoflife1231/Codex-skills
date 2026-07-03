@@ -1,0 +1,6 @@
+interface:
+  display_name: Incremental Implementation
+  short_description: Implement multi-file changes as small vertical slices with checkpoints and verification after
+    each slice. Use when a task is too large for one safe…
+  default_prompt: Use $incremental-implementation for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

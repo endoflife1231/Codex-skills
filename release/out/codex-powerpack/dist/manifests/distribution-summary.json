@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-07-03",
+  "distribution": "codex-powerpack",
+  "status": "release-ready-local",
+  "release_readiness": {
+    "assembled_product": true,
+    "local_validation": true,
+    "local_release_build": true,
+    "automatic_publishing": false,
+    "project_adaptation": true
+  },
+  "counts": {
+    "dist_files": 2867,
+    "agents": 8,
+    "skills": 254,
+    "profiles": 3,
+    "release_artifacts": 3,
+    "integrations": 2,
+    "onboarding_modes": 4,
+    "onboarding_fixtures": 18
+  },
+  "tier_counts": {
+    "caveman": 8,
+    "core": 22,
+    "design": 36,
+    "integration": 33,
+    "reference-only": 1,
+    "specialized": 154
+  },
+  "assembled_layers": [
+    "core",
+    "agents",
+    "skills",
+    "profiles",
+    "integrations",
+    "onboarding",
+    "verify",
+    "install",
+    "licenses",
+    "docs",
+    "release"
+  ],
+  "quality_checks": [
+    "dist validation passes",
+    "doctor passes",
+    "Codebase Memory lifecycle and negative-path tests pass",
+    "official v0.8.1 release checksum and executable verification pass",
+    "autonomous unpacked release install/uninstall passes",
+    "release doctor passes",
+    "release zip builds successfully",
+    "18-fixture onboarding suite passes",
+    "hashed-plan apply/verify/rollback lifecycle passes"
+  ],
+  "product_policy": [
+    "Codex-native core stays concise and default-safe",
+    "host-specific and unsafe behavior remains opt-in",
+    "upstream Claude-oriented material is adapted rather than published raw",
+    "the distribution remains useful even without optional integrations"
+  ],
+  "notes": [
+    "Codebase Memory MCP is available as a project-scoped managed integration.",
+    "Published Skill directories are bundled, so registry entries are installable from release artifacts."
+  ]
+}

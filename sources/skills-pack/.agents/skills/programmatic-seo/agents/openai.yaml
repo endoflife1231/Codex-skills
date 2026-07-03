@@ -1,0 +1,8 @@
+interface:
+  display_name: Programmatic SEO
+  short_description: When the user wants to create SEO-driven pages at scale using templates and data. Also use
+    when the user mentions "programmatic SEO," "template…
+  default_prompt: Use $programmatic-seo for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

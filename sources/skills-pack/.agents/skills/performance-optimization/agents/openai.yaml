@@ -1,0 +1,6 @@
+interface:
+  display_name: Performance Optimization
+  short_description: Measure and improve application performance using profiling, Core Web Vitals, bundle, rendering,
+    database, and network evidence. Avoid speculative…
+  default_prompt: Use $performance-optimization for this task. Follow its workflow, inspect the relevant project
+    files, and verify the result.

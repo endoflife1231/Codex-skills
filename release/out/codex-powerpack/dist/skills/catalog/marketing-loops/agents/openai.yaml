@@ -1,0 +1,8 @@
+interface:
+  display_name: Marketing Loops
+  short_description: When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop
+    an AI agent runs on a cadence (weekly, daily, on a…
+  default_prompt: Use $marketing-loops for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

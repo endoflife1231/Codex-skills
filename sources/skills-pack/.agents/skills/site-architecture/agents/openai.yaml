@@ -1,0 +1,8 @@
+interface:
+  display_name: Site Architecture
+  short_description: When the user wants to plan, map, or restructure their website's page hierarchy, navigation,
+    URL structure, or internal linking. Also use when the…
+  default_prompt: Use $site-architecture for this task. Follow the skill workflow, inspect relevant files and prerequisites,
+    and verify the result.
+policy:
+  allow_implicit_invocation: true

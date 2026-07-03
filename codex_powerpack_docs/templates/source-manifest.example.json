@@ -1,0 +1,60 @@
+{
+  "distribution_name": "codex-powerpack",
+  "distribution_version": "0.1.0",
+  "sources": [
+    {
+      "name": "claude-overlay",
+      "local_path": "sources/claude-overlay",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    },
+    {
+      "name": "subagents",
+      "local_path": "sources/subagents",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    },
+    {
+      "name": "skills-pack",
+      "local_path": "sources/skills-pack",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    },
+    {
+      "name": "caveman",
+      "local_path": "sources/caveman",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    },
+    {
+      "name": "graphify",
+      "local_path": "sources/graphify",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    },
+    {
+      "name": "project-rules",
+      "local_path": "sources/project-rules",
+      "source_url": "",
+      "commit_or_tag": "",
+      "license": "",
+      "redistribution_allowed": null,
+      "notes": ""
+    }
+  ]
+}
