@@ -21,16 +21,21 @@
     "excluded_unlicensed_skills": 5
   },
   "tier_counts": {
-    "design": 7,
-    "integration": 8,
-    "specialized": 50,
-    "unspecified": 184
+    "caveman": 8,
+    "core": 22,
+    "design": 35,
+    "integration": 33,
+    "reference-only": 1,
+    "specialized": 150
   },
   "license_counts": {
-    "MIT": 40,
+    "Apache-2.0": 33,
+    "MIT": 181,
     "MIT (first-party)": 3,
     "MIT (upstream declaration)": 22,
-    "unknown": 184
+    "first-party": 2,
+    "local:LICENSE.TXT": 6,
+    "local:LICENSE.txt": 2
   },
   "quality_checks": [
     "distribution validation",
