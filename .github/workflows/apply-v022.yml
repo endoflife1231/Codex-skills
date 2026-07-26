@@ -1,0 +1,59 @@
+name: Apply synchronized v0.2.2 release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.v022-release-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore synchronized release files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .release-payload/v022.part* > /tmp/v022_payload.b64
+          base64 --decode /tmp/v022_payload.b64 > /tmp/v022_payload.tar.gz
+          echo '487fc0f614f4d511ff3ad679c53d93f0a30a0806b42e7a23c0ac126236448a58  /tmp/v022_payload.tar.gz' | sha256sum --check --strict
+          tar -xzf /tmp/v022_payload.tar.gz -C .
+          rm -rf .release-payload
+          rm -f .v022-release-trigger
+          rm -f .github/workflows/apply-v022.yml
+          chmod +x install.sh update.sh uninstall.sh adapt-project.sh rollback.sh verify.sh
+          chmod +x release/build_release.sh release/doctor_release.sh
+          find dist -type f -name '*.sh' -exec chmod +x {} +
+
+      - name: Validate synchronized repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 release/check_release_consistency.py
+          python3 dist/verify/validate_dist.py
+          bash dist/verify/doctor.sh
+          bash release/doctor_release.sh
+          bash release/build_release.sh
+
+      - name: Commit synchronized v0.2.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'release: publish synchronized v0.2.2'
+          git push origin HEAD:main
+          git tag -a v0.2.2 -m 'Codex Powerpack v0.2.2'
+          git push origin v0.2.2
