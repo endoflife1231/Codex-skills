@@ -1,0 +1,81 @@
+name: Publish user release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.release-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-user-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build and validate packages
+        run: |
+          bash release/build_release.sh
+          unzip -t "release/out/codex-powerpack-v$(cat VERSION)-user.zip"
+
+      - name: Prepare release notes
+        run: |
+          VERSION="$(tr -d '[:space:]' < VERSION)"
+          cat > release/out/RELEASE_NOTES.md <<EOF
+          # Codex Powerpack v${VERSION}
+
+          User-ready open-source distribution for installing Codex agents, skills and project tooling.
+
+          ## Installation
+
+          1. Download `codex-powerpack-v${VERSION}-user.zip`.
+          2. Extract the archive.
+          3. Open a terminal in `codex-powerpack-v${VERSION}`.
+          4. Run:
+
+          \`\`\`bash
+          ./verify.sh
+          ./install.sh --target /path/to/project --profile minimal
+          \`\`\`
+
+          Recommended larger profile:
+
+          \`\`\`bash
+          ./install.sh --target /path/to/project --profile standard --without-codebase-memory
+          \`\`\`
+
+          The package contains 8 agents and 184 skills with preserved licensing information. Linux, macOS or Windows through WSL, Bash and Python 3.10+ are required.
+          EOF
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="$(tr -d '[:space:]' < VERSION)"
+          TAG="v${VERSION}"
+          USER_ZIP="release/out/codex-powerpack-v${VERSION}-user.zip"
+          CHECKSUMS="release/out/SHA256SUMS"
+          MANIFEST="release/out/user-manifest.json"
+          NOTES="release/out/RELEASE_NOTES.md"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "Codex Powerpack v${VERSION}" --notes-file "$NOTES" --latest
+            gh release upload "$TAG" "$USER_ZIP" "$CHECKSUMS" "$MANIFEST" --clobber
+          else
+            gh release create "$TAG" "$USER_ZIP" "$CHECKSUMS" "$MANIFEST" \
+              --target "$GITHUB_SHA" \
+              --title "Codex Powerpack v${VERSION}" \
+              --notes-file "$NOTES" \
+              --latest
+          fi
