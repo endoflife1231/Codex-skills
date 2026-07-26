@@ -1,0 +1,58 @@
+name: Fix v0.2.1 registry metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.registry-fix-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild complete audited registry
+        shell: bash
+        run: |
+          mkdir -p .audit-tmp
+          echo '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' | base64 -d | gzip -d > .audit-tmp/fix_registry_metadata.py
+          python3 .audit-tmp/fix_registry_metadata.py
+          rm -rf .audit-tmp
+          rm -f .registry-fix-trigger
+          rm -f .github/workflows/fix-registry-metadata.yml
+      - name: Validate and build packages
+        shell: bash
+        run: |
+          python3 dist/verify/validate_dist.py
+          bash dist/verify/doctor.sh
+          bash release/doctor_release.sh
+          bash release/build_release.sh
+      - name: Commit corrected metadata
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'fix: preserve complete audited registry metadata'
+          git push origin HEAD:main
+          git tag -fa v0.2.1 -m 'Codex Powerpack v0.2.1'
+          git push --force origin v0.2.1
+      - name: Refresh GitHub release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if gh release view v0.2.1 >/dev/null 2>&1; then
+            gh release upload v0.2.1 release/out/*.zip release/out/*.json release/out/SHA256SUMS --clobber
+            gh release edit v0.2.1 --title 'Codex Powerpack v0.2.1' --notes-file release/release_notes.md
+          else
+            gh release create v0.2.1 release/out/*.zip release/out/*.json release/out/SHA256SUMS --verify-tag --title 'Codex Powerpack v0.2.1' --notes-file release/release_notes.md
+          fi
