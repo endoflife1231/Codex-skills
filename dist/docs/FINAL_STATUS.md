@@ -1,11 +1,11 @@
 # Final status
 
-Codex Powerpack 0.2.0 is packaged as a public open-source distribution.
+Codex Powerpack 0.2.1 is packaged as a public open-source distribution.
 
 ## Verified capabilities
 
 - 8 Codex-native agents
-- 184 license-audited skills
+- 249 redistribution-audited skills
 - minimal, standard and full profiles
 - project-scoped installation, update, uninstall and rollback
 - guided project adaptation with reviewable plans

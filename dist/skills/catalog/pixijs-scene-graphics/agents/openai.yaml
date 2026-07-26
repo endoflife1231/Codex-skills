@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Scene Graphics
+  short_description: 'Use this skill when drawing vector shapes and paths in PixiJS v8. Covers the Graphics API:
+    shape-then-fill methods…'
+  default_prompt: Use $pixijs-scene-graphics to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

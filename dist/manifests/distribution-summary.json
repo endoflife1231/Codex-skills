@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "status": "public-open-source-release-ready",
   "release_readiness": {
     "assembled_product": true,
@@ -12,28 +12,25 @@
     "license_audit": true
   },
   "counts": {
-    "dist_files": 2251,
+    "dist_files": 2889,
     "agents": 8,
-    "skills": 184,
+    "skills": 249,
     "profiles": 3,
     "integrations": 2,
     "onboarding_modes": 4,
-    "excluded_unlicensed_skills": 70
+    "excluded_unlicensed_skills": 5
   },
   "tier_counts": {
-    "caveman": 8,
-    "core": 22,
-    "design": 28,
-    "integration": 25,
-    "reference-only": 1,
-    "specialized": 100
+    "design": 7,
+    "integration": 8,
+    "specialized": 50,
+    "unspecified": 184
   },
   "license_counts": {
-    "Apache-2.0": 33,
-    "MIT": 141,
-    "first-party": 2,
-    "local:LICENSE.TXT": 6,
-    "local:LICENSE.txt": 2
+    "MIT": 40,
+    "MIT (first-party)": 3,
+    "MIT (upstream declaration)": 22,
+    "unknown": 184
   },
   "quality_checks": [
     "distribution validation",

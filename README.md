@@ -15,8 +15,8 @@ Codex Powerpack is an open-source, project-scoped distribution of Codex agents, 
 ## Quick start
 
 ```bash
-unzip codex-powerpack-v0.2.0-user.zip
-cd codex-powerpack-v0.2.0
+unzip codex-powerpack-v0.2.1-user.zip
+cd codex-powerpack-v0.2.1
 ./verify.sh
 ./install.sh --target /path/to/project --profile minimal
 ```
@@ -86,4 +86,4 @@ bash release/doctor_release.sh
 
 ## Open-source status
 
-First-party work is licensed under MIT. Third-party components retain their bundled licenses and notices. Components without a preserved license were removed from the public packages; see [OPEN_SOURCE_AUDIT.md](OPEN_SOURCE_AUDIT.md).
+First-party work is licensed under MIT. Third-party components retain their bundled licenses and notices. Skills are included only when redistribution evidence is preserved. Five unresolved skills remain excluded; see [OPEN_SOURCE_AUDIT.md](OPEN_SOURCE_AUDIT.md).

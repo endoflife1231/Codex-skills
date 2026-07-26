@@ -1,0 +1,11 @@
+Upstream license declaration record
+
+Source repository: https://github.com/BarisSozen/claude
+Audit date: 2026-07-26
+
+The upstream README contains a "License: MIT" section and package.json declares
+"license": "MIT". No standalone LICENSE file or separate copyright notice was
+present when audited. Redistribution is therefore based on the explicit MIT
+identifier supplied by the upstream project. This evidence is weaker than a
+bundled full license file and is classified as medium confidence in
+OPEN_SOURCE_AUDIT.md.

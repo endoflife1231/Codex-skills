@@ -1,16 +1,2628 @@
 {
   "version": 1,
-  "generated_at": "2026-07-20",
-  "source": "Open-source audited catalog",
+  "generated_at": "2026-07-26",
+  "source": "Open-source catalog audited by upstream repository and parent-license scope",
   "hash_scope": "sha256 of each skill's SKILL.md",
-  "skills": [],
-  "skill_files": [
-    "registry.compact/part-001.json",
-    "registry.compact/part-002.json",
-    "registry.compact/part-003.json",
-    "registry.compact/part-004.json",
-    "registry.compact/part-005.json",
-    "registry.compact/part-006.json",
-    "registry.compact/part-007.json"
+  "skills": [
+    {
+      "name": "ab-testing",
+      "install_source": "dist/skills/catalog/ab-testing",
+      "hashes": {
+        "skill_md_sha256": "5da5fb7d75d28543bb1251e6dfca55626858e38605282754045a5fabffd5534f"
+      }
+    },
+    {
+      "name": "ad-creative",
+      "install_source": "dist/skills/catalog/ad-creative",
+      "hashes": {
+        "skill_md_sha256": "edf5328dea35c36677d1f2166b7c6d46d3e3e7b08c85047ebdafbf77d85336c0"
+      }
+    },
+    {
+      "name": "ads",
+      "install_source": "dist/skills/catalog/ads",
+      "hashes": {
+        "skill_md_sha256": "591d2f88c3775ffadde591d00a9c25c63c99506f1b770dce31f247de2a32b56f"
+      }
+    },
+    {
+      "name": "ai-seo",
+      "install_source": "dist/skills/catalog/ai-seo",
+      "hashes": {
+        "skill_md_sha256": "f9c9e37a7f7fb2131a5c89344e4927340d433d51c82f154577a63537bfaa8fbe"
+      }
+    },
+    {
+      "name": "analytics",
+      "install_source": "dist/skills/catalog/analytics",
+      "hashes": {
+        "skill_md_sha256": "646f1199d6a28371ab028c89d236eb1793d5dc35004b64ed0107af41099f65bb"
+      }
+    },
+    {
+      "name": "api-and-interface-design",
+      "install_source": "dist/skills/catalog/api-and-interface-design",
+      "hashes": {
+        "skill_md_sha256": "bf22fd9bfd11d583281bc53881a9edb19f92cf6e25083abd1325b861fd7f179c"
+      }
+    },
+    {
+      "name": "apple-ui-design",
+      "display_name": "Apple UI Design",
+      "description": "Apple-inspired clean, minimal, premium UI design. Use when building modern interfaces requiring exceptional UX, clean aesthetics, or Apple-like polish. Triggers on: clean UI, modern design, Apple style, minimal, premium, user-friendly, UX.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/apple-ui-design",
+      "source_path": "skills/.curated/claude-main/.claude/skills/apple-ui-design/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "a935d868c3fd1633474453b324f4fd7c3ca3831293a7f58d4a7cdb96131b205b"
+      },
+      "install_source": "dist/skills/catalog/apple-ui-design"
+    },
+    {
+      "name": "aso",
+      "install_source": "dist/skills/catalog/aso",
+      "hashes": {
+        "skill_md_sha256": "b63ef479d5aec4dc630cdbef4c2c12767607c3d8427b46cc49eee1b23988138e"
+      }
+    },
+    {
+      "name": "aspnet-core",
+      "install_source": "dist/skills/catalog/aspnet-core",
+      "hashes": {
+        "skill_md_sha256": "66bafc02e773cff6d3bbd68bd8605caa55a9f1e17f057f1f728268097cea0b10"
+      }
+    },
+    {
+      "name": "banner-design",
+      "display_name": "Banner Design",
+      "description": "Design MythicTable campaign banners, login heroes, thumbnails, and promotional visuals using the project design system and image-generation tools.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/banner-design",
+      "source_path": "skills/.curated/banner-design/SKILL.md",
+      "license": "MIT (first-party)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "b6c9216daf6bdd105682291f104730fa7aabc99430047aa82137813c4f640034"
+      },
+      "install_source": "dist/skills/catalog/banner-design"
+    },
+    {
+      "name": "brand",
+      "display_name": "Brand",
+      "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/brand",
+      "source_path": "skills/.curated/brand/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "8f9d679971512a1eb9d62a9203f02920b16ecee1f1656e904445f122e6d84d6d"
+      },
+      "install_source": "dist/skills/catalog/brand",
+      "always_on_group": "live-language-core",
+      "implicit_invocation": true,
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "risk_level": "low",
+      "verified": true
+    },
+    {
+      "name": "browser-testing-with-devtools",
+      "install_source": "dist/skills/catalog/browser-testing-with-devtools",
+      "hashes": {
+        "skill_md_sha256": "d5f8c44f2096d3a0b4c82309a5a8415736e427e04ad4c4cf716e75feed5b2b61"
+      }
+    },
+    {
+      "name": "cavecrew",
+      "install_source": "dist/skills/catalog/cavecrew",
+      "hashes": {
+        "skill_md_sha256": "b5a69f5731bdcd2ad525e8981e603d99dda756ffff412617f14bca89caf8d312"
+      }
+    },
+    {
+      "name": "caveman",
+      "install_source": "dist/skills/catalog/caveman",
+      "hashes": {
+        "skill_md_sha256": "ef6e4cfcfafc8ee88105a4a7d99fa594239c2caa24eebf5789b9bb60d19de48c"
+      }
+    },
+    {
+      "name": "caveman-commit",
+      "install_source": "dist/skills/catalog/caveman-commit",
+      "hashes": {
+        "skill_md_sha256": "ddf027083dde4ba1f1e95371eaac69cce8aa18be54ada871a89d64f3cf3a69f7"
+      }
+    },
+    {
+      "name": "caveman-compress",
+      "install_source": "dist/skills/catalog/caveman-compress",
+      "hashes": {
+        "skill_md_sha256": "9f729715f544c1e7f7116573e413e2ad45fef6d5aa7702d70e21f384bf7c2483"
+      }
+    },
+    {
+      "name": "caveman-help",
+      "install_source": "dist/skills/catalog/caveman-help",
+      "hashes": {
+        "skill_md_sha256": "c978469461601c65e51148f89cd66a1bebb410e8be50d62c73ca15325370439d"
+      }
+    },
+    {
+      "name": "caveman-review",
+      "install_source": "dist/skills/catalog/caveman-review",
+      "hashes": {
+        "skill_md_sha256": "89a2ffc554c10d60d662ce943cd65cbeecfec6c59837404363d3255c96a86ad5"
+      },
+      "conflicts": [
+        "code-review-and-quality"
+      ]
+    },
+    {
+      "name": "caveman-setup",
+      "install_source": "dist/skills/catalog/caveman-setup",
+      "hashes": {
+        "skill_md_sha256": "b3030742595f2426d75010926dfee4689345fded7b57eb6085b758f4e09fe180"
+      }
+    },
+    {
+      "name": "caveman-stats",
+      "install_source": "dist/skills/catalog/caveman-stats",
+      "hashes": {
+        "skill_md_sha256": "e5e6e761539431b5df29983114beeef6b2f759254c5fe76826ea7b93299a91e9"
+      }
+    },
+    {
+      "name": "chatgpt-apps",
+      "install_source": "dist/skills/catalog/chatgpt-apps",
+      "hashes": {
+        "skill_md_sha256": "99c0369cf0a4dd9c43a29728cc4669206cda04337d11177154343aa4e0d6b543"
+      }
+    },
+    {
+      "name": "churn-prevention",
+      "install_source": "dist/skills/catalog/churn-prevention",
+      "hashes": {
+        "skill_md_sha256": "0f19f85c148ef15b4ec74c5305e0d8f3695eba9f8285aa7050f6dccb04f3c11b"
+      }
+    },
+    {
+      "name": "ci-cd-and-automation",
+      "install_source": "dist/skills/catalog/ci-cd-and-automation",
+      "hashes": {
+        "skill_md_sha256": "a837b46fa4fda7758efe8190408d94d7f4bb13f73d3cad9adaa63fc52af6399e"
+      },
+      "conflicts": [
+        "gh-fix-ci"
+      ]
+    },
+    {
+      "name": "ckm-banner-design",
+      "install_source": "dist/skills/catalog/ckm-banner-design",
+      "hashes": {
+        "skill_md_sha256": "0c8c6fa83ad43e750af74249ebbb5197c2e7ef48e1c0d70f3e8f73a88a367aea"
+      }
+    },
+    {
+      "name": "ckm-brand",
+      "install_source": "dist/skills/catalog/ckm-brand",
+      "hashes": {
+        "skill_md_sha256": "4dd090a622e14743b4f156a42aee646e92c54eea1f20ff86910ec76d62e064be"
+      }
+    },
+    {
+      "name": "ckm-design",
+      "install_source": "dist/skills/catalog/ckm-design",
+      "hashes": {
+        "skill_md_sha256": "922f69ebf4da4f1d90c1fcec6c3cc586fcc21999fc52990f322c379c364e1137"
+      }
+    },
+    {
+      "name": "ckm-design-system",
+      "install_source": "dist/skills/catalog/ckm-design-system",
+      "hashes": {
+        "skill_md_sha256": "a8434b22eaa494497a1f9acf7ab661f569c40b4811638f8678ed54cbfb03b1ce"
+      }
+    },
+    {
+      "name": "ckm-slides",
+      "install_source": "dist/skills/catalog/ckm-slides",
+      "hashes": {
+        "skill_md_sha256": "a83044388e079c5446bdfa34db763e9271e3f59e9d02aac578f17737b0502a07"
+      }
+    },
+    {
+      "name": "ckm-ui-styling",
+      "install_source": "dist/skills/catalog/ckm-ui-styling",
+      "hashes": {
+        "skill_md_sha256": "861a3864030de5a5ad8e11cfa209ce87e5cd72661623887bf03644dfd8b46f16"
+      }
+    },
+    {
+      "name": "cli-creator",
+      "install_source": "dist/skills/catalog/cli-creator",
+      "hashes": {
+        "skill_md_sha256": "b3a4d29cb4a0ba9ebf4ac4babcb3c14707be52d2566d6c42455d0969d8549e8b"
+      }
+    },
+    {
+      "name": "cloudflare-deploy",
+      "install_source": "dist/skills/catalog/cloudflare-deploy",
+      "hashes": {
+        "skill_md_sha256": "2036fdd7949ba392c79cc7a7ebb257d1f0b56faa586a462bb72a7e0349b0981e"
+      }
+    },
+    {
+      "name": "co-marketing",
+      "install_source": "dist/skills/catalog/co-marketing",
+      "hashes": {
+        "skill_md_sha256": "b4d4ba42c7792c043492f2cd12aa828cc05ee7b01bf1be6be0cc3defe2f36c94"
+      }
+    },
+    {
+      "name": "code-consistency-validator",
+      "display_name": "Code Consistency Validator",
+      "description": "Validates type consistency across Rust, TypeScript, PostgreSQL boundaries. Use when reviewing code, debugging type mismatches, or validating API contracts. Triggers on: check consistency, validate types, find mismatches, cross-language.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/code-consistency-validator",
+      "source_path": "skills/.curated/claude-main/.claude/skills/code-consistency-validator/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "1b7fc96c0e36194b42e39606bf4aeb1bdda3c9c6fcceddc128f299447ac925d2"
+      },
+      "install_source": "dist/skills/catalog/code-consistency-validator"
+    },
+    {
+      "name": "code-review-and-quality",
+      "install_source": "dist/skills/catalog/code-review-and-quality",
+      "hashes": {
+        "skill_md_sha256": "fc958b18ba16e928e94608253c1a9bf41fef11c3f1b96eff6e38d6d41a520fb2"
+      },
+      "conflicts": [
+        "security-and-hardening",
+        "performance-optimization",
+        "caveman-review"
+      ]
+    },
+    {
+      "name": "code-review-expert",
+      "display_name": "Code Review Expert",
+      "description": "Comprehensive code review expertise. Use when reviewing code, evaluating architecture, or assessing quality. Triggers on review, evaluate, assess, audit, code quality, best practices.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/code-review-expert",
+      "source_path": "skills/.curated/claude-main/.claude/skills/code-review-expert/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "598c397efecc843025d55446c04094141efecadc645d71a50d4e0d819160ba97"
+      },
+      "install_source": "dist/skills/catalog/code-review-expert"
+    },
+    {
+      "name": "code-simplification",
+      "install_source": "dist/skills/catalog/code-simplification",
+      "hashes": {
+        "skill_md_sha256": "f567e7733765d0b3af7f148b63e3acb944af0ce8ed004177ee82a61dfe4e3394"
+      }
+    },
+    {
+      "name": "codebase-memory",
+      "install_source": "dist/skills/generated/codebase-memory",
+      "hashes": {
+        "skill_md_sha256": "07275117a516bb862c771d712a5a0807b5b490c9cfe712a097ad128b07618c3c"
+      }
+    },
+    {
+      "name": "cold-email",
+      "install_source": "dist/skills/catalog/cold-email",
+      "hashes": {
+        "skill_md_sha256": "45b5507ffa520e4c6dad523fbe87d8c1ac1823c6581790684efb5fd4575a4842"
+      }
+    },
+    {
+      "name": "common-pitfalls",
+      "display_name": "Common Pitfalls",
+      "description": "Orchestrates pitfall prevention skills for common development issues. Auto-triggered during code review to check for TanStack Query, Drizzle ORM, Express API, React, WebSocket, blockchain RPC, and security pitfalls.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/common-pitfalls",
+      "source_path": "skills/.curated/claude-main/.claude/skills/common-pitfalls/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "160d2362f8b02a4b71ce63ddf2829a7429b140e4bf53852209b3e6cfc5b902a9"
+      },
+      "install_source": "dist/skills/catalog/common-pitfalls"
+    },
+    {
+      "name": "community-marketing",
+      "install_source": "dist/skills/catalog/community-marketing",
+      "hashes": {
+        "skill_md_sha256": "b1f7261af13123c578c78aedb37e3f1ed2345a20d3a49e57e580025b3f4a9167"
+      }
+    },
+    {
+      "name": "competitor-profiling",
+      "install_source": "dist/skills/catalog/competitor-profiling",
+      "hashes": {
+        "skill_md_sha256": "6638c453e4e8aa74dafda3298bdf5b7cbdb8cb37fa1fb1d614cb97fdc5cebf15"
+      }
+    },
+    {
+      "name": "competitors",
+      "install_source": "dist/skills/catalog/competitors",
+      "hashes": {
+        "skill_md_sha256": "042ac8573a9d9c7e9284e7ced548f2eef9af2260ae0c6c5eb520bc56350b8ec8"
+      }
+    },
+    {
+      "name": "content",
+      "install_source": "dist/skills/catalog/content",
+      "hashes": {
+        "skill_md_sha256": "a069109b8fb9eaed42f7640d77091938b638425ce840e8667a3212b8c83e2ee1"
+      },
+      "conflicts": [
+        "content-strategy",
+        "content-editorial-strategy"
+      ]
+    },
+    {
+      "name": "content-audit",
+      "install_source": "dist/skills/catalog/content-audit",
+      "hashes": {
+        "skill_md_sha256": "40a434b963434f8829e608e8a69d9e548c65fcf07fb9e3374e051cf44f8aa8e7"
+      }
+    },
+    {
+      "name": "content-blog",
+      "install_source": "dist/skills/catalog/content-blog",
+      "hashes": {
+        "skill_md_sha256": "31602322411a8a075f086c574f75f5bc4e3efa251610f91fe22da29aac56da6c"
+      }
+    },
+    {
+      "name": "content-calendar",
+      "install_source": "dist/skills/catalog/content-calendar",
+      "hashes": {
+        "skill_md_sha256": "030a8dc10e59101e69c234b34eb8bec275b626ae651eff00ce30286bdee6ec8e"
+      }
+    },
+    {
+      "name": "content-editorial-strategy",
+      "install_source": "dist/skills/catalog/content-editorial-strategy",
+      "hashes": {
+        "skill_md_sha256": "e9b82e6ba0777ad4a90de1a2f6135ec169f0bedcebee09d61cd59961da8d3d39"
+      },
+      "conflicts": [
+        "content-strategy"
+      ]
+    },
+    {
+      "name": "content-hackernews",
+      "install_source": "dist/skills/catalog/content-hackernews",
+      "hashes": {
+        "skill_md_sha256": "57363c046904c3b35378a9e56b44f1b73d36da15b6f8a34b1811d4a572a280ce"
+      }
+    },
+    {
+      "name": "content-image",
+      "install_source": "dist/skills/catalog/content-image",
+      "hashes": {
+        "skill_md_sha256": "0381f60b01deb34c4ba4c57ed721e9bec0f544d5e880a123e14565caf5735755"
+      }
+    },
+    {
+      "name": "content-infographic",
+      "install_source": "dist/skills/catalog/content-infographic",
+      "hashes": {
+        "skill_md_sha256": "cbbc13cdb20b41a86187ed63a8b0d06a56b8d535710ff4f3359e0386640ca4c1"
+      }
+    },
+    {
+      "name": "content-linkedin",
+      "install_source": "dist/skills/catalog/content-linkedin",
+      "hashes": {
+        "skill_md_sha256": "795ede4c40afa38c4b630fd5171448950136dff82b1f20d845aa646d1b9ad7d2"
+      }
+    },
+    {
+      "name": "content-presentation",
+      "install_source": "dist/skills/catalog/content-presentation",
+      "hashes": {
+        "skill_md_sha256": "dd0eb1e1bf6cf62ae6ab5d47c55abb3afd0488a0b9677cae06b6cd05cddfa716"
+      }
+    },
+    {
+      "name": "content-reddit",
+      "install_source": "dist/skills/catalog/content-reddit",
+      "hashes": {
+        "skill_md_sha256": "aa81f5c562abf7a56e1a4011cdbeb396567436b4cdb3b93be175a93f8da1e561"
+      }
+    },
+    {
+      "name": "content-repurpose",
+      "install_source": "dist/skills/catalog/content-repurpose",
+      "hashes": {
+        "skill_md_sha256": "7391164d0393f876ef4f0b1299158712f05a1fd64d3aa569235e462eac1b8331"
+      }
+    },
+    {
+      "name": "content-setup",
+      "install_source": "dist/skills/catalog/content-setup",
+      "hashes": {
+        "skill_md_sha256": "dbc1416375802520405ea4b722353d6577bbae3d5cf2c2cdd7904d22d1f0630e"
+      }
+    },
+    {
+      "name": "content-strategy",
+      "install_source": "dist/skills/catalog/content-strategy",
+      "hashes": {
+        "skill_md_sha256": "cbf66c3215e3818bdb4244ea2ab8f85c4a2de479f5ccdbb78e9f388a725ceeb8"
+      },
+      "conflicts": [
+        "content-editorial-strategy"
+      ]
+    },
+    {
+      "name": "content-twitter",
+      "install_source": "dist/skills/catalog/content-twitter",
+      "hashes": {
+        "skill_md_sha256": "e148baa2f7fdeaec94333478f8daf1004eee1c9884aba2ed7230e19348400a3a"
+      }
+    },
+    {
+      "name": "content-video",
+      "install_source": "dist/skills/catalog/content-video",
+      "hashes": {
+        "skill_md_sha256": "2e91017ddf35cd49c1cd69ca359e3e7c08149368bb274f1f3e7c3b8b538c9fba"
+      }
+    },
+    {
+      "name": "context-engineering",
+      "install_source": "dist/skills/catalog/context-engineering",
+      "hashes": {
+        "skill_md_sha256": "3178029cfaf29aeb049234f8d6f7784775103a045d1565a8ee5861348566e87d"
+      }
+    },
+    {
+      "name": "copy-editing",
+      "install_source": "dist/skills/catalog/copy-editing",
+      "hashes": {
+        "skill_md_sha256": "51d06f5296016c1c1d3feb725408be88b82d680079581342762379711d44fd06"
+      }
+    },
+    {
+      "name": "copywriting",
+      "install_source": "dist/skills/catalog/copywriting",
+      "hashes": {
+        "skill_md_sha256": "ea62fb0dc9f1d28fee7122cdcda51efd77fbd5e09e17e984293dfeba555be0df"
+      }
+    },
+    {
+      "name": "cro",
+      "install_source": "dist/skills/catalog/cro",
+      "hashes": {
+        "skill_md_sha256": "88c6b25865ffc28688b2d5d5d6ba9261a558c65d59feccec7fbc1998f59698c3"
+      }
+    },
+    {
+      "name": "customer-research",
+      "install_source": "dist/skills/catalog/customer-research",
+      "hashes": {
+        "skill_md_sha256": "26d2466050ffed98b2f30ae85eed3b8633cb8a7a52b0e4cb441d118f0b767384"
+      }
+    },
+    {
+      "name": "debugging-and-error-recovery",
+      "install_source": "dist/skills/catalog/debugging-and-error-recovery",
+      "hashes": {
+        "skill_md_sha256": "4dcb63d897a3db07019b7657cf50fc8d2797485f47f957270e92bc3f96fa4a74"
+      }
+    },
+    {
+      "name": "defi-expert",
+      "display_name": "DeFi Expert",
+      "description": "DeFi protocol expert ensuring correct data formats, types, denominations, and API structures. MUST be consulted before writing ANY protocol integration code.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/defi-expert",
+      "source_path": "skills/.curated/claude-main/.claude/skills/defi-expert/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "2aa5f8a168e902eb7ccc6fdf42b375b354e26208b841fc7b2cf81c702db0b8bd"
+      },
+      "install_source": "dist/skills/catalog/defi-expert"
+    },
+    {
+      "name": "defi-mev-battletest",
+      "display_name": "DeFi MEV Battletest",
+      "description": "Stress-test DeFi systems against MEV, adversarial ordering, slippage, liquidation, and execution risks. Use for protocol or trading-system resilience reviews.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/defi-mev-battletest",
+      "source_path": "skills/.curated/claude-main/.claude/skills/defi-mev-battletest/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "e1bb29ec7e2c1f401df1a56eafd1331ff5359d69fc9d57ff565cba709db6cabe"
+      },
+      "install_source": "dist/skills/catalog/defi-mev-battletest"
+    },
+    {
+      "name": "defi-registry-manager",
+      "display_name": "DeFi Registry Manager",
+      "description": "Manages expansion of tokens, pools, chains, networks, and DEXes across the codebase. Use when adding new tokens, protocols, chains, networks, or updating existing DeFi registry data.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/defi-registry-manager",
+      "source_path": "skills/.curated/claude-main/.claude/skills/defi-registry-manager/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "347041811e78453665f630f720e5df5a42a6b911247fc47cefce86637aa28be7"
+      },
+      "install_source": "dist/skills/catalog/defi-registry-manager"
+    },
+    {
+      "name": "define-goal",
+      "install_source": "dist/skills/catalog/define-goal",
+      "hashes": {
+        "skill_md_sha256": "b126fc024b5a87dd724aec7f715f3710adba4113626ce1a30a876eb73885f663"
+      }
+    },
+    {
+      "name": "deploy-to-vercel",
+      "display_name": "Deploy To Vercel",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "category": "Delivery & operations",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/deploy-to-vercel",
+      "source_path": "skills/.curated/agent-skills-main/skills/deploy-to-vercel/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "9ea8e44a9e99b24fa9ab3ca81dea4234bc078bd2cb3b7b22fd0b7606b5c99140"
+      },
+      "install_source": "dist/skills/catalog/deploy-to-vercel"
+    },
+    {
+      "name": "deprecation-and-migration",
+      "install_source": "dist/skills/catalog/deprecation-and-migration",
+      "hashes": {
+        "skill_md_sha256": "62e5c430075391fee0564e1a1cb105606325f0847a12d2f77d063622c258f5e2"
+      }
+    },
+    {
+      "name": "design",
+      "display_name": "Design",
+      "description": "Route broad visual-design work across brand, design systems, UI styling, logos, presentations, banners, icons, and social assets.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/design",
+      "source_path": "skills/.curated/design/SKILL.md",
+      "license": "MIT (first-party)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "34c54e37f9d81f09710d065d36a4b1b5e35f83c6b9af478a17860e7fd66eec30"
+      },
+      "install_source": "dist/skills/catalog/design"
+    },
+    {
+      "name": "design-system",
+      "display_name": "Design System",
+      "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\\u2192semantic\\u2192component), CSS variables, spacing/typography scales, component specs, strategic slide creation.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/design-system",
+      "source_path": "skills/.curated/design-system/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "aa0a76a6aed557a63b4cbc9d03dc8fa399dfb2748721554f2926cd897e93ea27"
+      },
+      "install_source": "dist/skills/catalog/design-system"
+    },
+    {
+      "name": "design-taste-frontend",
+      "install_source": "dist/skills/catalog/design-taste-frontend",
+      "hashes": {
+        "skill_md_sha256": "8dfc4735bd65999029483e28f5d08807e66210f8377aa6aaae28527b91908cd8"
+      },
+      "conflicts": [
+        "impeccable",
+        "huashu-design"
+      ]
+    },
+    {
+      "name": "directory-submissions",
+      "install_source": "dist/skills/catalog/directory-submissions",
+      "hashes": {
+        "skill_md_sha256": "71fc562688d20e1442f4bd2ad3460cca1d395aa359430be5bf9982bda224e8ab"
+      }
+    },
+    {
+      "name": "documentation-and-adrs",
+      "install_source": "dist/skills/catalog/documentation-and-adrs",
+      "hashes": {
+        "skill_md_sha256": "bade7f7aaa1cf9308674be01d8330dd7bbf2c6c65d9b831d5a69d990613e582f"
+      }
+    },
+    {
+      "name": "doubt-driven-development",
+      "install_source": "dist/skills/catalog/doubt-driven-development",
+      "hashes": {
+        "skill_md_sha256": "d55717c23754a39b6fc19d51f98d74ba6ae92fee0d4e096aca3c3b6f16282632"
+      }
+    },
+    {
+      "name": "drizzle-best-practices",
+      "install_source": "dist/skills/catalog/drizzle-best-practices",
+      "hashes": {
+        "skill_md_sha256": "6f0232616c4c2d1f98f9517be3efcf946fc74080184c73f2ddd5d7b2e1e49c20"
+      }
+    },
+    {
+      "name": "emails",
+      "install_source": "dist/skills/catalog/emails",
+      "hashes": {
+        "skill_md_sha256": "e0629983c63b173f0e8ca57c10803525c645ac85b61b9e73a39e60736d6f0a97"
+      }
+    },
+    {
+      "name": "engineering-delivery-lifecycle",
+      "install_source": "dist/skills/catalog/engineering-delivery-lifecycle",
+      "hashes": {
+        "skill_md_sha256": "752732bf1cd216bd344aa89abe3ccc2f607c73d65d67ced3db56a9257225a603"
+      }
+    },
+    {
+      "name": "error-logger",
+      "display_name": "Error Logger",
+      "description": "Structured JSON logging with correlation IDs for multi-service systems. Use when implementing logging, debugging failures, or tracing errors across services. Triggers on: add logging, error handling, debug failures, trace errors.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/error-logger",
+      "source_path": "skills/.curated/claude-main/.claude/skills/error-logger/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "dc12a61f4a9169daeaa7056252d62ae0f5f981e3e4d4710a303f50540533a6f0"
+      },
+      "install_source": "dist/skills/catalog/error-logger"
+    },
+    {
+      "name": "fastify-best-practices",
+      "install_source": "dist/skills/catalog/fastify-best-practices",
+      "hashes": {
+        "skill_md_sha256": "4ab762b76a81c38be146138fe74e147af842733be3340404d05d6200386ee613"
+      }
+    },
+    {
+      "name": "figma",
+      "install_source": "dist/skills/catalog/figma",
+      "hashes": {
+        "skill_md_sha256": "bce3c84733186ba8d918c8c5eb4c0bf8f73a47dc059ad7272bc0fa91f6f1a0de"
+      }
+    },
+    {
+      "name": "figma-code-connect-components",
+      "install_source": "dist/skills/catalog/figma-code-connect-components",
+      "hashes": {
+        "skill_md_sha256": "1aa797a9e25b9361af21378042b336b8363b0467f7f0bc17e29b7306d1c569fd"
+      }
+    },
+    {
+      "name": "figma-create-design-system-rules",
+      "install_source": "dist/skills/catalog/figma-create-design-system-rules",
+      "hashes": {
+        "skill_md_sha256": "63998378782b2e6685b5db67d962991df2c1ff489469992d26e8877523510786"
+      }
+    },
+    {
+      "name": "figma-create-new-file",
+      "install_source": "dist/skills/catalog/figma-create-new-file",
+      "hashes": {
+        "skill_md_sha256": "fac509cee6c1d60064be3ea3bdefd104d83e076c95c645eaeb7f86da280822cb"
+      }
+    },
+    {
+      "name": "figma-generate-design",
+      "install_source": "dist/skills/catalog/figma-generate-design",
+      "hashes": {
+        "skill_md_sha256": "76a5d8f8b19ee58c3f00816207edaec02e69bee6b06f4ac8cee2475c993f0033"
+      }
+    },
+    {
+      "name": "figma-generate-library",
+      "install_source": "dist/skills/catalog/figma-generate-library",
+      "hashes": {
+        "skill_md_sha256": "40bbbf4817509f5b2eff77a24631fdd7227a6fae0fb3afdb78b00d9f43ea38e4"
+      }
+    },
+    {
+      "name": "figma-implement-design",
+      "install_source": "dist/skills/catalog/figma-implement-design",
+      "hashes": {
+        "skill_md_sha256": "e4ab18e22088f0e2b666968767b3249d489b97ba1a5826fa1545f576ee259d1b"
+      }
+    },
+    {
+      "name": "figma-use",
+      "install_source": "dist/skills/catalog/figma-use",
+      "hashes": {
+        "skill_md_sha256": "e52ab4901f856fb5a1a15383beb7d185327ba08e8666756454cc1421c8d6b135"
+      }
+    },
+    {
+      "name": "find-skills",
+      "display_name": "Find Skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities.",
+      "category": "Codex workflow",
+      "tier": "specialized",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/find-skills",
+      "source_path": "skills/.curated/find-skills/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "5a28d6faf2f56463cc1a2078cecf6c75415453831e800ad46e3711ffee912ab3"
+      },
+      "install_source": "dist/skills/catalog/find-skills"
+    },
+    {
+      "name": "free-tools",
+      "install_source": "dist/skills/catalog/free-tools",
+      "hashes": {
+        "skill_md_sha256": "e9d05177fa41b625b1e43da250c3bb2a94e2a69c7fbdd36088757e7840631466"
+      }
+    },
+    {
+      "name": "frontend-ui-engineering",
+      "install_source": "dist/skills/catalog/frontend-ui-engineering",
+      "hashes": {
+        "skill_md_sha256": "09d4c0ede28cf2ea795ff497678bf5c073ed4e9bc359a6156141b27320575d6e"
+      }
+    },
+    {
+      "name": "full-review",
+      "display_name": "Full Review",
+      "description": "Comprehensive code review using all available skills. Use before committing or when you want a thorough analysis of changes. Triggers on review code, check changes, full review, pre-commit review.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/full-review",
+      "source_path": "skills/.curated/claude-main/.claude/skills/full-review/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "45f66567fa809e2e11a6a675ac2ef425fcefd4a556e395296db79368394201ea"
+      },
+      "install_source": "dist/skills/catalog/full-review"
+    },
+    {
+      "name": "gh-address-comments",
+      "install_source": "dist/skills/catalog/gh-address-comments",
+      "hashes": {
+        "skill_md_sha256": "e20b5ea80d55fbb60ef0a72f32006e4d1ba5df44306bebbc193a5e9d094a32e4"
+      }
+    },
+    {
+      "name": "gh-fix-ci",
+      "install_source": "dist/skills/catalog/gh-fix-ci",
+      "hashes": {
+        "skill_md_sha256": "d45546c37c43423a2221241f00f1a8f101e31721cd329f28f8837d83c3058017"
+      },
+      "conflicts": [
+        "ci-cd-and-automation"
+      ]
+    },
+    {
+      "name": "git-workflow-and-versioning",
+      "install_source": "dist/skills/catalog/git-workflow-and-versioning",
+      "hashes": {
+        "skill_md_sha256": "afdf75ef5e2f3a925436c94a0f9ae19dae4148b604d303e4abbd2e22fda488b3"
+      }
+    },
+    {
+      "name": "graphify",
+      "install_source": "dist/skills/generated/graphify",
+      "hashes": {
+        "skill_md_sha256": "355b66b01ade473448dcfa33f06f54fdeed0194274bd36435db3a96f34c5860e"
+      }
+    },
+    {
+      "name": "hatch-pet",
+      "install_source": "dist/skills/catalog/hatch-pet",
+      "hashes": {
+        "skill_md_sha256": "04316444a429db3b7495f5b141a0e20dc6908c09e87c35aa9b3c156308b4b7b3"
+      }
+    },
+    {
+      "name": "hft-quant-expert",
+      "display_name": "HFT Quant Expert",
+      "description": "Quantitative trading expertise for DeFi and crypto derivatives. Use when building trading strategies, signals, risk management. Triggers on signal, backtest, alpha, sharpe, volatility, correlation, position size, risk.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/hft-quant-expert",
+      "source_path": "skills/.curated/claude-main/.claude/skills/hft-quant-expert/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "f8a0baea0add631118d5710f21cedba42ec8f0c79d43f85ab370898831253968"
+      },
+      "install_source": "dist/skills/catalog/hft-quant-expert"
+    },
+    {
+      "name": "huashu-design",
+      "install_source": "dist/skills/catalog/huashu-design",
+      "hashes": {
+        "skill_md_sha256": "e21a9e34cdfe0b5bb1f30f7587a4b8ab260c476d743e25b60df220d432c7a92a"
+      },
+      "conflicts": [
+        "impeccable",
+        "design-taste-frontend"
+      ]
+    },
+    {
+      "name": "humanizer",
+      "install_source": "dist/skills/catalog/humanizer",
+      "hashes": {
+        "skill_md_sha256": "db55951e89cdd78bb9de857fe86ef50d3fcd31c3e947c7aded57e14ec8d93b65"
+      }
+    },
+    {
+      "name": "humanizer-ru",
+      "install_source": "dist/skills/catalog/humanizer-ru",
+      "hashes": {
+        "skill_md_sha256": "68a89f7d16171cfeb35020a56142c9e48b0d300fc821ff94a340738b9f72cf58"
+      }
+    },
+    {
+      "name": "idea-refine",
+      "install_source": "dist/skills/catalog/idea-refine",
+      "hashes": {
+        "skill_md_sha256": "8f1f4de70903676844f5b861a1903e3294a1da0d8ca349c8d0ab35e8028ed0bb"
+      }
+    },
+    {
+      "name": "image",
+      "install_source": "dist/skills/catalog/image",
+      "hashes": {
+        "skill_md_sha256": "9da5d23f89c80b9192dbe09a0de8d66f6b54063908e8fd317dd63c55c5545950"
+      }
+    },
+    {
+      "name": "imagegen",
+      "install_source": "dist/skills/catalog/imagegen",
+      "hashes": {
+        "skill_md_sha256": "a729ca1d6486303d2471e4d9ee1aec17fbc5b849c15f39f1a64133e0bbc9ba03"
+      }
+    },
+    {
+      "name": "impeccable",
+      "install_source": "dist/skills/catalog/impeccable",
+      "hashes": {
+        "skill_md_sha256": "3f0b74f5368c50b636ab3045d4664b4b57faddd53c4ca95e64e144c97ea634ea"
+      },
+      "conflicts": [
+        "design-taste-frontend",
+        "huashu-design"
+      ]
+    },
+    {
+      "name": "incremental-implementation",
+      "install_source": "dist/skills/catalog/incremental-implementation",
+      "hashes": {
+        "skill_md_sha256": "cd2b37ad103de70c3b1f32821f8edbd152884b40cb7fa920dd55523107ae596f"
+      }
+    },
+    {
+      "name": "interview-me",
+      "install_source": "dist/skills/catalog/interview-me",
+      "hashes": {
+        "skill_md_sha256": "130ba223a958bbca9b5bea43c6c1d675724f849cabfef89c97a552dd3ce18e0b"
+      }
+    },
+    {
+      "name": "iterative-runner",
+      "display_name": "Iterative Runner",
+      "description": "Run a bounded implement-test-debug loop in the current Codex session until explicit completion criteria pass or a documented stop condition is reached. Use for retry-until-green, flaky-test isolation, TDD repair loops, and multi-attempt implementation work. Triggers on: loop until done, keep trying, retry until pass, TDD loop, iterate until tests pass.",
+      "category": "Codex workflow",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/iterative-runner",
+      "source_path": "skills/.curated/claude-main/.claude/skills/iterative-runner/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "aff598a0b15c5237d31dcb3d6d7d036fddcb176d4c4c492214b156851a67e8ce"
+      },
+      "install_source": "dist/skills/catalog/iterative-runner"
+    },
+    {
+      "name": "jupyter-notebook",
+      "install_source": "dist/skills/catalog/jupyter-notebook",
+      "hashes": {
+        "skill_md_sha256": "301535d1b5a9684078c05bf96e07e2bbb2f528e4685e62770309588dd202eb06"
+      }
+    },
+    {
+      "name": "latency-tracker",
+      "display_name": "Latency Tracker",
+      "description": "Per-call and aggregated latency tracking for MEV infrastructure. Use when implementing performance monitoring or debugging slow operations. Triggers on: latency, timing, performance, slow, speed, instrumentation.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/latency-tracker",
+      "source_path": "skills/.curated/claude-main/.claude/skills/latency-tracker/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "9d3ab264877af547aa07a559c90661ad2e59a5a6454dad1eb4dca8ed713bfdb5"
+      },
+      "install_source": "dist/skills/catalog/latency-tracker"
+    },
+    {
+      "name": "launch",
+      "install_source": "dist/skills/catalog/launch",
+      "hashes": {
+        "skill_md_sha256": "a704ba4256bd53a0c89490a21a79ff15bc168a8c2ab0419c605a52670768b89a"
+      }
+    },
+    {
+      "name": "lead-magnets",
+      "install_source": "dist/skills/catalog/lead-magnets",
+      "hashes": {
+        "skill_md_sha256": "f782ac90fdd303e731d4a889f370c01b037e223bc8d2570bb0dfa9bb5f34cd4a"
+      }
+    },
+    {
+      "name": "linear",
+      "install_source": "dist/skills/catalog/linear",
+      "hashes": {
+        "skill_md_sha256": "b7053f2aa99129cefe2d55e90c08af9ddd637c573b81ba3f2a6de6971885440f"
+      }
+    },
+    {
+      "name": "liquidity-depth-analyzer",
+      "display_name": "Liquidity Depth Analyzer",
+      "description": "DEX liquidity analysis and slippage estimation for MEV trading. Use when implementing swaps, route selection, or position sizing. Triggers on: liquidity, slippage, price impact, depth, AMM math, Uniswap, Curve.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/liquidity-depth-analyzer",
+      "source_path": "skills/.curated/claude-main/.claude/skills/liquidity-depth-analyzer/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "bfee775b5d1c76e472e95ada269bcdc951499851d8bf58928f0e6e981220b07c"
+      },
+      "install_source": "dist/skills/catalog/liquidity-depth-analyzer"
+    },
+    {
+      "name": "marketing-ideas",
+      "install_source": "dist/skills/catalog/marketing-ideas",
+      "hashes": {
+        "skill_md_sha256": "2b92c5547f1f8989135e921431b3e3c71bd3de9f08dd14cf44971e3ef987a0f1"
+      }
+    },
+    {
+      "name": "marketing-loops",
+      "install_source": "dist/skills/catalog/marketing-loops",
+      "hashes": {
+        "skill_md_sha256": "4de26c30f5d611512e1b8adfa7c1857b90634edc3d6afe5af620160a1fc8c92a"
+      }
+    },
+    {
+      "name": "marketing-plan",
+      "install_source": "dist/skills/catalog/marketing-plan",
+      "hashes": {
+        "skill_md_sha256": "edb113fc60d4cedd3e79fc071396abcd3dace3352be036415507badb400af312"
+      }
+    },
+    {
+      "name": "marketing-psychology",
+      "install_source": "dist/skills/catalog/marketing-psychology",
+      "hashes": {
+        "skill_md_sha256": "d4506c27263f2af01ef5726d685dd50d8a4b38dd238ede60a547b8d686559544"
+      }
+    },
+    {
+      "name": "marketing-seo-audit",
+      "install_source": "dist/skills/catalog/marketing-seo-audit",
+      "hashes": {
+        "skill_md_sha256": "4e89014ccfb65b40162cee45300c009ee610b1881fd5c2f158308dcad379e038"
+      },
+      "conflicts": [
+        "seo-audit"
+      ]
+    },
+    {
+      "name": "migrate-to-codex",
+      "install_source": "dist/skills/catalog/migrate-to-codex",
+      "hashes": {
+        "skill_md_sha256": "7951c29aec63dc879b954e711a2c5ce4f271dd5d4749d06119ef794c1dc9017b"
+      }
+    },
+    {
+      "name": "netlify-deploy",
+      "install_source": "dist/skills/catalog/netlify-deploy",
+      "hashes": {
+        "skill_md_sha256": "655db312ec182e26a15f5e24d59bb6fa5a713ef009447536a67a84a88d915db5"
+      }
+    },
+    {
+      "name": "notion-knowledge-capture",
+      "install_source": "dist/skills/catalog/notion-knowledge-capture",
+      "hashes": {
+        "skill_md_sha256": "595df2e75fe1d2e485f015d179e74c0629712370fbc81321803a9ab7542d002c"
+      }
+    },
+    {
+      "name": "notion-meeting-intelligence",
+      "install_source": "dist/skills/catalog/notion-meeting-intelligence",
+      "hashes": {
+        "skill_md_sha256": "e1f5df24a421433a15362da937091db3db47f8d6eb1c4036edbd4f71b48ff798"
+      }
+    },
+    {
+      "name": "notion-research-documentation",
+      "install_source": "dist/skills/catalog/notion-research-documentation",
+      "hashes": {
+        "skill_md_sha256": "b809a0ce6a69824c33a8745ab073f7a00f8264c6275773cc6b3c13df11cea4d2"
+      }
+    },
+    {
+      "name": "notion-spec-to-implementation",
+      "install_source": "dist/skills/catalog/notion-spec-to-implementation",
+      "hashes": {
+        "skill_md_sha256": "f9258eb68c53f087ce1d741d150401afedc32f75073e7aafd17ec1e561e15931"
+      }
+    },
+    {
+      "name": "observability-and-instrumentation",
+      "install_source": "dist/skills/catalog/observability-and-instrumentation",
+      "hashes": {
+        "skill_md_sha256": "681ff668f6b1cf5c6574106a6c530ea14ff7d201e69014622362d720e97ebc43"
+      }
+    },
+    {
+      "name": "offers",
+      "install_source": "dist/skills/catalog/offers",
+      "hashes": {
+        "skill_md_sha256": "2d8e92fa1325a8a42e6a721d017878dce5ed45215a1acbb941f8f0391424f4d2"
+      }
+    },
+    {
+      "name": "onboarding",
+      "install_source": "dist/skills/catalog/onboarding",
+      "hashes": {
+        "skill_md_sha256": "9610de53a5fbffaadb03eb98e7dc4bf366a2ca063c9e1665880ed29fae27c618"
+      }
+    },
+    {
+      "name": "openai-docs",
+      "install_source": "dist/skills/catalog/openai-docs",
+      "hashes": {
+        "skill_md_sha256": "f7bdb85187983f368dc6b03ff266e9164d6dcbfd4f6d14c68d73f302f5e3aa9a"
+      }
+    },
+    {
+      "name": "paywalls",
+      "install_source": "dist/skills/catalog/paywalls",
+      "hashes": {
+        "skill_md_sha256": "a709997c509449dc87eabb22ddb62d8d199d606362c1c495bf33d160215faf40"
+      }
+    },
+    {
+      "name": "pdf",
+      "install_source": "dist/skills/catalog/pdf",
+      "hashes": {
+        "skill_md_sha256": "c85a6e9fb03aedc9d710b98d85c08cc97184fedb2d174647f1a1a1e64021a461"
+      }
+    },
+    {
+      "name": "performance-optimization",
+      "install_source": "dist/skills/catalog/performance-optimization",
+      "hashes": {
+        "skill_md_sha256": "0c41911d93488298f4fc97002da0ca61833cf0327ad1541fa6f0d174e5444577"
+      },
+      "conflicts": [
+        "code-review-and-quality"
+      ]
+    },
+    {
+      "name": "pitfalls-blockchain",
+      "display_name": "Pitfalls Blockchain",
+      "description": "Blockchain RPC error handling, gas estimation, multi-chain config, and transaction management. Use when interacting with smart contracts, estimating gas, or managing transactions. Triggers on: RPC, contract call, gas, multicall, nonce, transaction, revert.",
+      "category": "Finance & blockchain",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-blockchain",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-blockchain/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "2051b80f01249645fe1ea70d10e32597cf6607143679c73b74ee7c5fa03d6284"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-blockchain"
+    },
+    {
+      "name": "pitfalls-drizzle-orm",
+      "display_name": "Pitfalls Drizzle Orm",
+      "description": "Drizzle ORM patterns and migration safety rules. Use when defining schemas, running migrations, or debugging database issues. Triggers on: Drizzle, schema, migration, db:push, $inferSelect, array column.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-drizzle-orm",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-drizzle-orm/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "3d453b1b76ae72b89cee6e2d0ea497095efd532ff7604c7bd8c64132c8fc3980"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-drizzle-orm"
+    },
+    {
+      "name": "pitfalls-express-api",
+      "display_name": "Pitfalls Express API",
+      "description": "Express API conventions and storage patterns. Use when building REST APIs, defining routes, or implementing storage interfaces. Triggers on: Express, router, API route, status code, storage interface.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-express-api",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-express-api/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "4e61df09b4e990f8957ff23a64afc9554f09d76b1b82de6d18bb979d066f1543"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-express-api"
+    },
+    {
+      "name": "pitfalls-react",
+      "display_name": "Pitfalls React",
+      "description": "React component patterns, forms, accessibility, and responsive design. Use when building React components, handling forms, or ensuring accessibility. Triggers on: React component, useEffect, form validation, a11y, responsive, Error Boundary.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-react",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-react/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "cf542333ffcef937f5bf2983d100543326526a424552ee4723ba572b8aadf3d7"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-react"
+    },
+    {
+      "name": "pitfalls-security",
+      "display_name": "Pitfalls Security",
+      "description": "Security patterns for session keys, caching, logging, and environment variables. Use when implementing authentication, caching sensitive data, or setting up logging. Triggers on: session key, private key, cache, logging, secrets, environment variable.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-security",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-security/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "749a08e84e33f8c25de6caa854d06af68a1ef7c27afa943fa2fa186e1c1038b3"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-security"
+    },
+    {
+      "name": "pitfalls-tanstack-query",
+      "display_name": "Pitfalls Tanstack Query",
+      "description": "TanStack Query v5 patterns and common pitfalls. Use when implementing data fetching, cache invalidation, or debugging stale data issues. Triggers on: useQuery, useMutation, queryKey, invalidate, TanStack, React Query.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-tanstack-query",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-tanstack-query/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "9d9fc4f53fc87181fbb181fef61a94144e824c813c2335017774341555c570af"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-tanstack-query"
+    },
+    {
+      "name": "pitfalls-websocket",
+      "display_name": "Pitfalls Websocket",
+      "description": "WebSocket server and client patterns with heartbeat and reconnection. Use when implementing real-time features, debugging connection issues, or reviewing WebSocket code. Triggers on: WebSocket, wss, heartbeat, reconnect, real-time.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pitfalls-websocket",
+      "source_path": "skills/.curated/claude-main/.claude/skills/pitfalls-websocket/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "9d6a20177d0c74ed6ba5ab8b0ef25b2c9d3f511bf15ce2bd67f8f129f82f219a"
+      },
+      "install_source": "dist/skills/catalog/pitfalls-websocket"
+    },
+    {
+      "name": "pixijs",
+      "display_name": "PixiJS",
+      "description": "Use this skill first for ANY PixiJS v8 task; it routes to the right specialized skill for the job. Covers the full PixiJS surface: Application setup, the scene graph (Container, Sprite, Graphics, Text, Mesh, ParticleContainer, DOMContainer, GifSprite).",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs",
+      "source_path": "skills/.curated/pixijs/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "e31d547f9fb9e837d4402e5aeb533cf7142eaa0b9d496a0dd816ba0cf7738fff"
+      },
+      "install_source": "dist/skills/catalog/pixijs"
+    },
+    {
+      "name": "pixijs-accessibility",
+      "display_name": "PixiJS Accessibility",
+      "description": "Use this skill when adding screen reader and keyboard navigation to PixiJS v8 apps. Covers AccessibilitySystem options (enabledByDefault, debug, activateOnTab, deactivateOnMouseMove), per-container accessibility properties, shadow DOM overlay.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-accessibility",
+      "source_path": "skills/.curated/pixijs-accessibility/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "e5134b3bbb768fe054db3bc34fd55742d11f0e20ed8033be57b5a2adbc1d60a6"
+      },
+      "install_source": "dist/skills/catalog/pixijs-accessibility"
+    },
+    {
+      "name": "pixijs-application",
+      "display_name": "PixiJS Application",
+      "description": "Use this skill when creating and configuring a PixiJS v8 Application. Covers new Application() + async app.init() options (width, height, background, antialias, resolution, autoDensity, preference, resizeTo, autoStart, sharedTicker, canvas, useBackBuffer.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-application",
+      "source_path": "skills/.curated/pixijs-application/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "2632c77c8e4f9dfdb18d968b8cf5bb5f129a477bd7b38e80cc31306a57a686e9"
+      },
+      "install_source": "dist/skills/catalog/pixijs-application"
+    },
+    {
+      "name": "pixijs-assets",
+      "display_name": "PixiJS Assets",
+      "description": "Use this skill when loading and managing resources in PixiJS v8. Covers Assets.init, Assets.load/add/unload, bundles, manifests, background loading, onProgress, caching, spritesheets, video textures, web fonts, bitmap fonts, animated GIFs.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-assets",
+      "source_path": "skills/.curated/pixijs-assets/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "37ec0d91786f765c516e918b98c2571d1af64626cf14cc4803c0eb9619a0bdd8"
+      },
+      "install_source": "dist/skills/catalog/pixijs-assets"
+    },
+    {
+      "name": "pixijs-blend-modes",
+      "display_name": "PixiJS Blend Modes",
+      "description": "Use this skill when compositing display objects with blend modes in PixiJS v8. Covers standard modes (normal, add, multiply, screen, erase, min, max), advanced modes via pixi.js/advanced-blend-modes (color-burn, overlay, hard-light, etc.).",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-blend-modes",
+      "source_path": "skills/.curated/pixijs-blend-modes/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "181390c4c4975debeceac7e5c97d796f25f9bdddd3ff281589dc8e335778d2bf"
+      },
+      "install_source": "dist/skills/catalog/pixijs-blend-modes"
+    },
+    {
+      "name": "pixijs-color",
+      "display_name": "PixiJS Color",
+      "description": "Use this skill when creating, converting, or manipulating colors in PixiJS v8. Covers Color class input formats (hex, CSS names, RGB/HSL objects, arrays, Uint8Array), conversion methods (toHex, toNumber, toArray, toRgba), component access.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-color",
+      "source_path": "skills/.curated/pixijs-color/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "2c9665a4f5bb45335614b3a69905d34648a7f2d633aece80be4be6902855b40f"
+      },
+      "install_source": "dist/skills/catalog/pixijs-color"
+    },
+    {
+      "name": "pixijs-core-concepts",
+      "display_name": "PixiJS Core Concepts",
+      "description": "Use this skill when understanding how PixiJS v8 renders frames: the systems-and-pipes renderer, the render loop, and how the library adapts to different environments.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-core-concepts",
+      "source_path": "skills/.curated/pixijs-core-concepts/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "f55b2355ac3feec2921f58766f28b7ce5e7a68a2eca802cf1c6882399b56b381"
+      },
+      "install_source": "dist/skills/catalog/pixijs-core-concepts"
+    },
+    {
+      "name": "pixijs-create",
+      "display_name": "PixiJS Create",
+      "description": "Use this skill when scaffolding a new PixiJS v8 project with the create-pixi CLI or adding PixiJS to an existing project.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-create",
+      "source_path": "skills/.curated/pixijs-create/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "40dcab6b43f7d2221b9ca8b4bcc73f98ad47de5f99c822784331d13063f1afa2"
+      },
+      "install_source": "dist/skills/catalog/pixijs-create"
+    },
+    {
+      "name": "pixijs-custom-rendering",
+      "display_name": "PixiJS Custom Rendering",
+      "description": "Use this skill when writing custom shaders, uniforms, filters, or batchers in PixiJS v8. Covers Shader.from({gl, gpu, resources}), GlProgram/GpuProgram, UniformGroup with typed uniforms (f32, vec2, mat4x4), UBO mode, textures as resources.",
+      "category": "Application development",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-custom-rendering",
+      "source_path": "skills/.curated/pixijs-custom-rendering/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "0bc347a45a45cd4111bc4a7f0c99c3ce1313abf2bf97da48df2bcf1264111c22"
+      },
+      "install_source": "dist/skills/catalog/pixijs-custom-rendering"
+    },
+    {
+      "name": "pixijs-environments",
+      "display_name": "PixiJS Environments",
+      "description": "Use this skill when running PixiJS v8 outside a standard browser: Web Workers, OffscreenCanvas, Node/SSR, or CSP-restricted contexts. Covers DOMAdapter.set, BrowserAdapter, WebWorkerAdapter, custom Adapter interface, pixi.js/unsafe-eval for strict CSP.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-environments",
+      "source_path": "skills/.curated/pixijs-environments/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "5ab5263326f1c6a28aa8f863194ddf263919b4e99d2c70d45e34dc63cac516ed"
+      },
+      "install_source": "dist/skills/catalog/pixijs-environments"
+    },
+    {
+      "name": "pixijs-events",
+      "display_name": "PixiJS Events",
+      "description": "Use this skill when handling pointer, mouse, touch, or wheel input in PixiJS v8. Covers eventMode (none, passive, auto, static, dynamic), FederatedEvent types, propagation and capture phase, hitArea, interactiveChildren, cursor and cursorStyles.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-events",
+      "source_path": "skills/.curated/pixijs-events/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "750f6c85ad1c33e5115716879bf71eb39b068452b6cc2987505f766789673eb0"
+      },
+      "install_source": "dist/skills/catalog/pixijs-events"
+    },
+    {
+      "name": "pixijs-filters",
+      "display_name": "PixiJS Filters",
+      "description": "Use this skill when applying visual effects to PixiJS v8 containers via the filter pipeline. Covers built-in filters (AlphaFilter, BlurFilter, ColorMatrixFilter, DisplacementFilter, NoiseFilter), custom Filter.from() with GLSL/WGSL, options (resolution.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-filters",
+      "source_path": "skills/.curated/pixijs-filters/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "ff652c99c0f359580c00b9aa855460a6fa8e816cb30f09ef0857945f147d4c0d"
+      },
+      "install_source": "dist/skills/catalog/pixijs-filters"
+    },
+    {
+      "name": "pixijs-html-source",
+      "display_name": "PixiJS Html Source",
+      "description": "Use this skill when rendering live HTML/DOM elements (or frozen snapshots of them) as PixiJS v8 textures via the EXPERIMENTAL HTML-in-Canvas browser APIs.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-html-source",
+      "source_path": "skills/.curated/pixijs-html-source/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "54ae0d4b1f6e3d87496e5eb372e862180a4b76bfc42f4ef52be6fc675609448b"
+      },
+      "install_source": "dist/skills/catalog/pixijs-html-source"
+    },
+    {
+      "name": "pixijs-math",
+      "display_name": "PixiJS Math",
+      "description": "Use this skill when working with coordinates, vectors, matrices, shapes, hit testing, or layout rectangles in PixiJS v8. Covers Point/ObservablePoint, Matrix (2D affine, decompose, apply, applyInverse), shapes (Rectangle, Circle, Ellipse, Polygon.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-math",
+      "source_path": "skills/.curated/pixijs-math/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "a0aff0491347a4095361c8f91b7a87f18ce239f7b92886bf4535083863d8f32b"
+      },
+      "install_source": "dist/skills/catalog/pixijs-math"
+    },
+    {
+      "name": "pixijs-migration-v8",
+      "display_name": "PixiJS Migration V8",
+      "description": "Use this skill when upgrading to PixiJS v8 from v7 or diagnosing broken v7 code after an upgrade. Covers async app.init, single pixi.js package (deprecated @pixi/* sub-packages), Graphics shape-then-fill, BaseTexture → TextureSource, shader/uniform rework.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-migration-v8",
+      "source_path": "skills/.curated/pixijs-migration-v8/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "6288aceaa76923bc440b28a128502efbb022d7cd5f5d08e556346958c5606259"
+      },
+      "install_source": "dist/skills/catalog/pixijs-migration-v8"
+    },
+    {
+      "name": "pixijs-performance",
+      "display_name": "PixiJS Performance",
+      "description": "Use this skill when profiling or optimizing a PixiJS v8 app for FPS, draw calls, or GPU memory. Covers destroy patterns (cacheAsTexture(false), releaseGlobalResources), GCSystem and TextureGCSystem, PrepareSystem, object pooling, batching rules.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-performance",
+      "source_path": "skills/.curated/pixijs-performance/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "12bb61deae68769a150955a11fd74a399713713f358cc44fae2e756e70cbb1e0"
+      },
+      "install_source": "dist/skills/catalog/pixijs-performance"
+    },
+    {
+      "name": "pixijs-scene-container",
+      "display_name": "PixiJS Scene Container",
+      "description": "Use this skill when grouping, positioning, or transforming display objects in PixiJS v8. Covers Container constructor options (isRenderGroup, sortableChildren, boundsArea), addChild/removeChild/addChildAt/swapChildren/setChildIndex.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-container",
+      "source_path": "skills/.curated/pixijs-scene-container/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "9298b67be01c034807a7eef4b3f3ecbd5d69c5952def884b88472989d873b98e"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-container"
+    },
+    {
+      "name": "pixijs-scene-core-concepts",
+      "display_name": "PixiJS Scene Core Concepts",
+      "description": "Use this skill when reasoning about the PixiJS v8 scene graph as a whole: how containers, leaves, transforms, and render order fit together.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-core-concepts",
+      "source_path": "skills/.curated/pixijs-scene-core-concepts/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "e22db023da6f5a84a38c786c5c0413057969f0e211a23a6b0e9486aa3798ea74"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-core-concepts"
+    },
+    {
+      "name": "pixijs-scene-dom-container",
+      "display_name": "PixiJS Scene Dom Container",
+      "description": "Use this skill when overlaying HTML elements on the PixiJS v8 canvas. Covers DOMContainer with element, anchor, and scene-graph-driven CSS transforms, the pixi.js/dom side-effect import, DOMPipe registration, visibility sync, pointer-events handling.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-dom-container",
+      "source_path": "skills/.curated/pixijs-scene-dom-container/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "67402de105d9a6e2e9973058f15eca384e804bf7bb831790a44d635942418c14"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-dom-container"
+    },
+    {
+      "name": "pixijs-scene-gif",
+      "display_name": "PixiJS Scene Gif",
+      "description": "Use this skill when displaying animated GIFs in PixiJS v8. Covers the pixi.js/gif side-effect import, Assets.load returning a GifSource, GifSprite playback (play/stop/currentFrame/animationSpeed), autoPlay/loop options.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-gif",
+      "source_path": "skills/.curated/pixijs-scene-gif/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "5016af3ad4e31d1ccbb83e33bfe333f8b2979eb2b85168c9c7e4781258573315"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-gif"
+    },
+    {
+      "name": "pixijs-scene-graphics",
+      "display_name": "PixiJS Scene Graphics",
+      "description": "Use this skill when drawing vector shapes and paths in PixiJS v8. Covers the Graphics API: shape-then-fill methods (rect/circle/ellipse/poly/roundRect/star/regularPoly/roundPoly/roundShape/filletRect/chamferRect).",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-graphics",
+      "source_path": "skills/.curated/pixijs-scene-graphics/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "0eab6267429237bc51b11255b2a95de8adc2c28b571ff797eab2483b765c5396"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-graphics"
+    },
+    {
+      "name": "pixijs-scene-mesh",
+      "display_name": "PixiJS Scene Mesh",
+      "description": "Use this skill when rendering custom geometry in PixiJS v8. Covers Mesh with MeshGeometry (positions, uvs, indices, topology), MeshSimple for per-frame vertex animation, MeshPlane for subdivided deformation, MeshRope for path-following textures.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-mesh",
+      "source_path": "skills/.curated/pixijs-scene-mesh/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "b5be5a3e40a012f3bf0c2c7ac3acf9854a4a6eeaf81510a6c537dcd23b52a942"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-mesh"
+    },
+    {
+      "name": "pixijs-scene-particle-container",
+      "display_name": "PixiJS Scene Particle Container",
+      "description": "Use this skill when rendering thousands of lightweight sprites in PixiJS v8. Covers ParticleContainer with Particle instances, addParticle/removeParticle, particleChildren array, dynamicProperties (vertex, position, rotation, uvs, color), boundsArea.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-particle-container",
+      "source_path": "skills/.curated/pixijs-scene-particle-container/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "b078778d046bb2615971a36aa02cd1465cce50f6906b554e2eabc5a53bb823e7"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-particle-container"
+    },
+    {
+      "name": "pixijs-scene-sprite",
+      "display_name": "PixiJS Scene Sprite",
+      "description": "Use this skill when drawing images in PixiJS v8. Covers Sprite with anchor/tint/texture, AnimatedSprite for frame animation, NineSliceSprite for resizable UI panels, TilingSprite for scrolling/repeating backgrounds.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-sprite",
+      "source_path": "skills/.curated/pixijs-scene-sprite/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "a5ce10a47e23b5cfc05cfcd8b0bfc4686b58d553250d17f7b152068b9a39e948"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-sprite"
+    },
+    {
+      "name": "pixijs-scene-text",
+      "display_name": "PixiJS Scene Text",
+      "description": "Use this skill when rendering text in PixiJS v8. Covers Text for canvas-quality styled labels, BitmapText for cheap per-frame updates via glyph atlas, HTMLText for HTML/CSS markup via SVG, SplitText and SplitBitmapText for per-character animation.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-scene-text",
+      "source_path": "skills/.curated/pixijs-scene-text/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "eab52cb59517a0be0474a391936cda3021ce83da53a3a3ae243f49dd0f71fce4"
+      },
+      "install_source": "dist/skills/catalog/pixijs-scene-text"
+    },
+    {
+      "name": "pixijs-ticker",
+      "display_name": "PixiJS Ticker",
+      "description": "Use this skill when running per-frame logic or controlling the PixiJS v8 render loop. Covers Ticker.add/addOnce/remove, deltaTime vs deltaMS vs elapsedMS, UPDATE_PRIORITY ordering, maxFPS/minFPS capping, speed scaling, Ticker.shared vs new instances.",
+      "category": "Application development",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/pixijs-ticker",
+      "source_path": "skills/.curated/pixijs-ticker/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "5c76b709aa66540adec5c6c6c5b1db1860b747491addb5a459fce2d105bd7425"
+      },
+      "install_source": "dist/skills/catalog/pixijs-ticker"
+    },
+    {
+      "name": "planning-and-task-breakdown",
+      "install_source": "dist/skills/catalog/planning-and-task-breakdown",
+      "hashes": {
+        "skill_md_sha256": "73ef554dd7ffe3581f820cf0f55fbf869f0f2c5f1234589fead38a589dd029da"
+      }
+    },
+    {
+      "name": "playwright",
+      "install_source": "dist/skills/catalog/playwright",
+      "hashes": {
+        "skill_md_sha256": "e67fcb58cea7cc7be38979271af04bde7af188c2b261a35410b7014d5c306b36"
+      }
+    },
+    {
+      "name": "playwright-interactive",
+      "install_source": "dist/skills/catalog/playwright-interactive",
+      "hashes": {
+        "skill_md_sha256": "dbb2f5e640c16db606cadd8b65194b35fce9109243133d2feb27b382e2fa4a52"
+      }
+    },
+    {
+      "name": "plugin-creator",
+      "install_source": "dist/skills/catalog/plugin-creator",
+      "hashes": {
+        "skill_md_sha256": "82120ca8e71119fa3a79b7eed792bf5bea87a53776a4b5e822a494e1467ab550"
+      }
+    },
+    {
+      "name": "popups",
+      "install_source": "dist/skills/catalog/popups",
+      "hashes": {
+        "skill_md_sha256": "748c75d9ca23e5ed0fb49ed1840eb6c085751068cc28bd93504fa0bfb38c466d"
+      }
+    },
+    {
+      "name": "postgres-best-practices",
+      "display_name": "Postgres Best Practices",
+      "description": "Best practices and guidelines for working with Postgres. Covers schema design, indexing strategies, query optimization, migrations, and common pitfalls. Use when writing SQL, designing database schemas, optimizing queries, or setting up a Postgres database.",
+      "category": "Data & databases",
+      "tier": "specialized",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/postgres-best-practices",
+      "source_path": "skills/.curated/postgres-best-practices/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "63090f349784c7712d7de20eb247ab33ab0c2c47fd64a2d91135f2d42be49c3a"
+      },
+      "install_source": "dist/skills/catalog/postgres-best-practices",
+      "dependency_triggers": [
+        "pg",
+        "psycopg",
+        "postgresql"
+      ],
+      "project_types": [
+        "database"
+      ]
+    },
+    {
+      "name": "pricing",
+      "install_source": "dist/skills/catalog/pricing",
+      "hashes": {
+        "skill_md_sha256": "812b2d8e7fe8edf3eaa8f0df72914169d276cd05039081cdbe4f80c9b72b9663"
+      }
+    },
+    {
+      "name": "product-marketing",
+      "install_source": "dist/skills/catalog/product-marketing",
+      "hashes": {
+        "skill_md_sha256": "f33cb1e3c6e1ba41de8612ff562b280e347163779c2168b1447d9efcbc6de4d2"
+      }
+    },
+    {
+      "name": "programmatic-seo",
+      "install_source": "dist/skills/catalog/programmatic-seo",
+      "hashes": {
+        "skill_md_sha256": "8c16a34be222ecea30f0c6903d75cff09c6b8cb549b52031d260e557be913e6f"
+      }
+    },
+    {
+      "name": "prospecting",
+      "install_source": "dist/skills/catalog/prospecting",
+      "hashes": {
+        "skill_md_sha256": "dd10150a0887046696cdb837a2c1d0f1fcbe2de53cfc4c03e22a5a342f7b409a"
+      }
+    },
+    {
+      "name": "public-relations",
+      "install_source": "dist/skills/catalog/public-relations",
+      "hashes": {
+        "skill_md_sha256": "883288ac2d2f97f499d5c09b7a72e8a5759dbc828c46442fd37c19eaac213c17"
+      }
+    },
+    {
+      "name": "referrals",
+      "install_source": "dist/skills/catalog/referrals",
+      "hashes": {
+        "skill_md_sha256": "fa57b620a60ae9847ec52f4567eda8b6f4748538640d26462329e4b5ccf2db83"
+      }
+    },
+    {
+      "name": "render-deploy",
+      "install_source": "dist/skills/catalog/render-deploy",
+      "hashes": {
+        "skill_md_sha256": "214c6b5c78e42a2a4e91275d04494925ce62c0a5f8a4ccf2f37688c55c126a77"
+      }
+    },
+    {
+      "name": "revops",
+      "install_source": "dist/skills/catalog/revops",
+      "hashes": {
+        "skill_md_sha256": "50ba2d7b7d40a584c76dfecac44e525019a18cbc035238676d1f00ff1232b5c9"
+      }
+    },
+    {
+      "name": "ru-text",
+      "install_source": "dist/skills/catalog/ru-text",
+      "hashes": {
+        "skill_md_sha256": "71707c8725303410f3be72cada2250856493aaea0058f554eb831759eff9625a"
+      }
+    },
+    {
+      "name": "sales-enablement",
+      "install_source": "dist/skills/catalog/sales-enablement",
+      "hashes": {
+        "skill_md_sha256": "5e61178687914610962c8dc7b371d490ff93d374ed6d97d195f9a83f3457e7ed"
+      }
+    },
+    {
+      "name": "schema",
+      "install_source": "dist/skills/catalog/schema",
+      "hashes": {
+        "skill_md_sha256": "57b57f38c51923299abd2d6284ebb3295b65ed3d40f0d2ff5e4e73ee6c9f9c22"
+      }
+    },
+    {
+      "name": "screenshot",
+      "install_source": "dist/skills/catalog/screenshot",
+      "hashes": {
+        "skill_md_sha256": "8accdfa95cf1070827d4393a096bfec182d1df46f03f8d4292a80c2179d7c872"
+      }
+    },
+    {
+      "name": "security-and-hardening",
+      "install_source": "dist/skills/catalog/security-and-hardening",
+      "hashes": {
+        "skill_md_sha256": "8041d53c2da474b0a543afb2971d5c6fa9726d2f6884820ca54b422c2fc4a4b4"
+      },
+      "conflicts": [
+        "code-review-and-quality"
+      ]
+    },
+    {
+      "name": "security-best-practices",
+      "install_source": "dist/skills/catalog/security-best-practices",
+      "hashes": {
+        "skill_md_sha256": "d4fe57c3d1eee5848cd224e34f644c9dcac42da3fd992cbc0730b4def728eb74"
+      }
+    },
+    {
+      "name": "security-ownership-map",
+      "install_source": "dist/skills/catalog/security-ownership-map",
+      "hashes": {
+        "skill_md_sha256": "017e2cc5f0f4cd8e31bf95b5b464919ea12499e08e453eb1620d4daeb9902ddf"
+      }
+    },
+    {
+      "name": "security-threat-model",
+      "install_source": "dist/skills/catalog/security-threat-model",
+      "hashes": {
+        "skill_md_sha256": "e664a250ca3dc4f7e5eb4c83519d1fd76e3234e0ec41eeb95d5bda806e66196e"
+      }
+    },
+    {
+      "name": "sentry",
+      "install_source": "dist/skills/catalog/sentry",
+      "hashes": {
+        "skill_md_sha256": "f044ae0e0806714eb755eb63c0d722097ccd3b62148b4a92e42e1d97da2eab4f"
+      }
+    },
+    {
+      "name": "seo",
+      "install_source": "dist/skills/catalog/seo",
+      "hashes": {
+        "skill_md_sha256": "02ef915d8cc98b66e37ab5e7ee317061ae7bd70be1c39a972bac95e4cabd21fe"
+      },
+      "conflicts": [
+        "marketing-seo-audit"
+      ]
+    },
+    {
+      "name": "seo-ahrefs",
+      "install_source": "dist/skills/catalog/seo-ahrefs",
+      "hashes": {
+        "skill_md_sha256": "83c215475ab398ae63349da99b82655c11da2d5158c7a711bc74c961bddeaaae"
+      }
+    },
+    {
+      "name": "seo-audit",
+      "install_source": "dist/skills/catalog/seo-audit",
+      "hashes": {
+        "skill_md_sha256": "7169084ea4c645ba3c180cf4b35653df74bd10e0bd1b41caeecd443db1988d08"
+      },
+      "conflicts": [
+        "marketing-seo-audit"
+      ]
+    },
+    {
+      "name": "seo-backlinks",
+      "install_source": "dist/skills/catalog/seo-backlinks",
+      "hashes": {
+        "skill_md_sha256": "ddbc0791ad3ed981442a4461fab67796e168c6354dbb18585085ca59a92d050c"
+      }
+    },
+    {
+      "name": "seo-bing",
+      "install_source": "dist/skills/catalog/seo-bing",
+      "hashes": {
+        "skill_md_sha256": "7c6d7e8f9a599fbf1293d9b65f14e488b1883d1402e4c8847f0c041cf35b1f35"
+      }
+    },
+    {
+      "name": "seo-cluster",
+      "install_source": "dist/skills/catalog/seo-cluster",
+      "hashes": {
+        "skill_md_sha256": "d2917dc55672b8eb97d5591ab0e81d08fa8f546db2d7fe623a535af5e23ea492"
+      }
+    },
+    {
+      "name": "seo-competitor-pages",
+      "install_source": "dist/skills/catalog/seo-competitor-pages",
+      "hashes": {
+        "skill_md_sha256": "d58a85a34918d2ad388c8d360a6a3be1f0920f0c76cef7290f7b0bc90d1a2dc6"
+      }
+    },
+    {
+      "name": "seo-content",
+      "install_source": "dist/skills/catalog/seo-content",
+      "hashes": {
+        "skill_md_sha256": "95eb82d51ba6b28733371ab2103389a1c0551613fad22f53cbab7535e68a2e53"
+      }
+    },
+    {
+      "name": "seo-content-brief",
+      "install_source": "dist/skills/catalog/seo-content-brief",
+      "hashes": {
+        "skill_md_sha256": "4407e8a708626569786e7fd5ff9361d488dd3ea0f7c4539b88e7150442fd15f0"
+      }
+    },
+    {
+      "name": "seo-dataforseo",
+      "install_source": "dist/skills/catalog/seo-dataforseo",
+      "hashes": {
+        "skill_md_sha256": "e780f0382af0025a67e1dc7686e681097800b05dddf622cdf25bc11ebbde5964"
+      }
+    },
+    {
+      "name": "seo-drift",
+      "install_source": "dist/skills/catalog/seo-drift",
+      "hashes": {
+        "skill_md_sha256": "32a491e9d40523113f6b7a7104f4475c1f4f466211d1050fea36e3d3fa6db8ec"
+      }
+    },
+    {
+      "name": "seo-ecommerce",
+      "install_source": "dist/skills/catalog/seo-ecommerce",
+      "hashes": {
+        "skill_md_sha256": "119925820dadfbc13dc66762e5b1f55e6ce099db171e60a7fc57127dc72c258f"
+      }
+    },
+    {
+      "name": "seo-firecrawl",
+      "install_source": "dist/skills/catalog/seo-firecrawl",
+      "hashes": {
+        "skill_md_sha256": "af25996fc9f9184c96112f35548ce60b7f3701fbf97c534f4b85e75c8b220ae6"
+      }
+    },
+    {
+      "name": "seo-flow",
+      "install_source": "dist/skills/catalog/seo-flow",
+      "hashes": {
+        "skill_md_sha256": "2388263b16a1f2a455d46963331314e7c683448fe80924a1063c4b07d267730f"
+      }
+    },
+    {
+      "name": "seo-geo",
+      "install_source": "dist/skills/catalog/seo-geo",
+      "hashes": {
+        "skill_md_sha256": "40149ec671a43abcf99f9fdb8421312f6fe8a4fa1d07a0f69554d20b020b96e1"
+      }
+    },
+    {
+      "name": "seo-google",
+      "install_source": "dist/skills/catalog/seo-google",
+      "hashes": {
+        "skill_md_sha256": "e1530dc4523abb5ec8f4730a2a41368072bd10beb956543a19b9bd95679fa648"
+      }
+    },
+    {
+      "name": "seo-hreflang",
+      "install_source": "dist/skills/catalog/seo-hreflang",
+      "hashes": {
+        "skill_md_sha256": "1e032a2f6df595d1370c34a9380fb258af36c0b9e02c31657f33475687b42435"
+      }
+    },
+    {
+      "name": "seo-image-gen",
+      "install_source": "dist/skills/catalog/seo-image-gen",
+      "hashes": {
+        "skill_md_sha256": "4b1c561644504917e1fe368cdefb161c568ac823704cfa61a7fe02397689b278"
+      }
+    },
+    {
+      "name": "seo-images",
+      "install_source": "dist/skills/catalog/seo-images",
+      "hashes": {
+        "skill_md_sha256": "6f0295a2d202871ba6661aec03f8c6d5ea1acb7e14e79404c40941dd76c369d9"
+      }
+    },
+    {
+      "name": "seo-local",
+      "install_source": "dist/skills/catalog/seo-local",
+      "hashes": {
+        "skill_md_sha256": "bcac6bef008c39d73b81704c5f45f645bd472113c636808f3ff2e00147f2c29a"
+      }
+    },
+    {
+      "name": "seo-maps",
+      "install_source": "dist/skills/catalog/seo-maps",
+      "hashes": {
+        "skill_md_sha256": "ed6eeb8074de1918039023a838b84c5b16735ffc8f17d013c44a7cd268bd407f"
+      }
+    },
+    {
+      "name": "seo-page",
+      "install_source": "dist/skills/catalog/seo-page",
+      "hashes": {
+        "skill_md_sha256": "03ec89b15f955da332dd6715068360260d50e025f987aad6f5504f001c66c8aa"
+      }
+    },
+    {
+      "name": "seo-plan",
+      "install_source": "dist/skills/catalog/seo-plan",
+      "hashes": {
+        "skill_md_sha256": "09198d3f0feef39944827d95e7a193b2c2da169415da747eba8f7902cc98bc8a"
+      }
+    },
+    {
+      "name": "seo-profound",
+      "install_source": "dist/skills/catalog/seo-profound",
+      "hashes": {
+        "skill_md_sha256": "1ae16145e34eaf1e020ac422c785cd9a306028672d8a2406af0c5c25876fba4f"
+      }
+    },
+    {
+      "name": "seo-programmatic",
+      "install_source": "dist/skills/catalog/seo-programmatic",
+      "hashes": {
+        "skill_md_sha256": "46e212818dae09ec39f14976d8ee163c9c0fe8761f177e8e6912ab0eb5709191"
+      }
+    },
+    {
+      "name": "seo-schema",
+      "install_source": "dist/skills/catalog/seo-schema",
+      "hashes": {
+        "skill_md_sha256": "45dd75501b7fd6a160acffee585fef983b47ef84c7783c48e3483a9ead5e2333"
+      }
+    },
+    {
+      "name": "seo-seranking",
+      "install_source": "dist/skills/catalog/seo-seranking",
+      "hashes": {
+        "skill_md_sha256": "8f802c1fe6fcc594cfa2a49486d9f3c8cace9ece51cd885ea40ab92a1d16e2f4"
+      }
+    },
+    {
+      "name": "seo-sitemap",
+      "install_source": "dist/skills/catalog/seo-sitemap",
+      "hashes": {
+        "skill_md_sha256": "389835278df5b86bd28477b0ecb4c41f132a4eb2290804af09e32f031017b59f"
+      }
+    },
+    {
+      "name": "seo-sxo",
+      "install_source": "dist/skills/catalog/seo-sxo",
+      "hashes": {
+        "skill_md_sha256": "f04d50c7e48c6195e12faf82c0c9fc22dfc1978b3aaaaee0a415586a2e5d1277"
+      }
+    },
+    {
+      "name": "seo-technical",
+      "install_source": "dist/skills/catalog/seo-technical",
+      "hashes": {
+        "skill_md_sha256": "138148564c0e1ed2c749ad8f5fc7cbcc3477ee516d53ddf094c63f212d544ceb"
+      }
+    },
+    {
+      "name": "seo-unlighthouse",
+      "install_source": "dist/skills/catalog/seo-unlighthouse",
+      "hashes": {
+        "skill_md_sha256": "5171a31ed1fdb8fc0ca024dcbf0a492f285cf1891f6e129961d3fccf75c3e61b"
+      }
+    },
+    {
+      "name": "shipping-and-launch",
+      "install_source": "dist/skills/catalog/shipping-and-launch",
+      "hashes": {
+        "skill_md_sha256": "c08a815fb5baeb56b8b3c194723fb8bb44d71f26595c5beecb53088b10526701"
+      }
+    },
+    {
+      "name": "signup",
+      "install_source": "dist/skills/catalog/signup",
+      "hashes": {
+        "skill_md_sha256": "3196d6fc54e3e36c9ff1efba395aaed77970eb84ba8ca8294f701ef1fe21fe07"
+      }
+    },
+    {
+      "name": "site-architecture",
+      "install_source": "dist/skills/catalog/site-architecture",
+      "hashes": {
+        "skill_md_sha256": "d8c7eff1ad6f9d5c79abd4682f180d8f97f8e3c0b340d6c8182cfb81c3f23364"
+      }
+    },
+    {
+      "name": "skill-auditor",
+      "display_name": "Skill Auditor",
+      "description": "Audits and validates skill definitions for quality, completeness, and best practices. Use when reviewing existing skills for proper formatting, evaluating if skills should be split into sub-skills, or ensuring skills follow established conventions.",
+      "category": "Codex workflow",
+      "tier": "specialized",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/skill-auditor",
+      "source_path": "skills/.curated/claude-main/.claude/skills/skill-auditor/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "37db30a7a5985fce5a174a79684bb5cafd5ec3c31e2aa473d50f17a1d56fe15c"
+      },
+      "install_source": "dist/skills/catalog/skill-auditor"
+    },
+    {
+      "name": "skill-creator",
+      "install_source": "dist/skills/catalog/skill-creator",
+      "hashes": {
+        "skill_md_sha256": "091916c05fde00708464c42164bd38b875618861e0b2633e8830b72ce0661066"
+      }
+    },
+    {
+      "name": "skill-installer",
+      "install_source": "dist/skills/catalog/skill-installer",
+      "hashes": {
+        "skill_md_sha256": "e45d013e33506ee16702f769bd0d9c432d4756133eb5f73c4eea65c36789f70b"
+      }
+    },
+    {
+      "name": "skill-router",
+      "display_name": "Skill Router",
+      "description": "Select the best local skill for a task and locate omitted skills in this large pack. Use when no exact skill was named or the right workflow is unclear.",
+      "category": "Codex workflow",
+      "tier": "specialized",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/skill-router",
+      "source_path": "generated",
+      "license": "MIT (first-party)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "a352e33de5c94914227484b525617e857897132fe49e7421683554952500c25b"
+      },
+      "install_source": "dist/skills/catalog/skill-router"
+    },
+    {
+      "name": "sms",
+      "install_source": "dist/skills/catalog/sms",
+      "hashes": {
+        "skill_md_sha256": "f3f72f9496940cf7f8d21d6efa2c845902f80359f78f52d97868f0a85af04a24"
+      }
+    },
+    {
+      "name": "social",
+      "install_source": "dist/skills/catalog/social",
+      "hashes": {
+        "skill_md_sha256": "90791161a5014e25f8a7e253d4a03a111feeeea071b7c0b0fc31f5ad8c5856dc"
+      }
+    },
+    {
+      "name": "source-driven-development",
+      "install_source": "dist/skills/catalog/source-driven-development",
+      "hashes": {
+        "skill_md_sha256": "efee2667fa8324159efb33b8bcd0d4c692cd64962637e56f18f42a18b835d0bf"
+      }
+    },
+    {
+      "name": "spec-driven-development",
+      "install_source": "dist/skills/catalog/spec-driven-development",
+      "hashes": {
+        "skill_md_sha256": "49b38216604d916011b20760888743440f047ac23eb5daeb9e0dac4de77e800b"
+      }
+    },
+    {
+      "name": "speech",
+      "install_source": "dist/skills/catalog/speech",
+      "hashes": {
+        "skill_md_sha256": "b8f72eabe5632cc234f6df53cccfd1ca537c961aa013a4864a38f22f2866b434"
+      }
+    },
+    {
+      "name": "system-integration-validator",
+      "display_name": "System Integration Validator",
+      "description": "Validates system integration before deployment. Use when checking ports, database connections, frontend-backend APIs, or debugging blocked/stuck workflows. Detects dead ends, bottlenecks, circular dependencies.",
+      "category": "Quality & security",
+      "tier": "specialized",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/system-integration-validator",
+      "source_path": "skills/.curated/claude-main/.claude/skills/system-integration-validator/SKILL.md",
+      "license": "MIT (upstream declaration)",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "a1663b8c6f1e5422643b59adbd0eec76a38d0e791053e434d5718749ce37e125"
+      },
+      "install_source": "dist/skills/catalog/system-integration-validator"
+    },
+    {
+      "name": "test-driven-development",
+      "install_source": "dist/skills/catalog/test-driven-development",
+      "hashes": {
+        "skill_md_sha256": "f4df8df6ff9e4e9d1558359f9630a13dd5543d0ce728874c296afb0fed59ab6d"
+      }
+    },
+    {
+      "name": "transcribe",
+      "install_source": "dist/skills/catalog/transcribe",
+      "hashes": {
+        "skill_md_sha256": "9480735908cd397acd8fb5e84fe7484064c44c3d690916628cdc98d6048be0dd"
+      }
+    },
+    {
+      "name": "ui-styling",
+      "install_source": "dist/skills/catalog/ui-styling",
+      "hashes": {
+        "skill_md_sha256": "0f5b9f1c1f62f3f03a526343bb6d2a3205652dfde664b6e25d4c16f7120c39c7"
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "display_name": "UI UX Pro Max",
+      "description": "UI/UX design intelligence for web and mobile. Use to plan, build, review, or improve interfaces, design systems, accessibility, typography, layout, and charts.",
+      "category": "Design & UI",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/ui-ux-pro-max",
+      "source_path": "skills/.curated/ui-ux-pro-max/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "0a6a0e44777aa51c17866b90813450ae03a9b30390608619f40d94ce31e33f92"
+      },
+      "install_source": "dist/skills/catalog/ui-ux-pro-max"
+    },
+    {
+      "name": "vercel-cli-with-tokens",
+      "display_name": "Vercel CLI With Tokens",
+      "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
+      "category": "Delivery & operations",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-cli-with-tokens",
+      "source_path": "skills/.curated/agent-skills-main/skills/vercel-cli-with-tokens/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "12c45362edf378af0676c2f939a6dcffae1c20956e8f6b90795760558ee5be43"
+      },
+      "install_source": "dist/skills/catalog/vercel-cli-with-tokens"
+    },
+    {
+      "name": "vercel-composition-patterns",
+      "display_name": "Vercel Composition Patterns",
+      "description": "React composition patterns for scalable component APIs. Use when refactoring prop-heavy components, compound components, providers, or reusable component libraries.",
+      "category": "Application development",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-composition-patterns",
+      "source_path": "skills/.curated/agent-skills-main/skills/composition-patterns/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "1afd7e402e095c9d3adc9c13ae90777083fe19bea377d9a7531614e0e0b4ff10"
+      },
+      "install_source": "dist/skills/catalog/vercel-composition-patterns"
+    },
+    {
+      "name": "vercel-deploy",
+      "install_source": "dist/skills/catalog/vercel-deploy",
+      "hashes": {
+        "skill_md_sha256": "9f583ecebc5f05f359e7286da32c76a5d15e4d69f7bb4b2e1c328a095c44e1aa"
+      }
+    },
+    {
+      "name": "vercel-optimize",
+      "display_name": "Vercel Optimize",
+      "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps.",
+      "category": "Delivery & operations",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-optimize",
+      "source_path": "skills/.curated/agent-skills-main/skills/vercel-optimize/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "bb3f1ea44e23c6f112ad641b21f593bac71fad62dcba2575df9350ab897855c0"
+      },
+      "install_source": "dist/skills/catalog/vercel-optimize"
+    },
+    {
+      "name": "vercel-react-best-practices",
+      "display_name": "Vercel React Best Practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns.",
+      "category": "Application development",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-react-best-practices",
+      "source_path": "skills/.curated/vercel-react-best-practices/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "730353281fd92316a06375f14690829e9a21b576eb8d9ece4845e504aef17739"
+      },
+      "install_source": "dist/skills/catalog/vercel-react-best-practices",
+      "frameworks": [
+        "React",
+        "Next.js"
+      ],
+      "dependency_triggers": [
+        "react",
+        "next"
+      ]
+    },
+    {
+      "name": "vercel-react-native-skills",
+      "display_name": "Vercel React Native Skills",
+      "description": "React Native and Expo performance and architecture guidance. Use for mobile UI, lists, animations, navigation, images, state, or native dependencies.",
+      "category": "Application development",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-react-native-skills",
+      "source_path": "skills/.curated/agent-skills-main/skills/react-native-skills/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "413ecf9d5e7e4b5d784b4ce6dea534e6eb6e3a19e13a59882f478644d0c009fc"
+      },
+      "install_source": "dist/skills/catalog/vercel-react-native-skills"
+    },
+    {
+      "name": "vercel-react-view-transitions",
+      "display_name": "Vercel React View Transitions",
+      "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`ViewTransition` component, `addTransitionType`, and CSS view transition pseudo-elements).",
+      "category": "Application development",
+      "tier": "integration",
+      "profiles": [
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/vercel-react-view-transitions",
+      "source_path": "skills/.curated/agent-skills-main/skills/react-view-transitions/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "af470d989861a8b2244e114d331fe8c4db0a7d45938cba374545475f601c1a6f"
+      },
+      "install_source": "dist/skills/catalog/vercel-react-view-transitions"
+    },
+    {
+      "name": "video",
+      "install_source": "dist/skills/catalog/video",
+      "hashes": {
+        "skill_md_sha256": "7f4f6ce51de1a360a0bc82f14206b38ebb575c22090f5d243bf525c8ba880653"
+      }
+    },
+    {
+      "name": "web-design-guidelines",
+      "display_name": "Web Design Guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "category": "Application development",
+      "tier": "design",
+      "profiles": [
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/web-design-guidelines",
+      "source_path": "skills/.curated/web-design-guidelines/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "022514578b3aac3d2e85db6729bab503b02264766a42a868f84c75714ac956b8"
+      },
+      "install_source": "dist/skills/catalog/web-design-guidelines"
+    },
+    {
+      "name": "winui-app",
+      "install_source": "dist/skills/catalog/winui-app",
+      "hashes": {
+        "skill_md_sha256": "903afc720274ba44e764cf60eeb867deb7fa72f9566ef57e6e6b70a15b17d125"
+      }
+    },
+    {
+      "name": "writing-guidelines",
+      "display_name": "Writing Guidelines",
+      "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
+      "category": "General",
+      "tier": "specialized",
+      "profiles": [
+        "minimal",
+        "standard",
+        "full"
+      ],
+      "source": "sources/skills-pack/.agents/skills/writing-guidelines",
+      "source_path": "skills/.curated/agent-skills-main/skills/writing-guidelines/SKILL.md",
+      "license": "MIT",
+      "conflicts": [],
+      "dependencies": [],
+      "hashes": {
+        "skill_md_sha256": "c447517a36c266c2d9755bbb351196213457d9ebe77a632f1d880d7a843928b1"
+      },
+      "install_source": "dist/skills/catalog/writing-guidelines",
+      "always_on_group": "live-language-core",
+      "implicit_invocation": true,
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "risk_level": "low",
+      "verified": true
+    },
+    {
+      "name": "yeet",
+      "install_source": "dist/skills/catalog/yeet",
+      "hashes": {
+        "skill_md_sha256": "4134c44cf8200b28dd514b8352c48d04201b37d95ba1cc0c7054b4ed032447c4"
+      }
+    }
   ]
 }

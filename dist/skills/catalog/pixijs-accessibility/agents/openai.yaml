@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Accessibility
+  short_description: Use this skill when adding screen reader and keyboard navigation to PixiJS v8 apps. Covers
+    AccessibilitySystem options (enabledByDefault, debug,…
+  default_prompt: Use $pixijs-accessibility to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

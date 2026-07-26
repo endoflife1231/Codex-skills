@@ -196,6 +196,71 @@ skills:
   - winui-app
   - yeet
   - graphify
+  - apple-ui-design
+  - banner-design
+  - brand
+  - code-consistency-validator
+  - code-review-expert
+  - common-pitfalls
+  - defi-expert
+  - defi-mev-battletest
+  - defi-registry-manager
+  - deploy-to-vercel
+  - design
+  - design-system
+  - error-logger
+  - find-skills
+  - full-review
+  - hft-quant-expert
+  - iterative-runner
+  - latency-tracker
+  - liquidity-depth-analyzer
+  - pitfalls-blockchain
+  - pitfalls-drizzle-orm
+  - pitfalls-express-api
+  - pitfalls-react
+  - pitfalls-security
+  - pitfalls-tanstack-query
+  - pitfalls-websocket
+  - pixijs
+  - pixijs-accessibility
+  - pixijs-application
+  - pixijs-assets
+  - pixijs-blend-modes
+  - pixijs-color
+  - pixijs-core-concepts
+  - pixijs-create
+  - pixijs-custom-rendering
+  - pixijs-environments
+  - pixijs-events
+  - pixijs-filters
+  - pixijs-html-source
+  - pixijs-math
+  - pixijs-migration-v8
+  - pixijs-performance
+  - pixijs-scene-container
+  - pixijs-scene-core-concepts
+  - pixijs-scene-dom-container
+  - pixijs-scene-gif
+  - pixijs-scene-graphics
+  - pixijs-scene-mesh
+  - pixijs-scene-particle-container
+  - pixijs-scene-sprite
+  - pixijs-scene-text
+  - pixijs-ticker
+  - postgres-best-practices
+  - skill-auditor
+  - skill-router
+  - system-integration-validator
+  - ui-ux-pro-max
+  - vercel-cli-with-tokens
+  - vercel-composition-patterns
+  - vercel-optimize
+  - vercel-react-best-practices
+  - vercel-react-native-skills
+  - vercel-react-view-transitions
+  - web-design-guidelines
+  - writing-guidelines
 integrations:
   codebase-memory: enabled
   graphify: auto

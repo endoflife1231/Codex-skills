@@ -94,6 +94,19 @@ skills:
   - humanizer-ru
   - ru-text
   - codebase-memory
+  - apple-ui-design
+  - banner-design
+  - brand
+  - design
+  - design-system
+  - find-skills
+  - pitfalls-react
+  - postgres-best-practices
+  - skill-auditor
+  - skill-router
+  - ui-ux-pro-max
+  - web-design-guidelines
+  - writing-guidelines
 integrations:
   codebase-memory: enabled
   graphify: auto

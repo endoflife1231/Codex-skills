@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "minimal": {
     "agents": 3,
-    "skills": 30,
+    "skills": 31,
     "intent": "small conservative offline-first baseline"
   },
   "standard": {
     "agents": 8,
-    "skills": 82,
+    "skills": 95,
     "intent": "recommended balanced profile for most projects"
   },
   "full": {
     "agents": 8,
-    "skills": 184,
-    "intent": "all license-audited skills in this distribution"
+    "skills": 249,
+    "intent": "all redistribution-audited skills in this distribution"
   },
   "default_recommendation": "standard",
   "selection_policy": {

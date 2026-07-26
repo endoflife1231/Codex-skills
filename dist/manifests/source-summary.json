@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "policy": {
     "adaptation_model": "selective Codex-native adaptation",
     "default_behavior": "safe and project-scoped; optional integrations remain explicit",
     "redistribution_model": "MIT first-party files plus preserved third-party licenses",
-    "public_package_rule": "exclude skill directories without a bundled license/copying/notice file"
+    "public_package_rule": "include skills with preserved skill-local, parent-repository, explicit upstream, or first-party redistribution evidence"
   },
   "sources": [
     {
@@ -36,8 +36,8 @@
     {
       "name": "excluded-catalog",
       "role": "not distributed",
-      "license": "unverified or missing notice",
-      "count": 70,
+      "license": "unverified or missing redistribution permission",
+      "count": 5,
       "details": "OPEN_SOURCE_AUDIT.md"
     }
   ]

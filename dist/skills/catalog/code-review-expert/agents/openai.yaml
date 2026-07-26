@@ -1,0 +1,6 @@
+interface:
+  display_name: Code Review Expert
+  short_description: Comprehensive code review expertise. Use when reviewing code, evaluating architecture, or assessing
+    quality. Triggers on review, evaluate, assess,…
+  default_prompt: Use $code-review-expert to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

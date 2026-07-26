@@ -1,0 +1,6 @@
+interface:
+  display_name: Pitfalls Express API
+  short_description: Express API conventions and storage patterns. Use when building REST APIs, defining routes,
+    or implementing storage interfaces. Triggers on:…
+  default_prompt: Use $pitfalls-express-api to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.

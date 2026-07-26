@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.1] - 2026-07-26
+
+- Re-audited the 70 previously excluded skills using upstream repositories and parent-license scope.
+- Restored 65 skills with preserved redistribution evidence, bringing the public catalog to 249 skills.
+- Preserved complete MIT texts for PixiJS, Addy Osmani agent-skills, Next Level Builder, Supabase and Vercel sources.
+- Recorded 22 BarisSozen skills as medium-confidence MIT based on explicit README and package metadata declarations.
+- Kept five skills excluded because no redistribution license could be confirmed.
+- Rebuilt profiles, manifests, checksums and the user release.
+
 ## [0.2.0] - 2026-07-20
 
 - Added English `README.md` and Russian `README.ru.md`.

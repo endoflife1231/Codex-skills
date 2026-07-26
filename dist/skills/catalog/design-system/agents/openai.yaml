@@ -1,0 +1,6 @@
+interface:
+  display_name: Design System
+  short_description: Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\u2192semantic\u2192component),
+    CSS variables,…
+  default_prompt: Use $design-system to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

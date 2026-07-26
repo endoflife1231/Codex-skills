@@ -1,15 +1,271 @@
 # Third-party notices
 
-Codex Powerpack includes third-party open-source skills. Each included skill retains its own license or notice file inside `dist/skills/catalog/<skill>/`.
+Codex Powerpack combines first-party MIT-licensed tooling with third-party open-source skills. License evidence is preserved inside skill directories and/or in `dist/licenses/`.
 
-The machine-readable inventory is stored in `dist/skills/registry.json` and its `registry.d/` shards. The licensing audit and exclusions are documented in `OPEN_SOURCE_AUDIT.md`.
+## Distribution rules
 
-When redistributing this project, keep:
+- Keep the root `LICENSE`, this file, `OPEN_SOURCE_AUDIT.md`, all `dist/licenses/` evidence, and all skill-local license/notice files with redistributed copies.
+- Third-party terms continue to apply to their respective files.
+- Release 0.2.1 includes 249 audited skills and excludes five unresolved skills.
+- Optional external tools such as Graphify and Codebase Memory are separate projects and are not relicensed by this repository.
 
-- the root `LICENSE`;
-- this notice;
-- `OPEN_SOURCE_AUDIT.md`;
-- `dist/licenses/THIRD_PARTY_NOTICES.md`;
-- every license and notice file inside individual skill directories.
+## Source groups restored in 0.2.1
 
-Optional external tools such as Graphify and Codebase Memory are separate projects and are not relicensed by this repository.
+- PixiJS — MIT, Copyright (c) 2026 PixiJS.
+- Addy Osmani agent-skills — MIT, Copyright (c) 2025 Addy Osmani.
+- Next Level Builder — MIT, Copyright (c) 2024 Next Level Builder.
+- Supabase agent-skills — MIT, Copyright (c) 2026 Supabase.
+- Vercel skills — MIT, Copyright (c) 2026 Vercel, Inc.
+- BarisSozen/claude — explicit MIT declaration in README and package metadata; no standalone license file was present.
+
+## Included skill license inventory
+
+- `ab-testing` — declared `unknown`; notices: `dist/skills/catalog/ab-testing/LICENSE.source.txt`
+- `ad-creative` — declared `unknown`; notices: `dist/skills/catalog/ad-creative/LICENSE.source.txt`
+- `ads` — declared `unknown`; notices: `dist/skills/catalog/ads/LICENSE.source.txt`
+- `ai-seo` — declared `unknown`; notices: `dist/skills/catalog/ai-seo/LICENSE.source.txt`
+- `analytics` — declared `unknown`; notices: `dist/skills/catalog/analytics/LICENSE.source.txt`
+- `api-and-interface-design` — declared `unknown`; notices: `dist/skills/catalog/api-and-interface-design/LICENSE.source.txt`
+- `apple-ui-design` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/apple-ui-design/NOTICE.source.txt`
+- `aso` — declared `unknown`; notices: `dist/skills/catalog/aso/LICENSE.source.txt`
+- `aspnet-core` — declared `unknown`; notices: `dist/skills/catalog/aspnet-core/LICENSE.txt`
+- `banner-design` — declared `MIT (first-party)`; notices: `dist/skills/catalog/banner-design/LICENSE.source.txt`
+- `brand` — declared `MIT`; notices: `dist/skills/catalog/brand/LICENSE.source.txt`
+- `browser-testing-with-devtools` — declared `unknown`; notices: `dist/skills/catalog/browser-testing-with-devtools/LICENSE.source.txt`
+- `cavecrew` — declared `unknown`; notices: `dist/skills/catalog/cavecrew/LICENSE.source.txt`
+- `caveman` — declared `unknown`; notices: `dist/skills/catalog/caveman/LICENSE.source.txt`
+- `caveman-commit` — declared `unknown`; notices: `dist/skills/catalog/caveman-commit/LICENSE.source.txt`
+- `caveman-compress` — declared `unknown`; notices: `dist/skills/catalog/caveman-compress/LICENSE.source.txt`
+- `caveman-help` — declared `unknown`; notices: `dist/skills/catalog/caveman-help/LICENSE.source.txt`
+- `caveman-review` — declared `unknown`; notices: `dist/skills/catalog/caveman-review/LICENSE.source.txt`
+- `caveman-setup` — declared `unknown`; notices: `dist/skills/catalog/caveman-setup/LICENSE.source.txt`
+- `caveman-stats` — declared `unknown`; notices: `dist/skills/catalog/caveman-stats/LICENSE.source.txt`
+- `chatgpt-apps` — declared `unknown`; notices: `dist/skills/catalog/chatgpt-apps/LICENSE.txt`
+- `churn-prevention` — declared `unknown`; notices: `dist/skills/catalog/churn-prevention/LICENSE.source.txt`
+- `ci-cd-and-automation` — declared `unknown`; notices: `dist/skills/catalog/ci-cd-and-automation/LICENSE.source.txt`
+- `ckm-banner-design` — declared `unknown`; notices: `dist/skills/catalog/ckm-banner-design/LICENSE.source.txt`
+- `ckm-brand` — declared `unknown`; notices: `dist/skills/catalog/ckm-brand/LICENSE.source.txt`
+- `ckm-design` — declared `unknown`; notices: `dist/skills/catalog/ckm-design/LICENSE.source.txt`
+- `ckm-design-system` — declared `unknown`; notices: `dist/skills/catalog/ckm-design-system/LICENSE.source.txt`
+- `ckm-slides` — declared `unknown`; notices: `dist/skills/catalog/ckm-slides/LICENSE.source.txt`
+- `ckm-ui-styling` — declared `unknown`; notices: `dist/skills/catalog/ckm-ui-styling/LICENSE.txt`
+- `cli-creator` — declared `unknown`; notices: `dist/skills/catalog/cli-creator/LICENSE.txt`
+- `cloudflare-deploy` — declared `unknown`; notices: `dist/skills/catalog/cloudflare-deploy/LICENSE.txt`
+- `co-marketing` — declared `unknown`; notices: `dist/skills/catalog/co-marketing/LICENSE.source.txt`
+- `code-consistency-validator` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/code-consistency-validator/NOTICE.source.txt`
+- `code-review-and-quality` — declared `unknown`; notices: `dist/skills/catalog/code-review-and-quality/LICENSE.source.txt`
+- `code-review-expert` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/code-review-expert/NOTICE.source.txt`
+- `code-simplification` — declared `unknown`; notices: `dist/skills/catalog/code-simplification/LICENSE.source.txt`
+- `codebase-memory` — declared `unknown`; notices: `dist/skills/generated/codebase-memory/LICENSE`
+- `cold-email` — declared `unknown`; notices: `dist/skills/catalog/cold-email/LICENSE.source.txt`
+- `common-pitfalls` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/common-pitfalls/NOTICE.source.txt`
+- `community-marketing` — declared `unknown`; notices: `dist/skills/catalog/community-marketing/LICENSE.source.txt`
+- `competitor-profiling` — declared `unknown`; notices: `dist/skills/catalog/competitor-profiling/LICENSE.source.txt`
+- `competitors` — declared `unknown`; notices: `dist/skills/catalog/competitors/LICENSE.source.txt`
+- `content` — declared `unknown`; notices: `dist/skills/catalog/content/LICENSE.source.txt`
+- `content-audit` — declared `unknown`; notices: `dist/skills/catalog/content-audit/LICENSE.source.txt`
+- `content-blog` — declared `unknown`; notices: `dist/skills/catalog/content-blog/LICENSE.source.txt`
+- `content-calendar` — declared `unknown`; notices: `dist/skills/catalog/content-calendar/LICENSE.source.txt`
+- `content-editorial-strategy` — declared `unknown`; notices: `dist/skills/catalog/content-editorial-strategy/LICENSE.source.txt`
+- `content-hackernews` — declared `unknown`; notices: `dist/skills/catalog/content-hackernews/LICENSE.source.txt`
+- `content-image` — declared `unknown`; notices: `dist/skills/catalog/content-image/LICENSE.source.txt`
+- `content-infographic` — declared `unknown`; notices: `dist/skills/catalog/content-infographic/LICENSE.source.txt`
+- `content-linkedin` — declared `unknown`; notices: `dist/skills/catalog/content-linkedin/LICENSE.source.txt`
+- `content-presentation` — declared `unknown`; notices: `dist/skills/catalog/content-presentation/LICENSE.source.txt`
+- `content-reddit` — declared `unknown`; notices: `dist/skills/catalog/content-reddit/LICENSE.source.txt`
+- `content-repurpose` — declared `unknown`; notices: `dist/skills/catalog/content-repurpose/LICENSE.source.txt`
+- `content-setup` — declared `unknown`; notices: `dist/skills/catalog/content-setup/LICENSE.source.txt`
+- `content-strategy` — declared `unknown`; notices: `dist/skills/catalog/content-strategy/LICENSE.source.txt`
+- `content-twitter` — declared `unknown`; notices: `dist/skills/catalog/content-twitter/LICENSE.source.txt`
+- `content-video` — declared `unknown`; notices: `dist/skills/catalog/content-video/LICENSE.source.txt`
+- `context-engineering` — declared `unknown`; notices: `dist/skills/catalog/context-engineering/LICENSE.source.txt`
+- `copy-editing` — declared `unknown`; notices: `dist/skills/catalog/copy-editing/LICENSE.source.txt`
+- `copywriting` — declared `unknown`; notices: `dist/skills/catalog/copywriting/LICENSE.source.txt`
+- `cro` — declared `unknown`; notices: `dist/skills/catalog/cro/LICENSE.source.txt`
+- `customer-research` — declared `unknown`; notices: `dist/skills/catalog/customer-research/LICENSE.source.txt`
+- `debugging-and-error-recovery` — declared `unknown`; notices: `dist/skills/catalog/debugging-and-error-recovery/LICENSE.source.txt`
+- `defi-expert` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/defi-expert/NOTICE.source.txt`
+- `defi-mev-battletest` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/defi-mev-battletest/NOTICE.source.txt`
+- `defi-registry-manager` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/defi-registry-manager/NOTICE.source.txt`
+- `define-goal` — declared `unknown`; notices: `dist/skills/catalog/define-goal/LICENSE.txt`
+- `deploy-to-vercel` — declared `MIT`; notices: `dist/skills/catalog/deploy-to-vercel/LICENSE.source.txt`
+- `deprecation-and-migration` — declared `unknown`; notices: `dist/skills/catalog/deprecation-and-migration/LICENSE.source.txt`
+- `design` — declared `MIT (first-party)`; notices: `dist/skills/catalog/design/LICENSE.source.txt`
+- `design-system` — declared `MIT`; notices: `dist/skills/catalog/design-system/LICENSE.source.txt`
+- `design-taste-frontend` — declared `unknown`; notices: `dist/skills/catalog/design-taste-frontend/LICENSE.source.txt`
+- `directory-submissions` — declared `unknown`; notices: `dist/skills/catalog/directory-submissions/LICENSE.source.txt`
+- `documentation-and-adrs` — declared `unknown`; notices: `dist/skills/catalog/documentation-and-adrs/LICENSE.source.txt`
+- `doubt-driven-development` — declared `unknown`; notices: `dist/skills/catalog/doubt-driven-development/LICENSE.source.txt`
+- `drizzle-best-practices` — declared `unknown`; notices: `dist/skills/catalog/drizzle-best-practices/LICENSE.txt`
+- `emails` — declared `unknown`; notices: `dist/skills/catalog/emails/LICENSE.source.txt`
+- `engineering-delivery-lifecycle` — declared `unknown`; notices: `dist/skills/catalog/engineering-delivery-lifecycle/LICENSE.source.txt`
+- `error-logger` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/error-logger/NOTICE.source.txt`
+- `fastify-best-practices` — declared `unknown`; notices: `dist/skills/catalog/fastify-best-practices/LICENSE.txt`
+- `figma` — declared `unknown`; notices: `dist/skills/catalog/figma/LICENSE.txt`
+- `figma-code-connect-components` — declared `unknown`; notices: `dist/skills/catalog/figma-code-connect-components/LICENSE.TXT`
+- `figma-create-design-system-rules` — declared `unknown`; notices: `dist/skills/catalog/figma-create-design-system-rules/LICENSE.TXT`
+- `figma-create-new-file` — declared `unknown`; notices: `dist/skills/catalog/figma-create-new-file/LICENSE.TXT`
+- `figma-generate-design` — declared `unknown`; notices: `dist/skills/catalog/figma-generate-design/LICENSE.TXT`
+- `figma-generate-library` — declared `unknown`; notices: `dist/skills/catalog/figma-generate-library/LICENSE.TXT`
+- `figma-implement-design` — declared `unknown`; notices: `dist/skills/catalog/figma-implement-design/LICENSE.txt`
+- `figma-use` — declared `unknown`; notices: `dist/skills/catalog/figma-use/LICENSE.TXT`
+- `find-skills` — declared `MIT`; notices: `dist/skills/catalog/find-skills/LICENSE.source.txt`
+- `free-tools` — declared `unknown`; notices: `dist/skills/catalog/free-tools/LICENSE.source.txt`
+- `frontend-ui-engineering` — declared `unknown`; notices: `dist/skills/catalog/frontend-ui-engineering/LICENSE.source.txt`
+- `full-review` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/full-review/NOTICE.source.txt`
+- `gh-address-comments` — declared `unknown`; notices: `dist/skills/catalog/gh-address-comments/LICENSE.txt`
+- `gh-fix-ci` — declared `unknown`; notices: `dist/skills/catalog/gh-fix-ci/LICENSE.txt`
+- `git-workflow-and-versioning` — declared `unknown`; notices: `dist/skills/catalog/git-workflow-and-versioning/LICENSE.source.txt`
+- `graphify` — declared `unknown`; notices: `dist/skills/generated/graphify/LICENSE`
+- `hatch-pet` — declared `unknown`; notices: `dist/skills/catalog/hatch-pet/LICENSE.txt`
+- `hft-quant-expert` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/hft-quant-expert/NOTICE.source.txt`
+- `huashu-design` — declared `unknown`; notices: `dist/skills/catalog/huashu-design/LICENSE.source.txt`
+- `humanizer` — declared `unknown`; notices: `dist/skills/catalog/humanizer/LICENSE.source.txt`
+- `humanizer-ru` — declared `unknown`; notices: `dist/skills/catalog/humanizer-ru/LICENSE.source.txt`, `dist/skills/catalog/humanizer-ru/NOTICE.source.txt`
+- `idea-refine` — declared `unknown`; notices: `dist/skills/catalog/idea-refine/LICENSE.source.txt`
+- `image` — declared `unknown`; notices: `dist/skills/catalog/image/LICENSE.source.txt`
+- `imagegen` — declared `unknown`; notices: `dist/skills/catalog/imagegen/LICENSE.txt`
+- `impeccable` — declared `unknown`; notices: `dist/skills/catalog/impeccable/LICENSE.source.txt`
+- `incremental-implementation` — declared `unknown`; notices: `dist/skills/catalog/incremental-implementation/LICENSE.source.txt`
+- `interview-me` — declared `unknown`; notices: `dist/skills/catalog/interview-me/LICENSE.source.txt`
+- `iterative-runner` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/iterative-runner/NOTICE.source.txt`
+- `jupyter-notebook` — declared `unknown`; notices: `dist/skills/catalog/jupyter-notebook/LICENSE.txt`
+- `latency-tracker` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/latency-tracker/NOTICE.source.txt`
+- `launch` — declared `unknown`; notices: `dist/skills/catalog/launch/LICENSE.source.txt`
+- `lead-magnets` — declared `unknown`; notices: `dist/skills/catalog/lead-magnets/LICENSE.source.txt`
+- `linear` — declared `unknown`; notices: `dist/skills/catalog/linear/LICENSE.txt`
+- `liquidity-depth-analyzer` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/liquidity-depth-analyzer/NOTICE.source.txt`
+- `marketing-ideas` — declared `unknown`; notices: `dist/skills/catalog/marketing-ideas/LICENSE.source.txt`
+- `marketing-loops` — declared `unknown`; notices: `dist/skills/catalog/marketing-loops/LICENSE.source.txt`
+- `marketing-plan` — declared `unknown`; notices: `dist/skills/catalog/marketing-plan/LICENSE.source.txt`
+- `marketing-psychology` — declared `unknown`; notices: `dist/skills/catalog/marketing-psychology/LICENSE.source.txt`
+- `marketing-seo-audit` — declared `unknown`; notices: `dist/skills/catalog/marketing-seo-audit/LICENSE.source.txt`
+- `migrate-to-codex` — declared `unknown`; notices: `dist/skills/catalog/migrate-to-codex/LICENSE.txt`
+- `netlify-deploy` — declared `unknown`; notices: `dist/skills/catalog/netlify-deploy/LICENSE.txt`
+- `notion-knowledge-capture` — declared `unknown`; notices: `dist/skills/catalog/notion-knowledge-capture/LICENSE.txt`
+- `notion-meeting-intelligence` — declared `unknown`; notices: `dist/skills/catalog/notion-meeting-intelligence/LICENSE.txt`
+- `notion-research-documentation` — declared `unknown`; notices: `dist/skills/catalog/notion-research-documentation/LICENSE.txt`
+- `notion-spec-to-implementation` — declared `unknown`; notices: `dist/skills/catalog/notion-spec-to-implementation/LICENSE.txt`
+- `observability-and-instrumentation` — declared `unknown`; notices: `dist/skills/catalog/observability-and-instrumentation/LICENSE.source.txt`
+- `offers` — declared `unknown`; notices: `dist/skills/catalog/offers/LICENSE.source.txt`
+- `onboarding` — declared `unknown`; notices: `dist/skills/catalog/onboarding/LICENSE.source.txt`
+- `openai-docs` — declared `unknown`; notices: `dist/skills/catalog/openai-docs/LICENSE.txt`
+- `paywalls` — declared `unknown`; notices: `dist/skills/catalog/paywalls/LICENSE.source.txt`
+- `pdf` — declared `unknown`; notices: `dist/skills/catalog/pdf/LICENSE.txt`
+- `performance-optimization` — declared `unknown`; notices: `dist/skills/catalog/performance-optimization/LICENSE.source.txt`
+- `pitfalls-blockchain` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-blockchain/NOTICE.source.txt`
+- `pitfalls-drizzle-orm` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-drizzle-orm/NOTICE.source.txt`
+- `pitfalls-express-api` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-express-api/NOTICE.source.txt`
+- `pitfalls-react` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-react/NOTICE.source.txt`
+- `pitfalls-security` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-security/NOTICE.source.txt`
+- `pitfalls-tanstack-query` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-tanstack-query/NOTICE.source.txt`
+- `pitfalls-websocket` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/pitfalls-websocket/NOTICE.source.txt`
+- `pixijs` — declared `MIT`; notices: `dist/skills/catalog/pixijs/LICENSE.source.txt`
+- `pixijs-accessibility` — declared `MIT`; notices: `dist/skills/catalog/pixijs-accessibility/LICENSE.source.txt`
+- `pixijs-application` — declared `MIT`; notices: `dist/skills/catalog/pixijs-application/LICENSE.source.txt`
+- `pixijs-assets` — declared `MIT`; notices: `dist/skills/catalog/pixijs-assets/LICENSE.source.txt`
+- `pixijs-blend-modes` — declared `MIT`; notices: `dist/skills/catalog/pixijs-blend-modes/LICENSE.source.txt`
+- `pixijs-color` — declared `MIT`; notices: `dist/skills/catalog/pixijs-color/LICENSE.source.txt`
+- `pixijs-core-concepts` — declared `MIT`; notices: `dist/skills/catalog/pixijs-core-concepts/LICENSE.source.txt`
+- `pixijs-create` — declared `MIT`; notices: `dist/skills/catalog/pixijs-create/LICENSE.source.txt`
+- `pixijs-custom-rendering` — declared `MIT`; notices: `dist/skills/catalog/pixijs-custom-rendering/LICENSE.source.txt`
+- `pixijs-environments` — declared `MIT`; notices: `dist/skills/catalog/pixijs-environments/LICENSE.source.txt`
+- `pixijs-events` — declared `MIT`; notices: `dist/skills/catalog/pixijs-events/LICENSE.source.txt`
+- `pixijs-filters` — declared `MIT`; notices: `dist/skills/catalog/pixijs-filters/LICENSE.source.txt`
+- `pixijs-html-source` — declared `MIT`; notices: `dist/skills/catalog/pixijs-html-source/LICENSE.source.txt`
+- `pixijs-math` — declared `MIT`; notices: `dist/skills/catalog/pixijs-math/LICENSE.source.txt`
+- `pixijs-migration-v8` — declared `MIT`; notices: `dist/skills/catalog/pixijs-migration-v8/LICENSE.source.txt`
+- `pixijs-performance` — declared `MIT`; notices: `dist/skills/catalog/pixijs-performance/LICENSE.source.txt`
+- `pixijs-scene-container` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-container/LICENSE.source.txt`
+- `pixijs-scene-core-concepts` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-core-concepts/LICENSE.source.txt`
+- `pixijs-scene-dom-container` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-dom-container/LICENSE.source.txt`
+- `pixijs-scene-gif` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-gif/LICENSE.source.txt`
+- `pixijs-scene-graphics` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-graphics/LICENSE.source.txt`
+- `pixijs-scene-mesh` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-mesh/LICENSE.source.txt`
+- `pixijs-scene-particle-container` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-particle-container/LICENSE.source.txt`
+- `pixijs-scene-sprite` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-sprite/LICENSE.source.txt`
+- `pixijs-scene-text` — declared `MIT`; notices: `dist/skills/catalog/pixijs-scene-text/LICENSE.source.txt`
+- `pixijs-ticker` — declared `MIT`; notices: `dist/skills/catalog/pixijs-ticker/LICENSE.source.txt`
+- `planning-and-task-breakdown` — declared `unknown`; notices: `dist/skills/catalog/planning-and-task-breakdown/LICENSE.source.txt`
+- `playwright` — declared `unknown`; notices: `dist/skills/catalog/playwright/LICENSE.txt`, `dist/skills/catalog/playwright/NOTICE.txt`
+- `playwright-interactive` — declared `unknown`; notices: `dist/skills/catalog/playwright-interactive/LICENSE.txt`, `dist/skills/catalog/playwright-interactive/NOTICE.txt`
+- `plugin-creator` — declared `unknown`; notices: `dist/skills/catalog/plugin-creator/LICENSE.txt`
+- `popups` — declared `unknown`; notices: `dist/skills/catalog/popups/LICENSE.source.txt`
+- `postgres-best-practices` — declared `MIT`; notices: `dist/skills/catalog/postgres-best-practices/LICENSE.source.txt`
+- `pricing` — declared `unknown`; notices: `dist/skills/catalog/pricing/LICENSE.source.txt`
+- `product-marketing` — declared `unknown`; notices: `dist/skills/catalog/product-marketing/LICENSE.source.txt`
+- `programmatic-seo` — declared `unknown`; notices: `dist/skills/catalog/programmatic-seo/LICENSE.source.txt`
+- `prospecting` — declared `unknown`; notices: `dist/skills/catalog/prospecting/LICENSE.source.txt`
+- `public-relations` — declared `unknown`; notices: `dist/skills/catalog/public-relations/LICENSE.source.txt`
+- `referrals` — declared `unknown`; notices: `dist/skills/catalog/referrals/LICENSE.source.txt`
+- `render-deploy` — declared `unknown`; notices: `dist/skills/catalog/render-deploy/LICENSE.txt`
+- `revops` — declared `unknown`; notices: `dist/skills/catalog/revops/LICENSE.source.txt`
+- `ru-text` — declared `unknown`; notices: `dist/skills/catalog/ru-text/LICENSE.source.txt`
+- `sales-enablement` — declared `unknown`; notices: `dist/skills/catalog/sales-enablement/LICENSE.source.txt`
+- `schema` — declared `unknown`; notices: `dist/skills/catalog/schema/LICENSE.source.txt`
+- `screenshot` — declared `unknown`; notices: `dist/skills/catalog/screenshot/LICENSE.txt`
+- `security-and-hardening` — declared `unknown`; notices: `dist/skills/catalog/security-and-hardening/LICENSE.source.txt`
+- `security-best-practices` — declared `unknown`; notices: `dist/skills/catalog/security-best-practices/LICENSE.txt`
+- `security-ownership-map` — declared `unknown`; notices: `dist/skills/catalog/security-ownership-map/LICENSE.txt`
+- `security-threat-model` — declared `unknown`; notices: `dist/skills/catalog/security-threat-model/LICENSE.txt`
+- `sentry` — declared `unknown`; notices: `dist/skills/catalog/sentry/LICENSE.txt`
+- `seo` — declared `unknown`; notices: `dist/skills/catalog/seo/LICENSE.source.txt`, `dist/skills/catalog/seo/LICENSE.txt`
+- `seo-ahrefs` — declared `unknown`; notices: `dist/skills/catalog/seo-ahrefs/LICENSE.source.txt`
+- `seo-audit` — declared `unknown`; notices: `dist/skills/catalog/seo-audit/LICENSE.source.txt`, `dist/skills/catalog/seo-audit/LICENSE.txt`
+- `seo-backlinks` — declared `unknown`; notices: `dist/skills/catalog/seo-backlinks/LICENSE.source.txt`, `dist/skills/catalog/seo-backlinks/LICENSE.txt`
+- `seo-bing` — declared `unknown`; notices: `dist/skills/catalog/seo-bing/LICENSE.source.txt`
+- `seo-cluster` — declared `unknown`; notices: `dist/skills/catalog/seo-cluster/LICENSE.source.txt`
+- `seo-competitor-pages` — declared `unknown`; notices: `dist/skills/catalog/seo-competitor-pages/LICENSE.source.txt`, `dist/skills/catalog/seo-competitor-pages/LICENSE.txt`
+- `seo-content` — declared `unknown`; notices: `dist/skills/catalog/seo-content/LICENSE.source.txt`, `dist/skills/catalog/seo-content/LICENSE.txt`
+- `seo-content-brief` — declared `unknown`; notices: `dist/skills/catalog/seo-content-brief/LICENSE.source.txt`, `dist/skills/catalog/seo-content-brief/LICENSE.txt`
+- `seo-dataforseo` — declared `unknown`; notices: `dist/skills/catalog/seo-dataforseo/LICENSE.source.txt`, `dist/skills/catalog/seo-dataforseo/LICENSE.txt`
+- `seo-drift` — declared `unknown`; notices: `dist/skills/catalog/seo-drift/LICENSE.source.txt`
+- `seo-ecommerce` — declared `unknown`; notices: `dist/skills/catalog/seo-ecommerce/LICENSE.source.txt`
+- `seo-firecrawl` — declared `unknown`; notices: `dist/skills/catalog/seo-firecrawl/LICENSE.source.txt`, `dist/skills/catalog/seo-firecrawl/LICENSE.txt`
+- `seo-flow` — declared `unknown`; notices: `dist/skills/catalog/seo-flow/LICENSE.source.txt`
+- `seo-geo` — declared `unknown`; notices: `dist/skills/catalog/seo-geo/LICENSE.source.txt`, `dist/skills/catalog/seo-geo/LICENSE.txt`
+- `seo-google` — declared `unknown`; notices: `dist/skills/catalog/seo-google/LICENSE.source.txt`, `dist/skills/catalog/seo-google/LICENSE.txt`
+- `seo-hreflang` — declared `unknown`; notices: `dist/skills/catalog/seo-hreflang/LICENSE.source.txt`, `dist/skills/catalog/seo-hreflang/LICENSE.txt`
+- `seo-image-gen` — declared `unknown`; notices: `dist/skills/catalog/seo-image-gen/LICENSE.source.txt`, `dist/skills/catalog/seo-image-gen/LICENSE.txt`
+- `seo-images` — declared `unknown`; notices: `dist/skills/catalog/seo-images/LICENSE.source.txt`, `dist/skills/catalog/seo-images/LICENSE.txt`
+- `seo-local` — declared `unknown`; notices: `dist/skills/catalog/seo-local/LICENSE.source.txt`, `dist/skills/catalog/seo-local/LICENSE.txt`
+- `seo-maps` — declared `unknown`; notices: `dist/skills/catalog/seo-maps/LICENSE.source.txt`, `dist/skills/catalog/seo-maps/LICENSE.txt`
+- `seo-page` — declared `unknown`; notices: `dist/skills/catalog/seo-page/LICENSE.source.txt`, `dist/skills/catalog/seo-page/LICENSE.txt`
+- `seo-plan` — declared `unknown`; notices: `dist/skills/catalog/seo-plan/LICENSE.source.txt`, `dist/skills/catalog/seo-plan/LICENSE.txt`
+- `seo-profound` — declared `unknown`; notices: `dist/skills/catalog/seo-profound/LICENSE.source.txt`
+- `seo-programmatic` — declared `unknown`; notices: `dist/skills/catalog/seo-programmatic/LICENSE.source.txt`, `dist/skills/catalog/seo-programmatic/LICENSE.txt`
+- `seo-schema` — declared `unknown`; notices: `dist/skills/catalog/seo-schema/LICENSE.source.txt`, `dist/skills/catalog/seo-schema/LICENSE.txt`
+- `seo-seranking` — declared `unknown`; notices: `dist/skills/catalog/seo-seranking/LICENSE.source.txt`
+- `seo-sitemap` — declared `unknown`; notices: `dist/skills/catalog/seo-sitemap/LICENSE.source.txt`, `dist/skills/catalog/seo-sitemap/LICENSE.txt`
+- `seo-sxo` — declared `unknown`; notices: `dist/skills/catalog/seo-sxo/LICENSE.source.txt`
+- `seo-technical` — declared `unknown`; notices: `dist/skills/catalog/seo-technical/LICENSE.source.txt`, `dist/skills/catalog/seo-technical/LICENSE.txt`
+- `seo-unlighthouse` — declared `unknown`; notices: `dist/skills/catalog/seo-unlighthouse/LICENSE.source.txt`
+- `shipping-and-launch` — declared `unknown`; notices: `dist/skills/catalog/shipping-and-launch/LICENSE.source.txt`
+- `signup` — declared `unknown`; notices: `dist/skills/catalog/signup/LICENSE.source.txt`
+- `site-architecture` — declared `unknown`; notices: `dist/skills/catalog/site-architecture/LICENSE.source.txt`
+- `skill-auditor` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/skill-auditor/NOTICE.source.txt`
+- `skill-creator` — declared `unknown`; notices: `dist/skills/catalog/skill-creator/LICENSE.txt`
+- `skill-installer` — declared `unknown`; notices: `dist/skills/catalog/skill-installer/LICENSE.txt`
+- `skill-router` — declared `MIT (first-party)`; notices: `dist/skills/catalog/skill-router/LICENSE.source.txt`
+- `sms` — declared `unknown`; notices: `dist/skills/catalog/sms/LICENSE.source.txt`
+- `social` — declared `unknown`; notices: `dist/skills/catalog/social/LICENSE.source.txt`
+- `source-driven-development` — declared `unknown`; notices: `dist/skills/catalog/source-driven-development/LICENSE.source.txt`
+- `spec-driven-development` — declared `unknown`; notices: `dist/skills/catalog/spec-driven-development/LICENSE.source.txt`
+- `speech` — declared `unknown`; notices: `dist/skills/catalog/speech/LICENSE.txt`
+- `system-integration-validator` — declared `MIT (upstream declaration)`; notices: `dist/skills/catalog/system-integration-validator/NOTICE.source.txt`
+- `test-driven-development` — declared `unknown`; notices: `dist/skills/catalog/test-driven-development/LICENSE.source.txt`
+- `transcribe` — declared `unknown`; notices: `dist/skills/catalog/transcribe/LICENSE.txt`
+- `ui-styling` — declared `unknown`; notices: `dist/skills/catalog/ui-styling/LICENSE.txt`
+- `ui-ux-pro-max` — declared `MIT`; notices: `dist/skills/catalog/ui-ux-pro-max/LICENSE.source.txt`
+- `vercel-cli-with-tokens` — declared `MIT`; notices: `dist/skills/catalog/vercel-cli-with-tokens/LICENSE.source.txt`
+- `vercel-composition-patterns` — declared `MIT`; notices: `dist/skills/catalog/vercel-composition-patterns/LICENSE.source.txt`
+- `vercel-deploy` — declared `unknown`; notices: `dist/skills/catalog/vercel-deploy/LICENSE.txt`
+- `vercel-optimize` — declared `MIT`; notices: `dist/skills/catalog/vercel-optimize/LICENSE.source.txt`
+- `vercel-react-best-practices` — declared `MIT`; notices: `dist/skills/catalog/vercel-react-best-practices/LICENSE.source.txt`
+- `vercel-react-native-skills` — declared `MIT`; notices: `dist/skills/catalog/vercel-react-native-skills/LICENSE.source.txt`
+- `vercel-react-view-transitions` — declared `MIT`; notices: `dist/skills/catalog/vercel-react-view-transitions/LICENSE.source.txt`
+- `video` — declared `unknown`; notices: `dist/skills/catalog/video/LICENSE.source.txt`
+- `web-design-guidelines` — declared `MIT`; notices: `dist/skills/catalog/web-design-guidelines/LICENSE.source.txt`
+- `winui-app` — declared `unknown`; notices: `dist/skills/catalog/winui-app/LICENSE.txt`
+- `writing-guidelines` — declared `MIT`; notices: `dist/skills/catalog/writing-guidelines/LICENSE.source.txt`
+- `yeet` — declared `unknown`; notices: `dist/skills/catalog/yeet/LICENSE.txt`

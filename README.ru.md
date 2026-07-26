@@ -15,8 +15,8 @@ Codex Powerpack — открытый дистрибутив для проект�
 ## Быстрый старт
 
 ```bash
-unzip codex-powerpack-v0.2.0-user.zip
-cd codex-powerpack-v0.2.0
+unzip codex-powerpack-v0.2.1-user.zip
+cd codex-powerpack-v0.2.1
 ./verify.sh
 ./install.sh --target /path/to/project --profile minimal
 ```
@@ -86,4 +86,4 @@ bash release/doctor_release.sh
 
 ## Статус open source
 
-Собственные материалы распространяются по MIT. Сторонние компоненты сохраняют свои лицензии и уведомления. Компоненты без сохранённой лицензии исключены из публичных архивов; подробности — в [OPEN_SOURCE_AUDIT.md](OPEN_SOURCE_AUDIT.md).
+Собственные материалы распространяются по MIT. Сторонние компоненты сохраняют свои лицензии и уведомления. Навыки включаются только при сохранённом подтверждении права распространения. Пять спорных навыков пока исключены; подробности — в [OPEN_SOURCE_AUDIT.md](OPEN_SOURCE_AUDIT.md).

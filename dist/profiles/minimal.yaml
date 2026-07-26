@@ -37,6 +37,7 @@ skills:
   - humanizer-ru
   - ru-text
   - copy-editing
+  - writing-guidelines
 integrations:
   codebase-memory: optional
   graphify: optional

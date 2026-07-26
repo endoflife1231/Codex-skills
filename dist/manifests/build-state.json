@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
   "status": {
     "stage_1_inventory": "complete",
@@ -82,11 +82,11 @@
     "dist/manifests/onboarding-summary.json"
   ],
   "notes": [
-    "Public package reduced to 184 skills with bundled license or notice files.",
-    "70 skills without preserved licensing terms were excluded.",
-    "Release tooling now emits separate user and repository archives."
+    "Release tooling now emits separate user and repository archives.",
+    "License scope re-audited against upstream repositories and parent licenses.",
+    "Public catalog expanded to 249 skills; five unresolved skills remain excluded."
   ],
-  "release_version": "0.2.0",
-  "public_skill_count": 184,
-  "excluded_unlicensed_skill_count": 70
+  "release_version": "0.2.1",
+  "public_skill_count": 249,
+  "excluded_unlicensed_skill_count": 5
 }

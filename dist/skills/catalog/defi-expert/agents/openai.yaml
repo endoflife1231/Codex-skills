@@ -1,0 +1,6 @@
+interface:
+  display_name: DeFi Expert
+  short_description: DeFi protocol expert ensuring correct data formats, types, denominations, and API structures.
+    MUST be consulted before writing ANY protocol…
+  default_prompt: Use $defi-expert to handle this task. Follow the skill workflow, inspect relevant project files,
+    and verify the result.

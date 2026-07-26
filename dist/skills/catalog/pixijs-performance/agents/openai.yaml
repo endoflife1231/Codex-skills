@@ -1,0 +1,6 @@
+interface:
+  display_name: PixiJS Performance
+  short_description: Use this skill when profiling or optimizing a PixiJS v8 app for FPS, draw calls, or GPU memory.
+    Covers destroy patterns (cacheAsTexture(false),…
+  default_prompt: Use $pixijs-performance to handle this task. Follow the skill workflow, inspect relevant project
+    files, and verify the result.
