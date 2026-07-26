@@ -1,0 +1,57 @@
+name: Retry license audit v0.2.1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.license-audit-retry'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract and run audited restoration
+        shell: bash
+        run: |
+          mkdir -p .audit-tmp
+          python3 - <<'PY'
+          import base64, gzip, re
+          from pathlib import Path
+          text = Path('.github/workflows/apply-license-audit.yml').read_text('utf-8')
+          match = re.search(r"echo '([^']+)' \| base64 -d", text)
+          if not match:
+              raise SystemExit('embedded audit script not found')
+          Path('.audit-tmp/apply_license_audit.py').write_bytes(gzip.decompress(base64.b64decode(match.group(1))))
+          PY
+          python3 .audit-tmp/apply_license_audit.py
+          rm -rf .audit-tmp
+          rm -f .license-audit-trigger .license-audit-retry .release-trigger
+          rm -f .github/workflows/apply-license-audit.yml
+          rm -f .github/workflows/retry-license-audit.yml
+          rm -f .github/workflows/publish-user-release.yml
+      - name: Validate and build packages
+        shell: bash
+        run: |
+          python3 dist/verify/validate_dist.py
+          bash dist/verify/doctor.sh
+          bash release/doctor_release.sh
+          bash release/build_release.sh
+      - name: Commit main and create tag
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'release: restore audited skills v0.2.1'
+          git push origin HEAD:main
+          git tag -a v0.2.1 -m 'Codex Powerpack v0.2.1'
+          git push origin v0.2.1
