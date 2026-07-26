@@ -23,15 +23,14 @@ The assembled distribution is intentionally layered.
 - `release/`
   - package generation and release artifacts
 
-## Source strategy
+## Source and licensing strategy
 
-- `skills-pack` is the primary product base
-- `subagents` provide role ideas, not final agent files
-- `claude-overlay` provides migration-safe patterns and references
-- `graphify` is optional and adapter-based
-- `codebase-memory-mcp` remains unchanged under `sources/`; the published adapter
-  owns binary verification, project config, isolated cache, state, and removal
-- `project-rules` holds first-party Codex-native policy
+- The public package contains the installable source form used at runtime.
+- First-party core, agents, onboarding, installers, and adapters are MIT licensed.
+- Third-party skills remain separate license domains and retain local license files.
+- Skills without a preserved license or notice are excluded from public packages.
+- Graphify and Codebase Memory remain optional external projects; this repository ships first-party adapters, not relicensed upstream binaries.
+- Provenance fields in registries are informational and may reference upstream source bundles that are not embedded in the public archive.
 
 ## Quality strategy
 

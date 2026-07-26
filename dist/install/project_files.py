@@ -13,6 +13,17 @@ END = "<!-- CODEX-POWERPACK:END core -->"
 MARKER = ".codex-powerpack-managed"
 
 
+def load_skill_registry(root: Path) -> dict:
+    registry_path = root / "dist/skills/registry.json"
+    data = json.loads(registry_path.read_text("utf-8"))
+    skills = list(data.get("skills", []))
+    for rel in data.get("skill_files", []):
+        shard = json.loads((registry_path.parent / rel).read_text("utf-8"))
+        skills.extend(shard.get("skills", []))
+    data["skills"] = skills
+    return data
+
+
 def profile_list(path: Path, section: str) -> list[str]:
     values: list[str] = []
     active = False
@@ -85,7 +96,7 @@ def install(a: argparse.Namespace) -> int:
     (target / ".agents/skills").mkdir(parents=True, exist_ok=True)
     (target / ".codex/agents").mkdir(parents=True, exist_ok=True)
     managed: list[str] = []
-    registry = json.loads((root / "dist/skills/registry.json").read_text("utf-8"))
+    registry = load_skill_registry(root)
     by_name = {x["name"]: x for x in registry["skills"]}
     for name in skills:
         item = by_name.get(name)

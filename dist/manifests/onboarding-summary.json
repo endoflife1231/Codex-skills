@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03",
+  "generated_at": "2026-07-20",
   "schema_version": 1,
   "modes": [
     "guided",
@@ -32,7 +32,7 @@
   ],
   "fixtures": 18,
   "acceptance_status": "passed",
-  "skills_registry_count": 254,
+  "skills_registry_count": 184,
   "agents_registry_count": 8,
   "graphify_default_hooks": false,
   "auto_mode_implicit_network": false

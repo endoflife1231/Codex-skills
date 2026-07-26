@@ -24,10 +24,10 @@ def analyze(f: dict) -> dict:
     if src: skills += [rec("source-driven-development",.9,["code project needs source-grounded changes"],evidence),rec("test-driven-development",.82,["verification workflow for code changes"],evidence),rec("debugging-and-error-recovery",.8,["code project benefits from structured debugging"],evidence)]
     if any(x in f["frameworks"] for x in ["React","Next.js","Vue","Nuxt","Angular","Svelte"]):
         skills += [rec("frontend-ui-engineering",.92,["frontend framework detected"],f["frameworks"]),rec("browser-testing-with-devtools",.78,["browser UI detected"],f["frameworks"])]
-    if any(x in f["frameworks"] for x in ["React","Next.js"]): skills.append(rec("vercel-react-best-practices",.88,["React-family project detected"],f["frameworks"]))
+    if any(x in f["frameworks"] for x in ["React","Next.js"]): skills.append(rec("frontend-ui-engineering",.88,["React-family project detected"],f["frameworks"]))
     if "Fastify" in f["frameworks"]: skills.append(rec("fastify-best-practices",.95,["Fastify dependency detected"],["Fastify"]))
     if any(x in f["frameworks"] for x in ["Express","Fastify","NestJS","FastAPI","Django","Flask"]): skills.append(rec("api-and-interface-design",.84,["backend/API framework detected"],f["frameworks"]))
-    if "PostgreSQL" in f["databases"]: skills.append(rec("postgres-best-practices",.94,["PostgreSQL dependency detected"],["PostgreSQL"]))
+    if "PostgreSQL" in f["databases"]: skills.append(rec("security-and-hardening",.78,["PostgreSQL project benefits from secure data handling"],["PostgreSQL"]))
     if "Drizzle" in f["orms"]: skills.append(rec("drizzle-best-practices",.94,["Drizzle detected"],["Drizzle"]))
     if any(x in f["testing"] for x in ["playwright","cypress"]): skills.append(rec("playwright",.9,["browser test stack detected"],f["testing"]))
     if f["containers"] or f["infrastructure"] or f["ci"]: skills.append(rec("ci-cd-and-automation",.84,["CI/container/infrastructure metadata detected"],f["containers"]+f["infrastructure"]+f["ci"]))

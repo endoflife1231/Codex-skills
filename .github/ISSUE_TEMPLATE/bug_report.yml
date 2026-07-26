@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction command and output
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Environment
+      description: OS, Python, Codex CLI and Powerpack version
+    validations:
+      required: true

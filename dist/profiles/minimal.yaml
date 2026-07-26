@@ -33,15 +33,10 @@ skills:
   - caveman-compress
   - caveman-review
   - caveman-stats
-  - bilingual-transcreator
   - humanizer
   - humanizer-ru
-  - ru-editor
   - ru-text
-  - ru-textovod
-  - en-ru-translator-adv
   - copy-editing
-  - writing-guidelines
 integrations:
   codebase-memory: optional
   graphify: optional

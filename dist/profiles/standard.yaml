@@ -45,21 +45,12 @@ skills:
   - aspnet-core
   - fastify-best-practices
   - drizzle-best-practices
-  - postgres-best-practices
-  - pitfalls-react
   - jupyter-notebook
-  - web-design-guidelines
-  - brand
-  - design
-  - design-system
   - design-taste-frontend
   - huashu-design
   - impeccable
   - imagegen
   - ui-styling
-  - ui-ux-pro-max
-  - apple-ui-design
-  - banner-design
   - browser-testing-with-devtools
   - playwright
   - playwright-interactive
@@ -68,9 +59,6 @@ skills:
   - pdf
   - skill-creator
   - skill-installer
-  - skill-router
-  - find-skills
-  - skill-auditor
   - cli-creator
   - migrate-to-codex
   - openai-docs
@@ -78,7 +66,6 @@ skills:
   - gh-fix-ci
   - sentry
   - analytics
-  - bilingual-transcreator
   - content-audit
   - content-blog
   - content-linkedin
@@ -105,11 +92,7 @@ skills:
   - site-architecture
   - social
   - humanizer-ru
-  - ru-editor
   - ru-text
-  - ru-textovod
-  - en-ru-translator-adv
-  - writing-guidelines
   - codebase-memory
 integrations:
   codebase-memory: enabled

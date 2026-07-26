@@ -1,108 +1,89 @@
 # Codex Powerpack
 
-Это готовый Codex-native дистрибутив для установки в проекты через терминал.
-Его можно скачать как репозиторий, развернуть локально и применять к своему
-проекту без ручной сборки из исходников.
+[Русская версия](README.ru.md) · [License](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
-Что в нём есть:
+Codex Powerpack is an open-source, project-scoped distribution of Codex agents, skills, profiles, onboarding, verification, installation, update, uninstall, and rollback tooling.
 
-- `dist/` — готовый слой дистрибутива, который устанавливается в проект
-- `release/` — локальная релизная сборка, zip и checksums
+## Requirements
 
-Что умеет дистрибутив:
+- Linux, macOS, or Windows through WSL
+- Bash
+- Python 3.10+
+- Codex CLI for normal Codex usage
+- Optional: Graphify CLI and Codebase Memory binary for the corresponding integrations
 
-- ставить в проект Codex-ядро, agents, skills и profiles
-- подстраиваться под конкретный проект через `guided` onboarding
-- выбирать нужный набор компонентов по структуре проекта
-- подключать optional project intelligence:
-  - Codebase Memory для кода, символов и связей
-  - Graphify для документации и визуальных связей
-- сохранять изменения безопасно и откатывать их через rollback
-- работать через понятные команды, а не через скрытую магию
-
-Кому это подходит:
-
-- тем, кто хочет быстро подключить Codex к своему проекту
-- тем, кому нужна аккуратная проектная адаптация, а не ручное копирование файлов
-- тем, кто хочет повторяемую установку с проверкой, планом и откатом
-
-## Как пользоваться
-
-Самый простой сценарий:
-
-1. Скачай этот репозиторий.
-2. Перейди в его корень.
-3. Выбери свой проект, куда нужно поставить дистрибутив.
-4. Запусти установку или адаптацию из терминала.
-
-Быстрая установка фиксированным профилем:
+## Quick start
 
 ```bash
-bash dist/install/install.sh --target /path/to/project --profile standard
+unzip codex-powerpack-v0.2.0-user.zip
+cd codex-powerpack-v0.2.0
+./verify.sh
+./install.sh --target /path/to/project --profile minimal
 ```
 
-Умная установка под конкретный проект:
+`minimal` is the safest offline-first profile. For the recommended larger profile:
 
 ```bash
-bash dist/onboarding/adapt-project.sh --target /path/to/project --mode guided
+./install.sh --target /path/to/project --profile standard --without-codebase-memory
 ```
 
-Если план устроил, применяй его:
+Project-aware guided installation:
 
 ```bash
-bash dist/onboarding/adapt-project.sh --target /path/to/project --mode guided --apply
+./adapt-project.sh --target /path/to/project --mode guided
+./adapt-project.sh --target /path/to/project --mode guided --apply
 ```
 
-Если нужно вернуться назад:
+Rollback or uninstall:
 
 ```bash
-bash dist/onboarding/rollback.sh --target /path/to/project
+./rollback.sh --target /path/to/project
+./uninstall.sh --target /path/to/project
 ```
 
-## Что выбрать
+## Profiles
 
-- `minimal` — если нужен самый лёгкий базовый слой
-- `standard` — если нужен хороший баланс из коробки
-- `full` — если нужен максимально богатый комплект
+- `minimal` — small, conservative, offline-first baseline
+- `standard` — balanced profile for most engineering projects
+- `full` — all license-audited skills included in this distribution
 
-Если не знаешь, с чего начать, бери `standard`.
+## Package types
 
-## Как это выглядит в жизни
+- **User release:** only runtime files, user documentation, wrappers, manifests, licenses, and checksums.
+- **Repository source:** user release plus maintainership docs, GitHub templates, CI workflows, release tooling, and project metadata.
 
-Обычный путь такой:
+## Safety and optional integrations
 
-1. Ты скачиваешь этот репозиторий как готовый дистрибутив.
-2. Открываешь терминал в его корне.
-3. Указываешь свой проект через `--target`.
-4. Дистрибутив анализирует проект, предлагает план и применяет нужные части.
-5. Если что-то не понравилось, используешь rollback.
+- Guided onboarding creates a reviewable plan before applying changes.
+- Rollback restores the pre-apply snapshot.
+- Codebase Memory may require an approved network download or a locally supplied verified binary.
+- Graphify is optional and is not bootstrapped through unsafe installer pipelines.
 
-Иными словами: не нужно вручную разбирать сотни файлов. Ты просто даёшь путь к проекту, а дальше дистрибутив сам подбирает нужную конфигурацию.
+## Repository structure
 
-## Структура репозитория
+- `dist/` — runtime distribution
+- `release/` — package builder and release notes
+- `.github/` — validation and release workflows
+- `docs/` — repository and maintainer documentation
 
-- `dist/` — то, что должно использоваться для установки и работы
-- `release/` — то, что можно собрать и распространять как релиз
-
-## Проверка
-
-Если хочешь убедиться, что дистрибутив собран корректно:
+## Validation
 
 ```bash
 python3 dist/verify/validate_dist.py
 bash dist/verify/doctor.sh
+bash release/doctor_release.sh
 ```
 
-## Дополнительные материалы
+## Documentation
 
-- [dist/docs/README.md](/workspaces/Codex-skills/dist/docs/README.md)
-- [dist/docs/PROJECT_ADAPTATION.md](/workspaces/Codex-skills/dist/docs/PROJECT_ADAPTATION.md)
-- [dist/onboarding/README.md](/workspaces/Codex-skills/dist/onboarding/README.md)
-- [dist/install/README.md](/workspaces/Codex-skills/dist/install/README.md)
-- [dist/docs/FINAL_STATUS.md](/workspaces/Codex-skills/dist/docs/FINAL_STATUS.md)
+- [Distribution overview](dist/docs/README.md)
+- [Architecture](dist/docs/ARCHITECTURE.md)
+- [Project adaptation](dist/docs/PROJECT_ADAPTATION.md)
+- [Installation](dist/install/README.md)
+- [Onboarding](dist/onboarding/README.md)
+- [Open-source audit](OPEN_SOURCE_AUDIT.md)
+- [Repository setup](docs/REPOSITORY_SETUP.md)
 
-## Важное
+## Open-source status
 
-- unsafe и host-specific поведение не включается в clean default core
-- сначала лучше использовать `guided`, а не сразу `auto`
-
+First-party work is licensed under MIT. Third-party components retain their bundled licenses and notices. Components without a preserved license were removed from the public packages; see [OPEN_SOURCE_AUDIT.md](OPEN_SOURCE_AUDIT.md).

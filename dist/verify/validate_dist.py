@@ -13,6 +13,17 @@ DIST = ROOT / "dist"
 ERRORS: list[str] = []
 
 
+def load_skill_registry(root: Path) -> dict:
+    registry_path = root / "dist/skills/registry.json"
+    data = json.loads(registry_path.read_text("utf-8"))
+    skills = list(data.get("skills", []))
+    for rel in data.get("skill_files", []):
+        shard = json.loads((registry_path.parent / rel).read_text("utf-8"))
+        skills.extend(shard.get("skills", []))
+    data["skills"] = skills
+    return data
+
+
 def require(path: Path, label: str) -> None:
     if not path.exists():
         ERRORS.append(f"missing {label}: {path.relative_to(ROOT)}")
@@ -117,7 +128,7 @@ if agent_registry_path.exists():
             ERRORS.append(f"{name}: expected read-only, got {mode}")
 
 if skill_registry_path.exists():
-    skill_registry = json.loads(skill_registry_path.read_text("utf-8"))
+    skill_registry = load_skill_registry(ROOT)
     skills = skill_registry.get("skills", [])
     skill_count = len(skills)
     seen: set[str] = set()
@@ -138,6 +149,9 @@ if skill_registry_path.exists():
         elif not (install_source / "SKILL.md").is_file():
             ERRORS.append(f"skill install source has no SKILL.md for {name}")
         else:
+            notices = [p for p in install_source.rglob("*") if p.is_file() and p.name.lower().startswith(("license", "copying", "notice"))]
+            if not notices:
+                ERRORS.append(f"skill has no bundled license/notice: {name}")
             expected_hash = skill.get("hashes", {}).get("skill_md_sha256")
             actual_hash = hashlib.sha256((install_source / "SKILL.md").read_bytes()).hexdigest()
             if expected_hash != actual_hash:
@@ -145,7 +159,7 @@ if skill_registry_path.exists():
 
 skill_names = {
     item.get("name") for item in
-    (json.loads(skill_registry_path.read_text("utf-8")).get("skills", []) if skill_registry_path.exists() else [])
+    (load_skill_registry(ROOT).get("skills", []) if skill_registry_path.exists() else [])
 }
 
 for profile_name, expected_agents in {
@@ -186,7 +200,7 @@ for profile_name, expected_agents in {
         for required_skill in ("caveman", "caveman-compress", "caveman-review", "caveman-stats"):
             if required_skill not in profile_skills:
                 ERRORS.append(f"{profile.relative_to(ROOT)} missing always-on skill: {required_skill}")
-        for required_live in ("humanizer", "humanizer-ru", "bilingual-transcreator", "copy-editing"):
+        for required_live in ("humanizer", "humanizer-ru", "ru-text", "copy-editing"):
             if required_live not in profile_skills:
                 ERRORS.append(f"{profile.relative_to(ROOT)} missing live-language Skill: {required_live}")
         profile_text = "\n".join(lines)

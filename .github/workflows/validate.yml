@@ -1,0 +1,24 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate distribution
+        run: python3 dist/verify/validate_dist.py
+      - name: Run doctor
+        run: bash dist/verify/doctor.sh
+      - name: Test package build
+        run: bash release/build_release.sh

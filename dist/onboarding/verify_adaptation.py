@@ -4,9 +4,20 @@ import argparse, json, tomllib
 from pathlib import Path
 
 BLOCKS=["core","generated-project-profile","caveman","live-language","project-intelligence"]
+
+
+def load_skill_registry(root: Path) -> dict:
+    registry_path = root / "dist/skills/registry.json"
+    data = json.loads(registry_path.read_text("utf-8"))
+    skills = list(data.get("skills", []))
+    for rel in data.get("skill_files", []):
+        shard = json.loads((registry_path.parent / rel).read_text("utf-8"))
+        skills.extend(shard.get("skills", []))
+    data["skills"] = skills
+    return data
 def main():
     p=argparse.ArgumentParser(); p.add_argument("--root",required=True); p.add_argument("--target",required=True); p.add_argument("--plan",required=True); a=p.parse_args(); root=Path(a.root); target=Path(a.target); plan=json.loads(Path(a.plan).read_text()); errors=[]; warnings=[]
-    sreg={x["name"]:x for x in json.loads((root/"dist/skills/registry.json").read_text())["skills"]}; areg={x["name"]:x for x in json.loads((root/"dist/agents/registry.json").read_text())["agents"]}
+    sreg={x["name"]:x for x in load_skill_registry(root)["skills"]}; areg={x["name"]:x for x in json.loads((root/"dist/agents/registry.json").read_text())["agents"]}
     skills=[x["id"] for x in plan["skills"]["always_on"]+plan["skills"]["selected"]]
     for name in skills:
         if name not in sreg: errors.append(f"unknown selected Skill: {name}"); continue

@@ -5,7 +5,18 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 CAVEMAN=["caveman","caveman-compress","caveman-review","caveman-stats"]
-LIVE=["bilingual-transcreator","humanizer","humanizer-ru","ru-editor","ru-text","ru-textovod","en-ru-translator-adv","copy-editing","writing-guidelines","brand","copywriting","impeccable"]
+LIVE=["humanizer","humanizer-ru","ru-text","copy-editing","copywriting","impeccable"]
+
+
+def load_skill_registry(root: Path) -> dict:
+    registry_path = root / "dist/skills/registry.json"
+    data = json.loads(registry_path.read_text("utf-8"))
+    skills = list(data.get("skills", []))
+    for rel in data.get("skill_files", []):
+        shard = json.loads((registry_path.parent / rel).read_text("utf-8"))
+        skills.extend(shard.get("skills", []))
+    data["skills"] = skills
+    return data
 
 def item(identifier, reason, confidence=1.0, always=False, required=False, **extra):
     return {"id":identifier,"confidence":confidence,"always_on":always,"required":required,"reasons":[reason],**extra}
@@ -29,7 +40,7 @@ def decide_integration(facts, analysis, cbm_override, graph_override, without):
 def main():
     p=argparse.ArgumentParser(); p.add_argument("--root",required=True); p.add_argument("--target",required=True); p.add_argument("--facts",required=True); p.add_argument("--analysis",required=True); p.add_argument("--mode",choices=["guided","auto","manual","analyze-only"],default="guided"); p.add_argument("--profile",choices=["auto","minimal","standard","full"],default="auto"); p.add_argument("--with-codebase-memory",choices=["auto","yes","no"],default="auto"); p.add_argument("--with-graphify",choices=["auto","yes","no"],default="auto"); p.add_argument("--without-project-intelligence",action="store_true"); p.add_argument("--confidence-threshold",type=float,default=.7); p.add_argument("--output-dir"); a=p.parse_args()
     root=Path(a.root).resolve(); target=Path(a.target).resolve(); facts=json.loads(Path(a.facts).read_text()); analysis=json.loads(Path(a.analysis).read_text())
-    sreg=json.loads((root/"dist/skills/registry.json").read_text())["skills"]; areg=json.loads((root/"dist/agents/registry.json").read_text())["agents"]
+    sreg=load_skill_registry(root)["skills"]; areg=json.loads((root/"dist/agents/registry.json").read_text())["agents"]
     skills={x["name"]:x for x in sreg}; agents={x["name"]:x for x in areg}
     missing=[x for x in CAVEMAN+LIVE if x not in skills]
     if "caveman" in missing: raise ValueError("critical always-on Skill caveman is missing")

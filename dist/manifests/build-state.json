@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28",
+  "generated_at": "2026-07-20",
   "distribution": "codex-powerpack",
   "status": {
     "stage_1_inventory": "complete",
@@ -15,9 +15,6 @@
     "stage_11_project_adaptation": "complete"
   },
   "completed_artifacts": [
-    "build/source-manifest.json",
-    "build/reports/source-inventory.md",
-    "build/reports/implementation-plan.md",
     "dist/core/AGENTS.base.md",
     "dist/core/references/README.md",
     "dist/core/references/codex-adaptation.md",
@@ -73,39 +70,23 @@
     "release/build_release.sh",
     "release/doctor_release.sh",
     "release/release_notes.md",
-    "sources/project-rules/README.md",
-    "sources/project-rules/AGENTS.base.source.md",
-    "sources/project-rules/references/migration-policy.md",
-    "build/reports/codebase-memory-audit.md",
-    "build/reports/codebase-memory-integration-plan.md",
-    "build/reports/codebase-memory-test-report.md",
     "dist/integrations/codebase-memory/adapter.json",
     "dist/integrations/registry.json",
     "dist/skills/generated/codebase-memory/SKILL.md",
-    "tests/test_codebase_memory.py",
-    "build/reports/onboarding-audit.md",
-    "build/reports/onboarding-implementation-plan.md",
-    "build/reports/onboarding-implementation-report.md",
     "dist/onboarding/adapt-project.sh",
     "dist/onboarding/scan-project.py",
     "dist/onboarding/select-components.py",
     "dist/onboarding/apply-plan.sh",
     "dist/onboarding/rollback.sh",
     "dist/docs/PROJECT_ADAPTATION.md",
-    "dist/manifests/onboarding-summary.json",
-    "tests/test_onboarding.py",
-    "tests/fixtures/onboarding/cases.json"
+    "dist/manifests/onboarding-summary.json"
   ],
   "notes": [
-    "Core policy and first curated agent layer are now materialized.",
-    "Agent collisions from upstream sources are resolved in the published dist layer by canonical names.",
-    "Published references now carry the strongest useful adaptations from claude-overlay and subagents.",
-    "Release packaging works locally and emits a zip, manifest, and checksums.",
-    "The assembled distribution is now release-ready for local packaging and release packaging is functioning locally.",
-    "Remaining work is optional metadata enrichment and editorial polish rather than missing core product layers.",
-    "Skills layer upgraded to the 2026-07-03.1 pack expansion with 252 published skills and refreshed profiles.",
-    "Codebase Memory MCP 0.8.1 integrated as a safe project-scoped optional layer; prompt 2 onboarding remains intentionally unstarted.",
-    "Project adaptation onboarding completed with 18 fixtures, hashed-plan apply, verification and rollback.",
-    "Graphify onboarding uses a first-party managed wrapper; upstream PreToolUse hooks and watchers are not enabled."
-  ]
+    "Public package reduced to 184 skills with bundled license or notice files.",
+    "70 skills without preserved licensing terms were excluded.",
+    "Release tooling now emits separate user and repository archives."
+  ],
+  "release_version": "0.2.0",
+  "public_skill_count": 184,
+  "excluded_unlicensed_skill_count": 70
 }

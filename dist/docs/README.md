@@ -1,28 +1,16 @@
-# Codex Powerpack
+# Codex Powerpack distribution
 
-Current assembled components:
+Release 0.2.0 contains:
 
-- `core/`: short Codex-native base policy plus references
-- `agents/`: curated Codex-native agent layer
-- `skills/`: machine-readable registry plus actual installable Skill directories
-- `profiles/`: `minimal`, `standard`, and `full` profile definitions
-- `integrations/graphify/`: optional Graphify adapter
-- `integrations/codebase-memory/`: project-scoped local MCP lifecycle
-- `onboarding/`: deterministic scan, schema analysis, selection, hashed plan, apply and rollback
-- `verify/`: distribution validation and doctor tooling
-- `install/`: real project profile orchestrator with backup, state, update, and exact uninstall
-- `manifests/`: build state and profile summary
-- `licenses/`: distribution-level notices
-- `release/`: local packaging flow with manifest and checksums
+- `core/`: Codex-native base policy and references
+- `agents/`: curated Codex agents
+- `skills/`: 184 license-audited, installable skills
+- `profiles/`: `minimal`, `standard`, and `full`
+- `integrations/`: optional Graphify and Codebase Memory adapters
+- `onboarding/`: scan, analysis, selection, reviewable plan, apply and rollback
+- `verify/`: validation and environment checks
+- `install/`: install, update and exact uninstall
+- `manifests/`: distribution and profile metadata
+- `licenses/`: third-party notices
 
-Key top-level docs:
-
-- `ARCHITECTURE.md`: layer model and source strategy
-- `FINAL_STATUS.md`: current release-ready local state of the assembled distribution
-- `PROJECT_ADAPTATION.md`: intelligent project-specific onboarding
-- `release/release_notes.md`: current release scope
-- `build/reports/`: inventory and implementation planning history
-
-This is an assembled Codex-native distribution with working validation, install helpers, and local release packaging.
-
-It is suitable for product review, local packaging, and further editorial polish without requiring structural rework.
+Repository-level release tooling is in `release/`. Public packages intentionally exclude components that lack preserved licensing terms.

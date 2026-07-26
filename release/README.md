@@ -1,17 +1,17 @@
-# Release Layer
+# Release tooling
 
-This directory contains release artifacts and release tooling for the assembled Codex Powerpack distribution.
+Run:
 
-Expected flow:
+```bash
+bash release/build_release.sh
+```
 
-1. validate the assembled `dist/`
-2. build a release zip
-3. emit checksums and a release manifest
+Outputs for version 0.2.0:
 
-Current outputs:
+- `release/out/codex-powerpack-v0.2.0-user.zip`
+- `release/out/codex-powerpack-v0.2.0-repository.zip`
+- `release/out/user-manifest.json`
+- `release/out/repository-manifest.json`
+- `release/out/SHA256SUMS`
 
-- `out/codex-powerpack.zip`
-- `out/release-manifest.json`
-- `out/SHA256SUMS`
-
-The release build is local and filesystem-based. It does not publish anywhere automatically.
+The user archive is installation-focused. The repository archive contains the full maintainership structure and a copy of the user archive under `release/out/`.

@@ -1,29 +1,30 @@
 {
-  "generated_at": "2026-07-03",
+  "generated_at": "2026-07-20",
   "distribution": "codex-powerpack",
+  "version": "0.2.0",
   "minimal": {
     "agents": 3,
-    "skills": 35,
-    "intent": "small default footprint for focused Codex project work"
+    "skills": 30,
+    "intent": "small conservative offline-first baseline"
   },
   "standard": {
     "agents": 8,
-    "skills": 99,
+    "skills": 82,
     "intent": "recommended balanced profile for most projects"
   },
   "full": {
     "agents": 8,
-    "skills": 254,
-    "intent": "complete published catalog including niche and optional layers"
+    "skills": 184,
+    "intent": "all license-audited skills in this distribution"
   },
   "default_recommendation": "standard",
   "selection_policy": {
-    "minimal": "prefer when you want lower noise and fewer optional behaviors",
+    "minimal": "prefer for the smallest offline-first footprint",
     "standard": "prefer for general product and engineering work",
-    "full": "prefer when you want the full published skill catalog including growth, SEO, content, and specialist layers"
+    "full": "prefer when the entire audited catalog is required"
   },
   "adaptive_modes": {
-    "auto": "fact-driven selection above always-on baseline",
+    "auto": "fact-driven selection",
     "guided": "reviewable plan before apply"
   }
 }

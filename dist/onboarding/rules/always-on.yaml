@@ -25,16 +25,10 @@ always_on:
       - ru
       - en
     preferred_skills:
-      - bilingual-transcreator
       - humanizer
       - humanizer-ru
-      - ru-editor
       - ru-text
-      - ru-textovod
-      - en-ru-translator-adv
       - copy-editing
-      - writing-guidelines
-      - brand
       - copywriting
       - impeccable
     category_fallbacks:
