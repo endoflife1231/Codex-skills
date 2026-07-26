@@ -1,1 +1,1 @@
-apply synchronized v0.2.2
+apply synchronized v0.2.2 retry 2
