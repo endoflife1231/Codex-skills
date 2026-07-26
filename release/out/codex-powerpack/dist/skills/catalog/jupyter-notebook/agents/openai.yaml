@@ -1,7 +1,0 @@
-interface:
-  display_name: Jupyter Notebook
-  short_description: Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments,
-    explorations, or tutorials; prefer the bundled…
-  icon_small: ./assets/jupyter-small.svg
-  icon_large: ./assets/jupyter.png
-  default_prompt: Create a Jupyter notebook for this task with clear sections, runnable cells, and concise takeaways.

@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Ahrefs
-  short_description: Ahrefs API analyst (extension). Reads referring domains, backlinks, organic keywords, and content
-    explorer data via the official @ahrefs/mcp@0.0.11…
-  default_prompt: Use $seo-ahrefs for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: false

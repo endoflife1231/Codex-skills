@@ -1,8 +1,0 @@
-interface:
-  display_name: Cold Email
-  short_description: Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to
-    write cold outreach emails, prospecting emails, cold…
-  default_prompt: Use $cold-email for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

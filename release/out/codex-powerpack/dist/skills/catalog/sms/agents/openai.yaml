@@ -1,8 +1,0 @@
-interface:
-  display_name: SMS
-  short_description: When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows,
-    abandoned cart texts, post-purchase, win-back,…
-  default_prompt: Use $sms for this task. Follow the skill workflow, inspect relevant files and prerequisites, and
-    verify the result.
-policy:
-  allow_implicit_invocation: false

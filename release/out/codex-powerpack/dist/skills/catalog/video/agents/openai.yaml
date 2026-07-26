@@ -1,8 +1,0 @@
-interface:
-  display_name: Video
-  short_description: When the user wants to create, generate, or produce video content using AI tools or programmatic
-    frameworks. Also use when the user mentions 'video…
-  default_prompt: Use $video for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

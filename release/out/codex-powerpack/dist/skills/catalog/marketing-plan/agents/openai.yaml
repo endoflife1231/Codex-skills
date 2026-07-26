@@ -1,8 +1,0 @@
-interface:
-  display_name: Marketing Plan
-  short_description: When the user needs a comprehensive marketing plan for a client, a company they advise, or
-    their own product. Also use when the user mentions…
-  default_prompt: Use $marketing-plan for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

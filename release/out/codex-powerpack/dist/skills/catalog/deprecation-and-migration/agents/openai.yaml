@@ -1,6 +1,0 @@
-interface:
-  display_name: Deprecation And Migration
-  short_description: Plan and execute safe API, schema, dependency, or system migrations with compatibility periods,
-    observability, rollback, and old-code removal.
-  default_prompt: Use $deprecation-and-migration for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.

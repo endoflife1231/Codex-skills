@@ -1,6 +1,0 @@
-interface:
-  display_name: Pitfalls Tanstack Query
-  short_description: TanStack Query v5 patterns and common pitfalls. Use when implementing data fetching, cache
-    invalidation, or debugging stale data issues. Triggers…
-  default_prompt: Use $pitfalls-tanstack-query to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

@@ -1,6 +1,0 @@
-interface:
-  display_name: Interview Me
-  short_description: Clarify an underspecified request through focused one-question-at-a-time discovery until intent,
-    users, constraints, and success criteria are clear.
-  default_prompt: Use $interview-me for this task. Follow its workflow, inspect the relevant project files, and
-    verify the result.

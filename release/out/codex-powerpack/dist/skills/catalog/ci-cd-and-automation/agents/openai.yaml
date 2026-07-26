@@ -1,6 +1,0 @@
-interface:
-  display_name: CI/CD and Automation
-  short_description: Design or improve CI/CD pipelines, automated quality gates, test execution, release workflows,
-    and deployment safety. Use for build, test, or…
-  default_prompt: Use $ci-cd-and-automation for this task. Follow its workflow, inspect the relevant project files,
-    and verify the result.

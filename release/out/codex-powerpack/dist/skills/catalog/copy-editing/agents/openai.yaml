@@ -1,8 +1,0 @@
-interface:
-  display_name: Copy Editing
-  short_description: When the user wants to edit, review, or improve existing marketing copy, or refresh outdated
-    content. Also use when the user mentions 'edit this…
-  default_prompt: Use $copy-editing for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

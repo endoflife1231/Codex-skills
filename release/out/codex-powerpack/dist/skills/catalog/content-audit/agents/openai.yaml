@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Audit
-  short_description: Content quality audit with anti-slop detection and brand consistency scoring. Use when user
-    wants to check content quality, audit a draft, score…
-  default_prompt: Use $content-audit for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

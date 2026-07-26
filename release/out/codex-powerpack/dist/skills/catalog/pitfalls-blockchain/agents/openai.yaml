@@ -1,6 +1,0 @@
-interface:
-  display_name: Pitfalls Blockchain
-  short_description: Blockchain RPC error handling, gas estimation, multi-chain config, and transaction management.
-    Use when interacting with smart contracts, estimating…
-  default_prompt: Use $pitfalls-blockchain to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

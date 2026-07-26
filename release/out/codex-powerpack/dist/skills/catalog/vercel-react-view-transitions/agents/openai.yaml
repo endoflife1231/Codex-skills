@@ -1,6 +1,0 @@
-interface:
-  display_name: Vercel React View Transitions
-  short_description: Guide for implementing smooth, native-feeling animations using React's View Transition API
-    (`ViewTransition` component, `addTransitionType`, and CSS…
-  default_prompt: Use $vercel-react-view-transitions to handle this task. Follow the skill workflow, inspect relevant
-    project files, and verify the result.

@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Drift
-  short_description: 'SEO drift monitoring: capture baselines of SEO-critical elements, detect changes, and track
-    regressions over time. Git for SEO — baseline, diff, and…'
-  default_prompt: Use $seo-drift for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

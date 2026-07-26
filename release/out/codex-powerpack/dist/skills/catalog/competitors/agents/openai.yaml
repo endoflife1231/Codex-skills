@@ -1,8 +1,0 @@
-interface:
-  display_name: Competitors
-  short_description: When the user wants to create competitor comparison or alternative pages for SEO and sales
-    enablement. Also use when the user mentions 'alternative…
-  default_prompt: Use $competitors for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

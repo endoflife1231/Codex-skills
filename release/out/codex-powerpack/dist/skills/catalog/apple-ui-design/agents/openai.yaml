@@ -1,6 +1,0 @@
-interface:
-  display_name: Apple UI Design
-  short_description: Apple-inspired clean, minimal, premium UI design. Use when building modern interfaces requiring
-    exceptional UX, clean aesthetics, or Apple-like…
-  default_prompt: Use $apple-ui-design to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

@@ -1,8 +1,0 @@
-interface:
-  display_name: Marketing Psychology
-  short_description: When the user wants to apply psychological principles, mental models, or behavioral science
-    to marketing. Also use when the user mentions…
-  default_prompt: Use $marketing-psychology for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

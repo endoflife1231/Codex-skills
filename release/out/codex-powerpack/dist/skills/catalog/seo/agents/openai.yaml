@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO
-  short_description: Comprehensive SEO analysis for any website or business type. Full site audits, single-page
-    analysis, technical SEO (crawlability, indexability, Core…
-  default_prompt: Use $seo for this task. Follow the skill workflow, inspect relevant files and prerequisites, and
-    verify the result.
-policy:
-  allow_implicit_invocation: true

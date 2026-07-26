@@ -1,6 +1,0 @@
-interface:
-  display_name: Code Simplification
-  short_description: Reduce code complexity while preserving behavior. Use for refactoring confusing, duplicated,
-    deeply nested, oversized, or unnecessarily abstract code.
-  default_prompt: Use $code-simplification for this task. Follow its workflow, inspect the relevant project files,
-    and verify the result.

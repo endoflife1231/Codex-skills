@@ -1,5 +1,0 @@
-interface:
-  display_name: Cavecrew
-  short_description: Route an explicitly requested compact subagent workflow among cavecrew_investigator, cavecrew_builder,
-    and cavecrew_reviewer to save parent-context…
-  default_prompt: Use $cavecrew for this task. Follow the skill workflow and preserve technical accuracy.

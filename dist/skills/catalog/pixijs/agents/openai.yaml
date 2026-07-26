@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS
-  short_description: 'Use this skill first for ANY PixiJS v8 task; it routes to the right specialized skill for
-    the job. Covers the full PixiJS surface: Application…'
-  default_prompt: Use $pixijs to handle this task. Follow the skill workflow, inspect relevant project files, and
-    verify the result.

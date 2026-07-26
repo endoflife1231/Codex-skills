@@ -1,8 +1,0 @@
-interface:
-  display_name: EN RU Translator Adv
-  short_description: Professional English to Russian translation agent with three-step agentic workflow (translate,
-    reflect, refine) and advanced editorial checks for…
-  default_prompt: Use $en-ru-translator-adv for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

@@ -1,6 +1,0 @@
-interface:
-  display_name: Pitfalls Security
-  short_description: Security patterns for session keys, caching, logging, and environment variables. Use when implementing
-    authentication, caching sensitive data, or…
-  default_prompt: Use $pitfalls-security to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

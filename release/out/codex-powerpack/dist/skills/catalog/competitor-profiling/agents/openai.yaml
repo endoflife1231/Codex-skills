@@ -1,8 +1,0 @@
-interface:
-  display_name: Competitor Profiling
-  short_description: When the user wants to research, profile, or analyze competitors from their URLs. Also use
-    when the user mentions 'competitor profile,' 'competitor…
-  default_prompt: Use $competitor-profiling for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

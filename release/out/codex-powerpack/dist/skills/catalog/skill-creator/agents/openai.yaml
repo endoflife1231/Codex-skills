@@ -1,5 +1,0 @@
-interface:
-  display_name: Skill Creator
-  short_description: Guide for creating effective skills. This skill should be used when users want to create a
-    new skill (or update an existing skill) that extends…
-  default_prompt: Read my repository and create a skill to bootstrap new components for my project.

@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Image
-  short_description: Image prompt engineering for AI image generation models. Use when user wants to generate images,
-    create image prompts, or optimize prompts for…
-  default_prompt: Use $content-image for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

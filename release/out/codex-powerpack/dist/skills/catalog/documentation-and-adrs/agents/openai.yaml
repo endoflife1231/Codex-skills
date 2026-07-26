@@ -1,6 +1,0 @@
-interface:
-  display_name: Documentation and ADRs
-  short_description: Write and maintain architecture decision records, API documentation, operational notes, and
-    project guidance. Use when decisions or behavior need…
-  default_prompt: Use $documentation-and-adrs for this task. Follow its workflow, inspect the relevant project files,
-    and verify the result.

@@ -1,8 +1,0 @@
-interface:
-  display_name: ASO
-  short_description: When the user wants to audit or optimize an App Store or Google Play listing. Also use when
-    the user mentions 'ASO audit,' 'app store optimization,'…
-  default_prompt: Use $aso for this task. Follow the skill workflow, inspect relevant files and prerequisites, and
-    verify the result.
-policy:
-  allow_implicit_invocation: true

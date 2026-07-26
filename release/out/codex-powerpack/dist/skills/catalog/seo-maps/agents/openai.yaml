@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Maps
-  short_description: Maps intelligence for local SEO — geo-grid rank tracking, GBP profile auditing via API, review
-    intelligence across Google/Tripadvisor/Trustpilot,…
-  default_prompt: Use $seo-maps for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

@@ -1,8 +1,0 @@
-interface:
-  display_name: Lead Magnets
-  short_description: When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation.
-    Also use when the user mentions "lead magnet,"…
-  default_prompt: Use $lead-magnets for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

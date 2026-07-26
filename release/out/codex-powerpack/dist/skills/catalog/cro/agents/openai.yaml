@@ -1,8 +1,0 @@
-interface:
-  display_name: CRO
-  short_description: When the user wants to optimize, improve, or increase conversions on any marketing page or
-    form — including homepage, landing pages, pricing pages,…
-  default_prompt: Use $cro for this task. Follow the skill workflow, inspect relevant files and prerequisites, and
-    verify the result.
-policy:
-  allow_implicit_invocation: true

@@ -1,8 +1,0 @@
-interface:
-  display_name: Free Tools
-  short_description: When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation,
-    SEO value, or brand awareness. Also use when…
-  default_prompt: Use $free-tools for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

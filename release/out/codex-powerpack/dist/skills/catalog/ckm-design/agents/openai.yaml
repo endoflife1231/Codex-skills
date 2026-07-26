@@ -1,6 +1,0 @@
-interface:
-  display_name: Ckm Design
-  short_description: Route broad ClaudeKit-derived design work across brand, tokens, UI, logos, presentations, banners,
-    icons, and social assets; adapted for Codex.
-  default_prompt: Use $ckm-design to handle this task. Follow the skill workflow, inspect relevant project files,
-    and verify the result.

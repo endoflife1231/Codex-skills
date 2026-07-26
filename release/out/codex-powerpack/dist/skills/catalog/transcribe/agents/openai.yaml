@@ -1,7 +1,0 @@
-interface:
-  display_name: Transcribe
-  short_description: Transcribe audio files to text with optional diarization and known-speaker hints. Use when
-    a user asks to transcribe speech from audio/video,…
-  icon_small: ./assets/transcribe-small.svg
-  icon_large: ./assets/transcribe.png
-  default_prompt: Transcribe this audio or video, include speaker labels when possible, and provide a clean summary.

@@ -1,8 +1,0 @@
-interface:
-  display_name: Sales Enablement
-  short_description: When the user wants to create sales collateral, pitch decks, one-pagers, objection handling
-    docs, or demo scripts. Also use when the user mentions…
-  default_prompt: Use $sales-enablement for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

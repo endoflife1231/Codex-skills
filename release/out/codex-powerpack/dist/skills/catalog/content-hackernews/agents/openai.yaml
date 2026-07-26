@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Hackernews
-  short_description: Hacker News post generation for Show HN, Ask HN, and submissions. Use when user wants to post
-    to Hacker News or write a Show HN/Ask HN post.
-  default_prompt: Use $content-hackernews for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

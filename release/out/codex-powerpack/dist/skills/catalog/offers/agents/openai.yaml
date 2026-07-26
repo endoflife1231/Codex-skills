@@ -1,8 +1,0 @@
-interface:
-  display_name: Offers
-  short_description: When the user wants to design, construct, or improve an offer — the thing they actually sell
-    — including value framing, bonus stacking, guarantee…
-  default_prompt: Use $offers for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

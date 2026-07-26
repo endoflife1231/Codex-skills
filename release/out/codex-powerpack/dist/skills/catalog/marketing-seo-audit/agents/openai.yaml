@@ -1,8 +1,0 @@
-interface:
-  display_name: Marketing SEO Audit
-  short_description: Run a practical marketing-oriented SEO review covering crawlability, on-page basics, content,
-    links, and prioritized recommendations without…
-  default_prompt: Use $marketing-seo-audit for this task. Follow the skill workflow, inspect relevant files and
-    prerequisites, and verify the result.
-policy:
-  allow_implicit_invocation: true

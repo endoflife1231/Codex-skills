@@ -1,8 +1,0 @@
-interface:
-  display_name: Doubt Driven Development
-  short_description: Run an adversarial fresh-context review of a high-stakes or uncertain technical decision before
-    committing to it. Prefer explicit invocation for…
-  default_prompt: Use $doubt-driven-development for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.
-policy:
-  allow_implicit_invocation: false

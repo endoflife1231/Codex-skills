@@ -1,8 +1,0 @@
-interface:
-  display_name: Humanizer
-  short_description: Edit or audit English prose to remove generic AI-writing patterns and restore a natural, specific,
-    credible human voice without changing facts or…
-  default_prompt: Use $humanizer for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

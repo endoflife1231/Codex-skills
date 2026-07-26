@@ -1,6 +1,0 @@
-interface:
-  display_name: Pitfalls Drizzle Orm
-  short_description: 'Drizzle ORM patterns and migration safety rules. Use when defining schemas, running migrations,
-    or debugging database issues. Triggers on: Drizzle,…'
-  default_prompt: Use $pitfalls-drizzle-orm to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

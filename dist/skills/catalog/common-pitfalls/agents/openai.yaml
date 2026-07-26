@@ -1,6 +1,0 @@
-interface:
-  display_name: Common Pitfalls
-  short_description: Orchestrates pitfall prevention skills for common development issues. Auto-triggered during
-    code review to check for TanStack Query, Drizzle ORM,…
-  default_prompt: Use $common-pitfalls to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

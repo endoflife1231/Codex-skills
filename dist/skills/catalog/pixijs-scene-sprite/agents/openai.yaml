@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Scene Sprite
-  short_description: Use this skill when drawing images in PixiJS v8. Covers Sprite with anchor/tint/texture, AnimatedSprite
-    for frame animation, NineSliceSprite for…
-  default_prompt: Use $pixijs-scene-sprite to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

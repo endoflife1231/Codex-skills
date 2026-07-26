@@ -1,5 +1,0 @@
-interface:
-  display_name: Caveman Setup
-  short_description: Optionally install, preview, configure, or remove project-local native Codex hooks that persist
-    Caveman mode across prompts and sessions. Trigger…
-  default_prompt: Use $caveman-setup for this task. Follow the skill workflow and preserve technical accuracy.

@@ -1,8 +1,0 @@
-interface:
-  display_name: Content Repurpose
-  short_description: Transform content from one format into multiple formats while maintaining brand consistency.
-    Use when user wants to repurpose content, convert a…
-  default_prompt: Use $content-repurpose for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

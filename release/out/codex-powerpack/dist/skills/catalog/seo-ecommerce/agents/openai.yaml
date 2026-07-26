@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Ecommerce
-  short_description: 'E-commerce SEO analysis: Google Shopping visibility, Amazon marketplace intelligence, product
-    schema validation, competitor pricing analysis, and…'
-  default_prompt: Use $seo-ecommerce for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

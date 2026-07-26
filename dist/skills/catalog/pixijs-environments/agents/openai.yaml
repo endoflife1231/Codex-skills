@@ -1,6 +1,0 @@
-interface:
-  display_name: PixiJS Environments
-  short_description: 'Use this skill when running PixiJS v8 outside a standard browser: Web Workers, OffscreenCanvas,
-    Node/SSR, or CSP-restricted contexts. Covers…'
-  default_prompt: Use $pixijs-environments to handle this task. Follow the skill workflow, inspect relevant project
-    files, and verify the result.

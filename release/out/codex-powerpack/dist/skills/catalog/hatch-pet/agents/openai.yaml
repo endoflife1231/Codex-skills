@@ -1,6 +1,0 @@
-interface:
-  display_name: Hatch Pet
-  short_description: Create, repair, validate, visually QA, and package Codex-compatible animated pets and pet spritesheets
-    from character art, generated images, company…
-  default_prompt: Use $hatch-pet to create a Codex-compatible animated pet in any pet-safe style from a concept,
-    company brand, or reference image.

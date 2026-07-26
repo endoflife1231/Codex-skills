@@ -1,8 +1,0 @@
-interface:
-  display_name: Launch
-  short_description: When the user wants to plan a product launch, feature announcement, or release strategy. Also
-    use when the user mentions 'launch,' 'Product Hunt,'…
-  default_prompt: Use $launch for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

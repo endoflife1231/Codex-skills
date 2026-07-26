@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Flow
-  short_description: FLOW framework integration — evidence-led SEO using the Find → Leverage → Optimize → Win loop.
-    Surfaces stage-specific AI prompts from the FLOW…
-  default_prompt: Use $seo-flow for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true

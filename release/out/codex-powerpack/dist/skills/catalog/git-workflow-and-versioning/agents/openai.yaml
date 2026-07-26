@@ -1,6 +1,0 @@
-interface:
-  display_name: Git Workflow and Versioning
-  short_description: Organize branches, commits, conflict resolution, releases, and versioning. Use when preparing
-    changes for integration or managing Git history.
-  default_prompt: Use $git-workflow-and-versioning for this task. Follow its workflow, inspect the relevant project
-    files, and verify the result.

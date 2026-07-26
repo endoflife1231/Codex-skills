@@ -1,6 +1,0 @@
-interface:
-  display_name: Context Engineering
-  short_description: Prepare focused project context for Codex using AGENTS.md, specs, relevant source files, examples,
-    and concise error output. Use when context is…
-  default_prompt: Use $context-engineering for this task. Follow its workflow, inspect the relevant project files,
-    and verify the result.

@@ -1,4 +1,0 @@
-{
-  "postCreateCommand": "bash .codex-powerpack/restore-codebase-memory.sh",
-  "comment": "Copy or wrap dist/integrations/codebase-memory/restore-tools.sh in the project. Merge this key manually with an existing postCreateCommand."
-}

@@ -1,8 +1,0 @@
-interface:
-  display_name: SEO Programmatic
-  short_description: Programmatic SEO planning and analysis for pages generated at scale from data sources. Covers
-    template engines, URL patterns, internal linking…
-  default_prompt: Use $seo-programmatic for this task. Follow the skill workflow, inspect relevant files and prerequisites,
-    and verify the result.
-policy:
-  allow_implicit_invocation: true
