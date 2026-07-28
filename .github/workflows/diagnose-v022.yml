@@ -1,0 +1,52 @@
+name: Diagnose v0.2.2 payload
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.v022-diagnose-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inspect payload
+        shell: bash
+        run: |
+          set +e
+          REPORT=v022-diagnostic.txt
+          : > "$REPORT"
+          echo "commit=$GITHUB_SHA" >> "$REPORT"
+          echo "parts:" >> "$REPORT"
+          ls -l .release-payload/v022.part* >> "$REPORT" 2>&1
+          cat .release-payload/v022.part* | tr -d '\r\n\t ' > /tmp/v022_payload.b64
+          echo "base64_bytes=$(wc -c < /tmp/v022_payload.b64)" >> "$REPORT"
+          base64 --decode /tmp/v022_payload.b64 > /tmp/v022_payload.tar.gz 2>/tmp/base64.err
+          BASE64_STATUS=$?
+          echo "base64_status=$BASE64_STATUS" >> "$REPORT"
+          cat /tmp/base64.err >> "$REPORT"
+          if [ "$BASE64_STATUS" -eq 0 ]; then
+            sha256sum /tmp/v022_payload.tar.gz >> "$REPORT" 2>&1
+            tar -tzf /tmp/v022_payload.tar.gz >/tmp/tar.list 2>/tmp/tar.err
+            TAR_STATUS=$?
+            echo "tar_status=$TAR_STATUS" >> "$REPORT"
+            echo "tar_files=$(wc -l < /tmp/tar.list)" >> "$REPORT"
+            cat /tmp/tar.err >> "$REPORT"
+            head -30 /tmp/tar.list >> "$REPORT"
+          fi
+
+      - name: Commit diagnostic report
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add v022-diagnostic.txt
+          git commit -m 'diagnostic: inspect v0.2.2 payload'
+          git push origin HEAD:main
