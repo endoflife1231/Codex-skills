@@ -1,15 +1,12 @@
-commit=f602695bd84d52ee162cb6de0523f5a3eff7bf2a
-parts:
--rw-r--r-- 1 runner runner 12000 Jul 28 12:52 .release-payload/v022.part00
--rw-r--r-- 1 runner runner 12000 Jul 28 12:52 .release-payload/v022.part01
--rw-r--r-- 1 runner runner 12000 Jul 28 12:52 .release-payload/v022.part02
--rw-r--r-- 1 runner runner  5204 Jul 28 12:52 .release-payload/v022.part03
--rw-r--r-- 1 runner runner  9792 Jul 28 12:52 .release-payload/v022.part04
-base64_bytes=50996
-base64_status=0
-98ce110a15210eb79a6fcabcd026a2f8eb2534fbe8f0dbc54892be834bd3ce74  /tmp/v022_payload.tar.gz
-tar_status=2
-tar_files=45
+commit=6596d6cde43f4fc701fd167f8940153c84243fdb
+-rw-r--r-- 1 runner runner 12000 Jul 28 12:54 .release-payload/v022.part00
+-rw-r--r-- 1 runner runner 12000 Jul 28 12:54 .release-payload/v022.part01
+-rw-r--r-- 1 runner runner 12000 Jul 28 12:54 .release-payload/v022.part02
+-rw-r--r-- 1 runner runner  5204 Jul 28 12:54 .release-payload/v022.part03
+-rw-r--r-- 1 runner runner  9792 Jul 28 12:54 .release-payload/v022.part04
+[default] base64_status=0 bytes=50996
+98ce110a15210eb79a6fcabcd026a2f8eb2534fbe8f0dbc54892be834bd3ce74  /tmp/default.tar.gz
+[default] tar_status=2 files=45
 tar: Skipping to next header
 tar: Skipping to next header
 
@@ -18,33 +15,33 @@ gzip: stdin: invalid compressed data--crc error
 gzip: stdin: invalid compressed data--length error
 tar: Child returned status 1
 tar: Error is not recoverable: exiting now
-.github/ISSUE_TEMPLATE/bug_report.yml
-.github/ISSUE_TEMPLATE/feature_request.yml
-.github/PULL_REQUEST_TEMPLATE.md
-.github/workflows/release.yml
-.github/workflows/validate.yml
-CHANGELOG.md
-CHANGELOG.ru.md
-CITATION.cff
-CODE_OF_CONDUCT.md
-CODE_OF_CONDUCT.ru.md
-CONTRIBUTING.md
-CONTRIBUTING.ru.md
-OPEN_SOURCE_AUDIT.md
-OPEN_SOURCE_AUDIT.ru.md
-README.md
-README.ru.md
-SECURITY.md
-SECURITY.ru.md
-SUPPORT.md
-SUPPORT.ru.md
-THIRD_PARTY_NOTICES.md
-THIRD_PARTY_NOTICES.ru.md
+dist/docs/README.md
+dist/docs/README.ru.md
+dist/install/README.md
+dist/install/README.ru.md
+dist/integrations/codebase-memory/README.md
+dist/integrations/codebase-memory/README.ru.md
+dist/integrations/graphify/README.md
+dist/integrations/graphify/README.ru.md
+dist/licenses/THIRD_PARTY_NOTICES.md
 VERSION
-dist/agents/README.md
-dist/agents/README.ru.md
-dist/agents/references/README.md
-dist/agents/references/README.ru.md
-dist/core/references/README.md
-dist/core/references/README.ru.md
-dist/docs/ARCHITECTURE.md
+[swapped_last] base64_status=0 bytes=50996
+674d7021a4c0146afeda8877690b6a2021c23c776fa1f6853e6a2c3c3bff71ab  /tmp/swapped_last.tar.gz
+[swapped_last] tar_status=2 files=44
+tar: Skipping to next header
+
+gzip: stdin: invalid compressed data--crc error
+
+gzip: stdin: invalid compressed data--length error
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+dist/docs/PROJECT_ADAPTATION.ru.md
+dist/docs/README.md
+dist/docs/README.ru.md
+dist/install/README.md
+dist/install/README.ru.md
+dist/integrations/codebase-memory/README.md
+dist/integrations/codebase-memory/README.ru.md
+dist/integrations/graphify/README.md
+dist/integrations/graphify/README.ru.md
+dist/licenses/THIRD_PARTY_NOTICES.md
