@@ -1,1 +1,1 @@
-publish clean v0.2.2 now
+publish clean v0.2.2 now retry 2
