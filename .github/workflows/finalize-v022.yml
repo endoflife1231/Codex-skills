@@ -1,0 +1,339 @@
+name: Finalize clean v0.2.2 release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.v022-finalize-trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Synchronize version and documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+
+          root = Path('.')
+          old = '0.2.1'
+          new = '0.2.2'
+          date = '2026-07-28'
+
+          (root / 'VERSION').write_text(new + '\n', encoding='utf-8')
+
+          roots = [
+              root,
+              root / 'docs',
+              root / 'release',
+              root / 'dist' / 'docs',
+              root / 'dist' / 'install',
+              root / 'dist' / 'onboarding',
+              root / 'dist' / 'integrations',
+              root / 'dist' / 'manifests',
+              root / 'dist' / 'licenses',
+              root / 'dist' / 'skills',
+              root / 'dist' / 'agents',
+              root / 'dist' / 'core',
+          ]
+          suffixes = {'.md', '.json', '.yaml', '.yml', '.cff', '.py', '.sh', '.txt'}
+          seen = set()
+          for base in roots:
+              if not base.exists():
+                  continue
+              paths = [base] if base.is_file() else base.rglob('*')
+              for path in paths:
+                  if not path.is_file() or path in seen:
+                      continue
+                  seen.add(path)
+                  rel = path.as_posix()
+                  if path.name in {'CHANGELOG.md', 'CHANGELOG.ru.md'}:
+                      continue
+                  if rel.startswith('dist/skills/catalog/') or rel.startswith('dist/skills/generated/'):
+                      continue
+                  if path.suffix.lower() not in suffixes and path.name not in {'VERSION'}:
+                      continue
+                  try:
+                      text = path.read_text(encoding='utf-8')
+                  except UnicodeDecodeError:
+                      continue
+                  updated = text.replace('v' + old, 'v' + new).replace(old, new)
+                  if updated != text:
+                      path.write_text(updated, encoding='utf-8')
+
+          citation = root / 'CITATION.cff'
+          if citation.exists():
+              text = citation.read_text(encoding='utf-8')
+              text = re.sub(r'^date-released:.*$', f'date-released: "{date}"', text, flags=re.M)
+              citation.write_text(text, encoding='utf-8')
+
+          changelog = root / 'CHANGELOG.md'
+          en_section = f'''## [0.2.2] - {date}
+
+- Replaced the failed fragmented-payload deployment with direct repository finalization.
+- Removed temporary payload, trigger, diagnostic, and one-time workflow files.
+- Synchronized current release references, citation metadata, manifests, and documentation to `0.2.2`.
+- Added an automated release-consistency check to prevent version drift and leftover release scaffolding.
+- Rebuilt and validated the user and repository archives before publishing the release.
+
+'''
+          if changelog.exists():
+              text = changelog.read_text(encoding='utf-8')
+              if '## [0.2.2]' not in text:
+                  marker = '\n\n'
+                  pos = text.find(marker)
+                  text = text[:pos+2] + en_section + text[pos+2:] if pos >= 0 else '# Changelog\n\n' + en_section + text
+                  changelog.write_text(text, encoding='utf-8')
+
+          changelog_ru = root / 'CHANGELOG.ru.md'
+          ru_section = f'''## [0.2.2] — {date}
+
+- Неудачная публикация через фрагментированный payload заменена прямой финализацией репозитория.
+- Удалены временные части, триггеры, диагностические файлы и одноразовые workflows.
+- Текущая версия, метаданные цитирования, манифесты и документация синхронизированы с `0.2.2`.
+- Добавлена автоматическая проверка согласованности релиза и отсутствия временного мусора.
+- Пользовательский и репозиторный архивы заново собраны и проверены перед публикацией.
+
+'''
+          if changelog_ru.exists():
+              text = changelog_ru.read_text(encoding='utf-8')
+              if '## [0.2.2]' not in text:
+                  marker = '\n\n'
+                  pos = text.find(marker)
+                  text = text[:pos+2] + ru_section + text[pos+2:] if pos >= 0 else '# История изменений\n\n' + ru_section + text
+                  changelog_ru.write_text(text, encoding='utf-8')
+          else:
+              changelog_ru.write_text('# История изменений\n\n' + ru_section, encoding='utf-8')
+
+          (root / 'SECURITY.ru.md').write_text('''# Политика безопасности
+
+Не публикуйте сведения об уязвимостях в открытых issues. Используйте приватное сообщение об уязвимости GitHub, когда эта функция доступна. Укажите затронутую версию, шаги воспроизведения, последствия и возможное исправление. Не прикладывайте секреты, персональные данные и материалы закрытых репозиториев.
+
+Поддерживаемая версия — последний опубликованный релиз. Исправления для старых веток выпускаются только при отдельном объявлении сопровождающего.
+''', encoding='utf-8')
+
+          (root / 'SUPPORT.ru.md').write_text('''# Поддержка
+
+Для проблем установки, пробелов в документации и запросов функций используйте GitHub Discussions или issues. Укажите операционную систему, версии Python и Codex CLI, выбранный профиль, выполненную команду и полный вывод ошибки без секретов.
+
+Сообщения об уязвимостях должны отправляться приватно, а не через публичные обращения поддержки.
+''', encoding='utf-8')
+
+          (root / 'CONTRIBUTING.ru.md').write_text('''# Участие в разработке
+
+1. Создайте отдельную ветку для изменения.
+2. Не добавляйте сторонний компонент без подтверждённой лицензии и сохранённого уведомления об авторстве.
+3. Обновляйте английскую и русскую документацию одновременно, когда изменение затрагивает пользователей.
+4. Перед pull request выполните проверки дистрибутива, окружения и сборки релизных архивов.
+5. В pull request кратко опишите изменение, риски, проверку и лицензионное происхождение новых материалов.
+''', encoding='utf-8')
+
+          (root / 'CODE_OF_CONDUCT.ru.md').write_text('''# Кодекс поведения
+
+Участники должны общаться профессионально, обсуждать работу, а не личные качества, и не допускать оскорблений, дискриминации, преследования или публикации чужих персональных данных. Сопровождающий вправе редактировать или удалять материалы и ограничивать участие при нарушении этих правил.
+''', encoding='utf-8')
+
+          release_notes = root / 'release' / 'release_notes.md'
+          release_notes.write_text(f'''# Codex Powerpack v{new}
+
+This patch release finalizes the audited 249-skill distribution after the failed temporary payload workflow.
+
+## Included
+
+- 8 Codex agents
+- 249 license-audited skills
+- user and repository ZIP archives
+- SHA-256 checksums and manifests
+- synchronized English and Russian user documentation
+
+## Fixes
+
+- removed corrupted payload fragments and one-time triggers;
+- synchronized current version references and citation metadata;
+- added release-consistency validation;
+- rebuilt and validated both release packages.
+''', encoding='utf-8')
+
+          (root / 'release' / 'release_notes.ru.md').write_text(f'''# Codex Powerpack v{new}
+
+Patch-релиз завершает публикацию проверенного набора из 249 навыков после сбоя временного payload-workflow.
+
+## Состав
+
+- 8 Codex-агентов;
+- 249 навыков с проверенными условиями распространения;
+- пользовательский и репозиторный ZIP-архивы;
+- SHA-256 и манифесты;
+- синхронизированная английская и русская пользовательская документация.
+
+## Исправления
+
+- удалены повреждённые части payload и одноразовые триггеры;
+- синхронизированы версия и метаданные цитирования;
+- добавлена проверка согласованности релиза;
+- оба релизных пакета пересобраны и проверены.
+''', encoding='utf-8')
+
+          checker = root / 'release' / 'check_release_consistency.py'
+          checker.write_text('''#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+version = (ROOT / "VERSION").read_text("utf-8").strip()
+errors: list[str] = []
+
+required = [
+    "README.md",
+    "README.ru.md",
+    "CITATION.cff",
+    "OPEN_SOURCE_AUDIT.md",
+    "release/README.md",
+    "release/release_notes.md",
+    "dist/docs/README.md",
+]
+for rel in required:
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"missing {rel}")
+        continue
+    text = path.read_text("utf-8")
+    if version not in text:
+        errors.append(f"{rel} does not reference current version {version}")
+
+for path in (ROOT / "dist" / "manifests").glob("*.json"):
+    try:
+        data = json.loads(path.read_text("utf-8"))
+    except Exception as exc:
+        errors.append(f"{path.relative_to(ROOT)} invalid JSON: {exc}")
+        continue
+    declared = data.get("version")
+    if declared is not None and str(declared) != version:
+        errors.append(f"{path.relative_to(ROOT)} version {declared} != {version}")
+
+summary_path = ROOT / "dist" / "manifests" / "distribution-summary.json"
+if summary_path.is_file():
+    data = json.loads(summary_path.read_text("utf-8"))
+    counts = data.get("counts", {})
+    expected = {"agents": 8, "skills": 249, "excluded_unlicensed_skills": 5}
+    for key, value in expected.items():
+        if counts.get(key) != value:
+            errors.append(f"distribution count {key}={counts.get(key)} != {value}")
+
+for rel in [
+    ".release-payload",
+    ".v022-release-trigger",
+    ".v022-diagnose-trigger",
+    ".v022-finalize-trigger",
+    "v022-diagnostic.txt",
+    ".github/workflows/apply-v022.yml",
+    ".github/workflows/diagnose-v022.yml",
+    ".github/workflows/finalize-v022.yml",
+]:
+    if (ROOT / rel).exists():
+        errors.append(f"temporary release artifact remains: {rel}")
+
+if errors:
+    for error in errors:
+        print(f"[error] {error}")
+    raise SystemExit(1)
+print(f"[ok] release consistency: v{version}, 8 agents, 249 skills")
+''', encoding='utf-8')
+
+          validate = root / '.github' / 'workflows' / 'validate.yml'
+          validate.write_text('''name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check release consistency
+        run: python3 release/check_release_consistency.py
+      - name: Validate distribution
+        run: python3 dist/verify/validate_dist.py
+      - name: Run doctor
+        run: bash dist/verify/doctor.sh
+      - name: Test package build
+        run: bash release/build_release.sh
+''', encoding='utf-8')
+          PY
+
+          rm -rf .release-payload
+          rm -f .v022-release-trigger .v022-diagnose-trigger .v022-finalize-trigger
+          rm -f v022-diagnostic.txt
+          rm -f .github/workflows/apply-v022.yml
+          rm -f .github/workflows/diagnose-v022.yml
+          rm -f .github/workflows/finalize-v022.yml
+          chmod +x install.sh update.sh uninstall.sh adapt-project.sh rollback.sh verify.sh
+          chmod +x release/build_release.sh release/doctor_release.sh release/check_release_consistency.py
+          find dist -type f -name '*.sh' -exec chmod +x {} +
+
+      - name: Validate and build final packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 release/check_release_consistency.py
+          python3 dist/verify/validate_dist.py
+          bash dist/verify/doctor.sh
+          bash release/doctor_release.sh
+          bash release/build_release.sh
+
+      - name: Commit clean v0.2.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'release: publish clean v0.2.2'
+          git push origin HEAD:main
+          git tag -a v0.2.2 -m 'Codex Powerpack v0.2.2'
+          git push origin v0.2.2
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v0.2.2 >/dev/null 2>&1; then
+            gh release upload v0.2.2 release/out/*.zip release/out/*.json release/out/SHA256SUMS --clobber
+            gh release edit v0.2.2 --title 'Codex Powerpack v0.2.2' --notes-file release/release_notes.md
+          else
+            gh release create v0.2.2 \
+              release/out/*.zip \
+              release/out/*.json \
+              release/out/SHA256SUMS \
+              --verify-tag \
+              --title 'Codex Powerpack v0.2.2' \
+              --notes-file release/release_notes.md
+          fi
