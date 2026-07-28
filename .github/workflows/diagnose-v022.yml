@@ -1,4 +1,4 @@
-name: Diagnose v0.2.2 payload
+name: Diagnose v0.2.2 finalizer
 
 on:
   push:
@@ -16,53 +16,56 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-      - name: Inspect payload orders
+      - name: Test finalizer without committing changes
         shell: bash
         run: |
           set +e
           REPORT=v022-diagnostic.txt
           : > "$REPORT"
           echo "commit=$GITHUB_SHA" >> "$REPORT"
-          ls -l .release-payload/v022.part* >> "$REPORT" 2>&1
+          python3 release/finalize_v022.py >/tmp/sync.log 2>&1
+          SYNC=$?
+          echo "sync_status=$SYNC" >> "$REPORT"
+          cat /tmp/sync.log >> "$REPORT"
+          if [ "$SYNC" -eq 0 ]; then
+            python3 release/check_release_consistency.py >/tmp/consistency.log 2>&1
+            CONSISTENCY=$?
+            echo "consistency_status=$CONSISTENCY" >> "$REPORT"
+            cat /tmp/consistency.log >> "$REPORT"
 
-          test_order() {
-            NAME="$1"
-            shift
-            cat "$@" | tr -d '\r\n\t ' > "/tmp/${NAME}.b64"
-            base64 --decode "/tmp/${NAME}.b64" > "/tmp/${NAME}.tar.gz" 2>"/tmp/${NAME}.base64.err"
-            B64=$?
-            echo "[$NAME] base64_status=$B64 bytes=$(wc -c < /tmp/${NAME}.b64)" >> "$REPORT"
-            cat "/tmp/${NAME}.base64.err" >> "$REPORT"
-            if [ "$B64" -eq 0 ]; then
-              sha256sum "/tmp/${NAME}.tar.gz" >> "$REPORT" 2>&1
-              tar -tzf "/tmp/${NAME}.tar.gz" >"/tmp/${NAME}.list" 2>"/tmp/${NAME}.tar.err"
-              TAR=$?
-              echo "[$NAME] tar_status=$TAR files=$(wc -l < /tmp/${NAME}.list)" >> "$REPORT"
-              cat "/tmp/${NAME}.tar.err" >> "$REPORT"
-              tail -10 "/tmp/${NAME}.list" >> "$REPORT"
-            fi
-          }
+            python3 dist/verify/validate_dist.py >/tmp/dist.log 2>&1
+            DIST=$?
+            echo "dist_status=$DIST" >> "$REPORT"
+            cat /tmp/dist.log >> "$REPORT"
 
-          test_order default \
-            .release-payload/v022.part00 \
-            .release-payload/v022.part01 \
-            .release-payload/v022.part02 \
-            .release-payload/v022.part03 \
-            .release-payload/v022.part04
+            bash dist/verify/doctor.sh >/tmp/doctor.log 2>&1
+            DOCTOR=$?
+            echo "doctor_status=$DOCTOR" >> "$REPORT"
+            cat /tmp/doctor.log >> "$REPORT"
 
-          test_order swapped_last \
-            .release-payload/v022.part00 \
-            .release-payload/v022.part01 \
-            .release-payload/v022.part02 \
-            .release-payload/v022.part04 \
-            .release-payload/v022.part03
+            bash release/doctor_release.sh >/tmp/release-doctor.log 2>&1
+            RELEASE_DOCTOR=$?
+            echo "release_doctor_status=$RELEASE_DOCTOR" >> "$REPORT"
+            cat /tmp/release-doctor.log >> "$REPORT"
 
-      - name: Commit diagnostic report
+            bash release/build_release.sh >/tmp/build.log 2>&1
+            BUILD=$?
+            echo "build_status=$BUILD" >> "$REPORT"
+            cat /tmp/build.log >> "$REPORT"
+          fi
+          echo "--- changed files ---" >> "$REPORT"
+          git status --short >> "$REPORT"
+
+      - name: Commit diagnostic report only
         shell: bash
         run: |
+          git restore --staged . || true
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add v022-diagnostic.txt
-          git commit -m 'diagnostic: compare v0.2.2 payload order'
+          git add -f v022-diagnostic.txt
+          git commit -m 'diagnostic: test v0.2.2 finalizer'
           git push origin HEAD:main
