@@ -1,7 +1,7 @@
 # Open-source audit
 
 Audit date: 2026-07-26  
-Release: 0.2.1
+Release: 0.2.2
 
 ## Policy
 

@@ -86,7 +86,7 @@
     "License scope re-audited against upstream repositories and parent licenses.",
     "Public catalog expanded to 249 skills; five unresolved skills remain excluded."
   ],
-  "release_version": "0.2.1",
+  "release_version": "0.2.2",
   "public_skill_count": 249,
   "excluded_unlicensed_skill_count": 5
 }

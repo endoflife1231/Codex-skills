@@ -1,20 +1,18 @@
-# Codex Powerpack 0.2.1
+# Codex Powerpack v0.2.2
 
-License re-audit and catalog restoration release.
+This patch release finalizes the audited 249-skill distribution after the failed temporary payload workflow.
 
-## Highlights
+## Included
 
-- 249 redistributable skills
-- 65 skills restored after upstream and parent-license verification
 - 8 Codex agents
-- separate user and repository archives
-- English and Russian documentation
-- manifests and SHA-256 checksums
+- 249 license-audited skills
+- user and repository ZIP archives
+- SHA-256 checksums and manifests
+- synchronized English and Russian user documentation
 
-## Compatibility
+## Fixes
 
-Linux, macOS and Windows through WSL. Requires Bash and Python 3.10+. Codex CLI is required for normal Codex usage.
-
-## Licensing
-
-High-confidence MIT evidence is bundled for PixiJS, Addy Osmani agent-skills, Next Level Builder, Supabase and Vercel sources. Twenty-two BarisSozen skills are included with medium confidence because the upstream README and package metadata explicitly declare MIT but no standalone LICENSE file was present. Five skills remain excluded because redistribution permission could not be confirmed.
+- removed corrupted payload fragments and one-time triggers;
+- synchronized current version references and citation metadata;
+- added release-consistency validation;
+- rebuilt and validated both release packages.

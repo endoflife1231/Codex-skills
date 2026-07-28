@@ -1,6 +1,6 @@
 # Codex Powerpack distribution
 
-Release 0.2.1 contains:
+Release 0.2.2 contains:
 
 - `core/`: Codex-native base policy and references
 - `agents/`: 8 curated Codex agents
