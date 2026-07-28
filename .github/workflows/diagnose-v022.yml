@@ -1,4 +1,4 @@
-name: Publish clean v0.2.2 release
+name: Apply clean v0.2.2 repository state
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  publish:
+  apply:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,52 +20,29 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Finalize repository
+      - name: Finalize, validate, and build
         shell: bash
         run: |
           set -euo pipefail
           python3 release/finalize_v022.py
+          rm -f release/finalize_v022.py v022-finalizer-report.txt
           chmod +x install.sh update.sh uninstall.sh adapt-project.sh rollback.sh verify.sh
           chmod +x release/build_release.sh release/doctor_release.sh release/check_release_consistency.py
           find dist -type f -name '*.sh' -exec chmod +x {} +
-
-      - name: Validate and build packages
-        shell: bash
-        run: |
-          set -euo pipefail
           python3 release/check_release_consistency.py
           python3 dist/verify/validate_dist.py
           bash dist/verify/doctor.sh
           bash release/doctor_release.sh
           bash release/build_release.sh
 
-      - name: Commit and tag v0.2.2
+      - name: Commit repository changes without workflow mutations
         shell: bash
         run: |
           set -euo pipefail
+          git restore --source=HEAD --staged --worktree .github/workflows
+          rm -rf release/out
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -m 'release: publish clean v0.2.2'
+          git commit -m 'release: apply clean v0.2.2 repository state'
           git push origin HEAD:main
-          git tag -a v0.2.2 -m 'Codex Powerpack v0.2.2'
-          git push origin v0.2.2
-
-      - name: Publish GitHub release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          if gh release view v0.2.2 >/dev/null 2>&1; then
-            gh release upload v0.2.2 release/out/*.zip release/out/*.json release/out/SHA256SUMS --clobber
-            gh release edit v0.2.2 --title 'Codex Powerpack v0.2.2' --notes-file release/release_notes.md
-          else
-            gh release create v0.2.2 \
-              release/out/*.zip \
-              release/out/*.json \
-              release/out/SHA256SUMS \
-              --verify-tag \
-              --title 'Codex Powerpack v0.2.2' \
-              --notes-file release/release_notes.md
-          fi
