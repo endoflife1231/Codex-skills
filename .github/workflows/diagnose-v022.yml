@@ -17,30 +17,46 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Inspect payload
+      - name: Inspect payload orders
         shell: bash
         run: |
           set +e
           REPORT=v022-diagnostic.txt
           : > "$REPORT"
           echo "commit=$GITHUB_SHA" >> "$REPORT"
-          echo "parts:" >> "$REPORT"
           ls -l .release-payload/v022.part* >> "$REPORT" 2>&1
-          cat .release-payload/v022.part* | tr -d '\r\n\t ' > /tmp/v022_payload.b64
-          echo "base64_bytes=$(wc -c < /tmp/v022_payload.b64)" >> "$REPORT"
-          base64 --decode /tmp/v022_payload.b64 > /tmp/v022_payload.tar.gz 2>/tmp/base64.err
-          BASE64_STATUS=$?
-          echo "base64_status=$BASE64_STATUS" >> "$REPORT"
-          cat /tmp/base64.err >> "$REPORT"
-          if [ "$BASE64_STATUS" -eq 0 ]; then
-            sha256sum /tmp/v022_payload.tar.gz >> "$REPORT" 2>&1
-            tar -tzf /tmp/v022_payload.tar.gz >/tmp/tar.list 2>/tmp/tar.err
-            TAR_STATUS=$?
-            echo "tar_status=$TAR_STATUS" >> "$REPORT"
-            echo "tar_files=$(wc -l < /tmp/tar.list)" >> "$REPORT"
-            cat /tmp/tar.err >> "$REPORT"
-            head -30 /tmp/tar.list >> "$REPORT"
-          fi
+
+          test_order() {
+            NAME="$1"
+            shift
+            cat "$@" | tr -d '\r\n\t ' > "/tmp/${NAME}.b64"
+            base64 --decode "/tmp/${NAME}.b64" > "/tmp/${NAME}.tar.gz" 2>"/tmp/${NAME}.base64.err"
+            B64=$?
+            echo "[$NAME] base64_status=$B64 bytes=$(wc -c < /tmp/${NAME}.b64)" >> "$REPORT"
+            cat "/tmp/${NAME}.base64.err" >> "$REPORT"
+            if [ "$B64" -eq 0 ]; then
+              sha256sum "/tmp/${NAME}.tar.gz" >> "$REPORT" 2>&1
+              tar -tzf "/tmp/${NAME}.tar.gz" >"/tmp/${NAME}.list" 2>"/tmp/${NAME}.tar.err"
+              TAR=$?
+              echo "[$NAME] tar_status=$TAR files=$(wc -l < /tmp/${NAME}.list)" >> "$REPORT"
+              cat "/tmp/${NAME}.tar.err" >> "$REPORT"
+              tail -10 "/tmp/${NAME}.list" >> "$REPORT"
+            fi
+          }
+
+          test_order default \
+            .release-payload/v022.part00 \
+            .release-payload/v022.part01 \
+            .release-payload/v022.part02 \
+            .release-payload/v022.part03 \
+            .release-payload/v022.part04
+
+          test_order swapped_last \
+            .release-payload/v022.part00 \
+            .release-payload/v022.part01 \
+            .release-payload/v022.part02 \
+            .release-payload/v022.part04 \
+            .release-payload/v022.part03
 
       - name: Commit diagnostic report
         shell: bash
@@ -48,5 +64,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add v022-diagnostic.txt
-          git commit -m 'diagnostic: inspect v0.2.2 payload'
+          git commit -m 'diagnostic: compare v0.2.2 payload order'
           git push origin HEAD:main
