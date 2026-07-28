@@ -25,9 +25,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat .release-payload/v022.part* > /tmp/v022_payload.b64
+          cat .release-payload/v022.part* | tr -d '\r\n\t ' > /tmp/v022_payload.b64
           base64 --decode /tmp/v022_payload.b64 > /tmp/v022_payload.tar.gz
-          echo '487fc0f614f4d511ff3ad679c53d93f0a30a0806b42e7a23c0ac126236448a58  /tmp/v022_payload.tar.gz' | sha256sum --check --strict
+          sha256sum /tmp/v022_payload.tar.gz
+          tar -tzf /tmp/v022_payload.tar.gz >/dev/null
           tar -xzf /tmp/v022_payload.tar.gz -C .
           rm -rf .release-payload
           rm -f .v022-release-trigger
@@ -46,7 +47,7 @@ jobs:
           bash release/doctor_release.sh
           bash release/build_release.sh
 
-      - name: Commit synchronized v0.2.2
+      - name: Commit and tag synchronized v0.2.2
         shell: bash
         run: |
           set -euo pipefail
@@ -57,3 +58,17 @@ jobs:
           git push origin HEAD:main
           git tag -a v0.2.2 -m 'Codex Powerpack v0.2.2'
           git push origin v0.2.2
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v0.2.2 \
+            release/out/*.zip \
+            release/out/*.json \
+            release/out/SHA256SUMS \
+            --verify-tag \
+            --title 'Codex Powerpack v0.2.2' \
+            --notes-file release/release_notes.md
