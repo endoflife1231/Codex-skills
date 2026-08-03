@@ -1,6 +1,6 @@
 # Final status
 
-Codex Powerpack 0.2.2 is packaged as a public open-source distribution.
+Codex Powerpack 0.2.3 is packaged as a public open-source distribution.
 
 ## Verified capabilities
 

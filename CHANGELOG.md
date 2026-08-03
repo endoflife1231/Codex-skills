@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.3] - 2026-08-03
+
+- Repaired malformed Markdown in the English and Russian v0.2.2 changelog sections.
+- Extended release-consistency validation to reject missing, empty, or fragmented changelog sections.
+- Rebuilt and validated the user and repository release archives.
+
 ## [0.2.2] - 2026-07-28
 
 - Replaced the failed fragmented-payload deployment with direct repository finalization.

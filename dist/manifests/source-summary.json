@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "policy": {
     "adaptation_model": "selective Codex-native adaptation",
     "default_behavior": "safe and project-scoped; optional integrations remain explicit",

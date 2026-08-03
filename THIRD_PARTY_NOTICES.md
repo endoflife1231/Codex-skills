@@ -6,7 +6,7 @@ Codex Powerpack combines first-party MIT-licensed tooling with third-party open-
 
 - Keep the root `LICENSE`, this file, `OPEN_SOURCE_AUDIT.md`, all `dist/licenses/` evidence, and all skill-local license/notice files with redistributed copies.
 - Third-party terms continue to apply to their respective files.
-- Release 0.2.2 includes 249 audited skills and excludes five unresolved skills.
+- Release 0.2.3 includes 249 audited skills and excludes five unresolved skills.
 - Optional external tools such as Graphify and Codebase Memory are separate projects and are not relicensed by this repository.
 
 ## Source groups restored in 0.2.2

@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-26",
   "distribution": "codex-powerpack",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "minimal": {
     "agents": 3,
     "skills": 31,

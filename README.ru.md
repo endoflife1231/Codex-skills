@@ -15,8 +15,8 @@ Codex Powerpack — открытый дистрибутив для проект�
 ## Быстрый старт
 
 ```bash
-unzip codex-powerpack-v0.2.2-user.zip
-cd codex-powerpack-v0.2.2
+unzip codex-powerpack-v0.2.3-user.zip
+cd codex-powerpack-v0.2.3
 ./verify.sh
 ./install.sh --target /path/to/project --profile minimal
 ```

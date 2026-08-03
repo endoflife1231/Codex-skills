@@ -1,6 +1,6 @@
-# Codex Powerpack v0.2.2
+# Codex Powerpack v0.2.3
 
-This patch release finalizes the audited 249-skill distribution after the failed temporary payload workflow.
+This patch release repairs the published changelogs and strengthens release validation.
 
 ## Included
 
@@ -12,7 +12,7 @@ This patch release finalizes the audited 249-skill distribution after the failed
 
 ## Fixes
 
-- removed corrupted payload fragments and one-time triggers;
-- synchronized current version references and citation metadata;
-- added release-consistency validation;
+- repaired malformed Markdown in the English and Russian changelogs;
+- added validation for missing, empty, and fragmented current-release sections;
+- synchronized version references and citation metadata;
 - rebuilt and validated both release packages.

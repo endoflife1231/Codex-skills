@@ -1,7 +1,7 @@
 # Open-source audit
 
 Audit date: 2026-07-26  
-Release: 0.2.2
+Release: 0.2.3
 
 ## Policy
 
@@ -139,4 +139,3 @@ These five can be restored later if the copyright holder supplies a compatible l
 - `pitfalls-websocket`
 - `skill-auditor`
 - `system-integration-validator`
-

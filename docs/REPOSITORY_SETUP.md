@@ -13,5 +13,5 @@ Enable Issues, Discussions, private vulnerability reporting, and GitHub Actions.
 1. Update `VERSION`, `CHANGELOG.md`, and `release/release_notes.md`.
 2. Run `bash release/build_release.sh`.
 3. Verify `release/out/SHA256SUMS`.
-4. Push a tag such as `v0.2.2`.
+4. Push a tag such as `v0.2.3`.
 5. The release workflow builds and attaches both archives.

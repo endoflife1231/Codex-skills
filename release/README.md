@@ -6,10 +6,10 @@ Run:
 bash release/build_release.sh
 ```
 
-Outputs for version 0.2.2:
+Outputs for version 0.2.3:
 
-- `release/out/codex-powerpack-v0.2.2-user.zip`
-- `release/out/codex-powerpack-v0.2.2-repository.zip`
+- `release/out/codex-powerpack-v0.2.3-user.zip`
+- `release/out/codex-powerpack-v0.2.3-repository.zip`
 - `release/out/user-manifest.json`
 - `release/out/repository-manifest.json`
 - `release/out/SHA256SUMS`
