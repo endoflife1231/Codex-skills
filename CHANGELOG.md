@@ -2,16 +2,11 @@
 
 ## [0.2.2] - 2026-07-28
 
-"
-        "- Replaced the failed fragmented-payload deployment with direct repository finalization.
-"
-        "- Removed temporary payload, trigger, diagnostic, and one-time workflow files.
-"
-        "- Synchronized current release references, citation metadata, manifests, and documentation.
-"
-        "- Added automated release-consistency validation.
-"
-        "- Rebuilt and validated the user and repository archives before publication.
+- Replaced the failed fragmented-payload deployment with direct repository finalization.
+- Removed temporary payload, trigger, diagnostic, and one-time workflow files.
+- Synchronized current release references, citation metadata, manifests, and documentation.
+- Added automated release-consistency validation.
+- Rebuilt and validated the user and repository archives before publication.
 
 All notable changes to this project are documented here.
 
