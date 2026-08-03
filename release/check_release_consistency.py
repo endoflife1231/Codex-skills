@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -9,8 +10,9 @@ version = (ROOT / "VERSION").read_text("utf-8").strip()
 errors: list[str] = []
 
 required = [
-    "README.md", "README.ru.md", "CITATION.cff", "OPEN_SOURCE_AUDIT.md",
-    "release/README.md", "release/release_notes.md", "dist/docs/README.md",
+    "README.md", "README.ru.md", "CHANGELOG.md", "CHANGELOG.ru.md",
+    "CITATION.cff", "OPEN_SOURCE_AUDIT.md", "release/README.md",
+    "release/release_notes.md", "dist/docs/README.md",
 ]
 for rel in required:
     path = ROOT / rel
@@ -18,6 +20,22 @@ for rel in required:
         errors.append(f"missing {rel}")
     elif version not in path.read_text("utf-8"):
         errors.append(f"{rel} does not reference current version {version}")
+
+for rel in ["CHANGELOG.md", "CHANGELOG.ru.md"]:
+    text = (ROOT / rel).read_text("utf-8")
+    match = re.search(
+        rf"^## \[{re.escape(version)}\].*?(?=^## \[|\Z)",
+        text,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    if match is None:
+        errors.append(f"{rel} is missing a section for {version}")
+        continue
+    section = match.group(0)
+    if len(re.findall(r"^- \S", section, flags=re.MULTILINE)) == 0:
+        errors.append(f"{rel} release section has no Markdown bullet items")
+    if any(line.strip() == '"' or line.lstrip().startswith('"- ') for line in section.splitlines()):
+        errors.append(f"{rel} release section contains fragmented quoted payload text")
 
 for path in (ROOT / "dist" / "manifests").glob("*.json"):
     try:
